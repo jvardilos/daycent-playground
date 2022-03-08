@@ -1,0 +1,234 @@
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c adjlig.f; ar rcsUu libDDCEVI.a adjlig.o; rm -f adjlig.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c agdrat.f; ar rcsUu libDDCEVI.a agdrat.o; rm -f agdrat.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c annacc.f; ar rcsUu libDDCEVI.a annacc.o; rm -f annacc.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c balanceN.c; ar rcsUu libDDCEVI.a balanceN.o; rm -f balanceN.o
+balanceN.c: In function ‘printnpool’:
+balanceN.c:86:27: warning: unused variable ‘layers’ [-Wunused-variable]
+       extern LAYERPAR_SPT layers;
+                           ^~~~~~
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c bgdrat.f; ar rcsUu libDDCEVI.a bgdrat.o; rm -f bgdrat.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c calcdefac.c; ar rcsUu libDDCEVI.a calcdefac.o; rm -f calcdefac.o
+calcdefac.c: In function ‘calcdefac’:
+calcdefac.c:217:42: warning: ‘agwfunc’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         *agdefac = max(0.000001f, *tfunc * agwfunc);
+                                          ^
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c flowstak.f90; ar rcsUu libDDCEVI.a flowstak.o; rm -f flowstak.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c calciv.f90; ar rcsUu libDDCEVI.a calciv.o; rm -f calciv.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c calcpet.c; ar rcsUu libDDCEVI.a calcpet.o; rm -f calcpet.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c calcSrad.c; ar rcsUu libDDCEVI.a calcSrad.o; rm -f calcSrad.o
+In file included from calcSrad.c:60:
+/nfs/paustian/Century/DDCent17/Include/calcSrad.h:67:21: warning: ‘eps’ defined but not used [-Wunused-variable]
+       static double eps = PI/180 *(23. + (26. + 21.448/60)/60);
+                     ^~~
+/nfs/paustian/Century/DDCent17/Include/calcSrad.h:58:22: warning: ‘SpRad’ defined but not used [-Wunused-variable]
+       static double  SpRad = 3600 * (12/PI); /* S/Rad; */
+                      ^~~~~
+/nfs/paustian/Century/DDCent17/Include/calcSrad.h:57:22: warning: ‘WtL’ defined but not used [-Wunused-variable]
+       static double  WtL = 0.04184e6; /* Watt/Langley */
+                      ^~~
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c candec.f90; ar rcsUu libDDCEVI.a candec.o; rm -f candec.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c catanf.f; ar rcsUu libDDCEVI.a catanf.o; rm -f catanf.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c chkdata.f90; ar rcsUu libDDCEVI.a chkdata.o; rm -f chkdata.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c climscale.f; ar rcsUu libDDCEVI.a climscale.o; rm -f climscale.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c closefiles.c; ar rcsUu libDDCEVI.a closefiles.o; rm -f closefiles.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c cmplig.f; ar rcsUu libDDCEVI.a cmplig.o; rm -f cmplig.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c cmpnfrac.c; ar rcsUu libDDCEVI.a cmpnfrac.o; rm -f cmpnfrac.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c co2eff.f; ar rcsUu libDDCEVI.a co2eff.o; rm -f co2eff.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c crop.f; ar rcsUu libDDCEVI.a crop.o; rm -f crop.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c cropDynC.f; ar rcsUu libDDCEVI.a cropDynC.o; rm -f cropDynC.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c cropin.f90; ar rcsUu libDDCEVI.a cropin.o; rm -f cropin.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c csa_detiv.f90; ar rcsUu libDDCEVI.a csa_detiv.o; rm -f csa_detiv.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c csched.f; ar rcsUu libDDCEVI.a csched.o; rm -f csched.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c cultin.f90; ar rcsUu libDDCEVI.a cultin.o; rm -f cultin.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c cultiv.f90; ar rcsUu libDDCEVI.a cultiv.o; rm -f cultiv.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c cutrtn.f; ar rcsUu libDDCEVI.a cutrtn.o; rm -f cutrtn.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c cycle.f; ar rcsUu libDDCEVI.a cycle.o; rm -f cycle.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c dailymoist.f90; ar rcsUu libDDCEVI.a dailymoist.o; rm -f dailymoist.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c declig.f; ar rcsUu libDDCEVI.a declig.o; rm -f declig.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c decomp.f90; ar rcsUu libDDCEVI.a decomp.o; rm -f decomp.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c dedrem.f; ar rcsUu libDDCEVI.a dedrem.o; rm -f dedrem.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c default.f90; ar rcsUu libDDCEVI.a default.o; rm -f default.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c denitrify.c; ar rcsUu libDDCEVI.a denitrify.o; rm -f denitrify.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c diffusiv.c; ar rcsUu libDDCEVI.a diffusiv.o; rm -f diffusiv.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c droot.f; ar rcsUu libDDCEVI.a droot.o; rm -f droot.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c dshoot.f; ar rcsUu libDDCEVI.a dshoot.o; rm -f dshoot.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c eachyr.f; ar rcsUu libDDCEVI.a eachyr.o; rm -f eachyr.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c erosn.f90; ar rcsUu libDDCEVI.a erosn.o; rm -f erosn.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c esched.f90; ar rcsUu libDDCEVI.a esched.o; rm -f esched.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c parse.f90; ar rcsUu libDDCEVI.a parse.o; rm -f parse.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c retarg.f90; ar rcsUu libDDCEVI.a retarg.o; rm -f retarg.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c extend.f; ar rcsUu libDDCEVI.a extend.o; rm -f extend.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c falstd.f; ar rcsUu libDDCEVI.a falstd.o; rm -f falstd.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c fertin.f90; ar rcsUu libDDCEVI.a fertin.o; rm -f fertin.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c firein.f90; ar rcsUu libDDCEVI.a firein.o; rm -f firein.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c firrtn.f; ar rcsUu libDDCEVI.a firrtn.o; rm -f firrtn.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c fixin.f90; ar rcsUu libDDCEVI.a fixin.o; rm -f fixin.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c fltce.f; ar rcsUu libDDCEVI.a fltce.o; rm -f fltce.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c fracbslos.c; ar rcsUu libDDCEVI.a fracbslos.o; rm -f fracbslos.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c fracis.f; ar rcsUu libDDCEVI.a fracis.o; rm -f fracis.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c frem.f; ar rcsUu libDDCEVI.a frem.o; rm -f frem.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c froota.f90; ar rcsUu libDDCEVI.a froota.o; rm -f froota.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c fsfunc.f; ar rcsUu libDDCEVI.a fsfunc.o; rm -f fsfunc.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c getdiff.c; ar rcsUu libDDCEVI.a getdiff.o; rm -f getdiff.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c getsoilprop.c; ar rcsUu libDDCEVI.a getsoilprop.o; rm -f getsoilprop.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c getwth.f90; ar rcsUu libDDCEVI.a getwth.o; rm -f getwth.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c gpdf.f; ar rcsUu libDDCEVI.a gpdf.o; rm -f gpdf.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c grazin.f90; ar rcsUu libDDCEVI.a grazin.o; rm -f grazin.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c grazrst.f; ar rcsUu libDDCEVI.a grazrst.o; rm -f grazrst.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c grem.f90; ar rcsUu libDDCEVI.a grem.o; rm -f grem.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c grochk.f; ar rcsUu libDDCEVI.a grochk.o; rm -f grochk.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c growth.f90; ar rcsUu libDDCEVI.a growth.o; rm -f growth.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c h2oflux.c; ar rcsUu libDDCEVI.a h2oflux.o; rm -f h2oflux.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c harvin.f90; ar rcsUu libDDCEVI.a harvin.o; rm -f harvin.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c harvst.f90; ar rcsUu libDDCEVI.a harvst.o; rm -f harvst.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c hwdrain.c; ar rcsUu libDDCEVI.a hwdrain.o; rm -f hwdrain.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c initdaily.c; ar rcsUu libDDCEVI.a initdaily.o; rm -f initdaily.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c initialize.f90; ar rcsUu libDDCEVI.a initialize.o; rm -f initialize.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c initlyrs.c; ar rcsUu libDDCEVI.a initlyrs.o; rm -f initlyrs.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c initprod.f; ar rcsUu libDDCEVI.a initprod.o; rm -f initprod.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c initsite_tg.c; ar rcsUu libDDCEVI.a initsite_tg.o; rm -f initsite_tg.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c initsrad.c; ar rcsUu libDDCEVI.a initsrad.o; rm -f initsrad.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c initsw.c; ar rcsUu libDDCEVI.a initsw.o; rm -f initsw.o
+initsw.c: In function ‘outfils’:
+initsw.c:408:20: warning: unused variable ‘callname’ [-Wunused-variable]
+       static char *callname = "outfils";
+                    ^~~~~~~~
+At top level:
+initsw.c:408:20: warning: ‘callname’ defined but not used [-Wunused-variable]
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c inprac.f90; ar rcsUu libDDCEVI.a inprac.o; rm -f inprac.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c irrgin.f90; ar rcsUu libDDCEVI.a irrgin.o; rm -f irrgin.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c irrigt.f90; ar rcsUu libDDCEVI.a irrigt.o; rm -f irrigt.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c killrt.f; ar rcsUu libDDCEVI.a killrt.o; rm -f killrt.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c lacalc.f; ar rcsUu libDDCEVI.a lacalc.o; rm -f lacalc.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c laprod.f; ar rcsUu libDDCEVI.a laprod.o; rm -f laprod.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c leachdly.c; ar rcsUu libDDCEVI.a leachdly.o; rm -f leachdly.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c leafa.f; ar rcsUu libDDCEVI.a leafa.o; rm -f leafa.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c listvar.f90; ar rcsUu libDDCEVI.a listvar.o; rm -f listvar.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c litburn.f; ar rcsUu libDDCEVI.a litburn.o; rm -f litburn.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c line.f; ar rcsUu libDDCEVI.a line.o; rm -f line.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c litdec.f90; ar rcsUu libDDCEVI.a litdec.o; rm -f litdec.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c litstcrev.c; ar rcsUu libDDCEVI.a litstcrev.o; rm -f litstcrev.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c livrem.f90; ar rcsUu libDDCEVI.a livrem.o; rm -f livrem.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c maxswpot.f90; ar rcsUu libDDCEVI.a maxswpot.o; rm -f maxswpot.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c messageC.f90; ar rcsUu libDDCEVI.a messageC.o; rm -f messageC.o
+messageC.f90:174:23:
+
+       integer :: iostat
+                       1
+Warning: Unused variable ‘iostat’ declared at (1) [-Wunused-variable]
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c mssg.c; ar rcsUu libDDCEVI.a mssg.o; rm -f mssg.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c methane.c; ar rcsUu libDDCEVI.a methane.o; rm -f methane.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c mnracc.f; ar rcsUu libDDCEVI.a mnracc.o; rm -f mnracc.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c mthacc.f90; ar rcsUu libDDCEVI.a mthacc.o; rm -f mthacc.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c nitrify.c; ar rcsUu libDDCEVI.a nitrify.o; rm -f nitrify.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c nox_pulse.c; ar rcsUu libDDCEVI.a nox_pulse.o; rm -f nox_pulse.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c nscale.f; ar rcsUu libDDCEVI.a nscale.o; rm -f nscale.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c nutrlm.f90; ar rcsUu libDDCEVI.a nutrlm.o; rm -f nutrlm.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c omadin.f90; ar rcsUu libDDCEVI.a omadin.o; rm -f omadin.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c omadscale.f; ar rcsUu libDDCEVI.a omadscale.o; rm -f omadscale.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c partit.f90; ar rcsUu libDDCEVI.a partit.o; rm -f partit.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c petrad.c; ar rcsUu libDDCEVI.a petrad.o; rm -f petrad.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c pevapdly.c; ar rcsUu libDDCEVI.a pevapdly.o; rm -f pevapdly.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c phshift.f; ar rcsUu libDDCEVI.a phshift.o; rm -f phshift.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c pi_funcs.c; ar rcsUu libDDCEVI.a pi_funcs.o; rm -f pi_funcs.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c potbse.c; ar rcsUu libDDCEVI.a potbse.o; rm -f potbse.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c potbst.c; ar rcsUu libDDCEVI.a potbst.o; rm -f potbst.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c potcrp.f; ar rcsUu libDDCEVI.a potcrp.o; rm -f potcrp.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c potfor.f90; ar rcsUu libDDCEVI.a potfor.o; rm -f potfor.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c potprod.f90; ar rcsUu libDDCEVI.a potprod.o; rm -f potprod.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c pprdwc.f; ar rcsUu libDDCEVI.a pprdwc.o; rm -f pprdwc.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c prcgrw.f; ar rcsUu libDDCEVI.a prcgrw.o; rm -f prcgrw.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c prelim.f; ar rcsUu libDDCEVI.a prelim.o; rm -f prelim.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c pschem.f; ar rcsUu libDDCEVI.a pschem.o; rm -f pschem.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c pteevap.c; ar rcsUu libDDCEVI.a pteevap.o; rm -f pteevap.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c rainflux.c; ar rcsUu libDDCEVI.a rainflux.o; rm -f rainflux.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c ramp.f; ar rcsUu libDDCEVI.a ramp.o; rm -f ramp.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c readblk.f90; ar rcsUu libDDCEVI.a readblk.o; rm -f readblk.o
+readblk.f90:889:0:
+
+         subroutine repeatevnt()
+ 
+Warning: ‘repeatevnt’ defined but not used [-Wunused-function]
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c respir.f; ar rcsUu libDDCEVI.a respir.o; rm -f respir.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c restrp.f90; ar rcsUu libDDCEVI.a restrp.o; rm -f restrp.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c rtimp.f; ar rcsUu libDDCEVI.a rtimp.o; rm -f rtimp.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c savarp.f90; ar rcsUu libDDCEVI.a savarp.o; rm -f savarp.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c schedl.f90; ar rcsUu libDDCEVI.a schedl.o; rm -f schedl.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c setamov.c; ar rcsUu libDDCEVI.a setamov.o; rm -f setamov.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c setasmos.c; ar rcsUu libDDCEVI.a setasmos.o; rm -f setasmos.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c setlyrs.c; ar rcsUu libDDCEVI.a setlyrs.o; rm -f setlyrs.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c showlyrs.c; ar rcsUu libDDCEVI.a showlyrs.o; rm -f showlyrs.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c showminrl.c; ar rcsUu libDDCEVI.a showminrl.o; rm -f showminrl.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c simsom.f90; ar rcsUu libDDCEVI.a simsom.o; rm -f simsom.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c sitein.f90; ar rcsUu libDDCEVI.a sitein.o; rm -f sitein.o
+sitein.f90:709:0:
+
+             if(ii .gt. 0) buffr = buffr(ii+1:jj-1)  ! take just the quoted string
+ 
+Warning: ‘__builtin_memmove’ reading 132 bytes from a region of size 131 [-Wstringop-overflow=]
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c sitein_grid.f; ar rcsUu libDDCEVI.a sitein_grid.o; rm -f sitein_grid.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c snowcent.c; ar rcsUu libDDCEVI.a snowcent.o; rm -f snowcent.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c snowmodel.c; ar rcsUu libDDCEVI.a snowmodel.o; rm -f snowmodel.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c soiltemp.c; ar rcsUu libDDCEVI.a soiltemp.o; rm -f soiltemp.o
+soiltemp.c: In function ‘tempinit’:
+soiltemp.c:321:26: warning: unused variable ‘sitepar’ [-Wunused-variable]
+       extern SITEPAR_SPT sitepar;
+                          ^~~~~~~
+soiltemp.c: In function ‘tempinity’:
+soiltemp.c:371:36: warning: variable ‘Tamp’ set but not used [-Wunused-but-set-variable]
+      float Tavean, Tmaxan, Tminan, Tamp;
+                                    ^~~~
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c soiltransp.c; ar rcsUu libDDCEVI.a soiltransp.o; rm -f soiltransp.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c somdec.f90; ar rcsUu libDDCEVI.a somdec.o; rm -f somdec.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c sumcar.f90; ar rcsUu libDDCEVI.a sumcar.o; rm -f sumcar.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c svapor.c; ar rcsUu libDDCEVI.a svapor.o; rm -f svapor.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c swpotentl.c; ar rcsUu libDDCEVI.a swpotentl.o; rm -f swpotentl.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c tanfunc.c; ar rcsUu libDDCEVI.a tanfunc.o; rm -f tanfunc.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c tcalc.f90; ar rcsUu libDDCEVI.a tcalc.o; rm -f tcalc.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c tgmodel.c; ar rcsUu libDDCEVI.a tgmodel.o; rm -f tgmodel.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c thawpulse.c; ar rcsUu libDDCEVI.a thawpulse.o; rm -f thawpulse.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c treeDynC.f90; ar rcsUu libDDCEVI.a treeDynC.o; rm -f treeDynC.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c treegrow.f90; ar rcsUu libDDCEVI.a treegrow.o; rm -f treegrow.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c treein.f90; ar rcsUu libDDCEVI.a treein.o; rm -f treein.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c trees.f; ar rcsUu libDDCEVI.a trees.o; rm -f trees.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c tremin.f90; ar rcsUu libDDCEVI.a tremin.o; rm -f tremin.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c trwtavg.c; ar rcsUu libDDCEVI.a trwtavg.o; rm -f trwtavg.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c updateN.c; ar rcsUu libDDCEVI.a updateN.o; rm -f updateN.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c watrbal.c; ar rcsUu libDDCEVI.a watrbal.o; rm -f watrbal.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c watrflow.c; ar rcsUu libDDCEVI.a watrflow.o; rm -f watrflow.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c watrlit.c; ar rcsUu libDDCEVI.a watrlit.o; rm -f watrlit.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c watrstcr.c; ar rcsUu libDDCEVI.a watrstcr.o; rm -f watrstcr.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wdeath.f90; ar rcsUu libDDCEVI.a wdeath.o; rm -f wdeath.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wfps.c; ar rcsUu libDDCEVI.a wfps.o; rm -f wfps.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wfunc_pulse.c; ar rcsUu libDDCEVI.a wfunc_pulse.o; rm -f wfunc_pulse.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c woodec.f90; ar rcsUu libDDCEVI.a woodec.o; rm -f woodec.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c writsit.f90; ar rcsUu libDDCEVI.a writsit.o; rm -f writsit.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtbin.f; ar rcsUu libDDCEVI.a wrtbin.o; rm -f wrtbin.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtbio.c; ar rcsUu libDDCEVI.a wrtbio.o; rm -f wrtbio.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtcflows.c; ar rcsUu libDDCEVI.a wrtcflows.o; rm -f wrtcflows.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtco2.c; ar rcsUu libDDCEVI.a wrtco2.o; rm -f wrtco2.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtdcsip.c; ar rcsUu libDDCEVI.a wrtdcsip.o; rm -f wrtdcsip.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtdeadc.c; ar rcsUu libDDCEVI.a wrtdeadc.o; rm -f wrtdeadc.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtdels.c; ar rcsUu libDDCEVI.a wrtdels.o; rm -f wrtdels.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtdN2lyr.c; ar rcsUu libDDCEVI.a wrtdN2lyr.o; rm -f wrtdN2lyr.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtdN2Olyr.c; ar rcsUu libDDCEVI.a wrtdN2Olyr.o; rm -f wrtdN2Olyr.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtgresp.c; ar rcsUu libDDCEVI.a wrtgresp.o; rm -f wrtgresp.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtharvest.c; ar rcsUu libDDCEVI.a wrtharvest.o; rm -f wrtharvest.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtlivec.c; ar rcsUu libDDCEVI.a wrtlivec.o; rm -f wrtlivec.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtmresp.c; ar rcsUu libDDCEVI.a wrtmresp.o; rm -f wrtmresp.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtsoilc.c; ar rcsUu libDDCEVI.a wrtsoilc.o; rm -f wrtsoilc.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtsoiln.c; ar rcsUu libDDCEVI.a wrtsoiln.o; rm -f wrtsoiln.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtstemp.c; ar rcsUu libDDCEVI.a wrtstemp.o; rm -f wrtstemp.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtswc.c; ar rcsUu libDDCEVI.a wrtswc.o; rm -f wrtswc.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtsysc.c; ar rcsUu libDDCEVI.a wrtsysc.o; rm -f wrtsysc.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrttgmonth.c; ar rcsUu libDDCEVI.a wrttgmonth.o; rm -f wrttgmonth.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtwflux.c; ar rcsUu libDDCEVI.a wrtwflux.o; rm -f wrtwflux.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtwfps.c; ar rcsUu libDDCEVI.a wrtwfps.o; rm -f wrtwfps.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtyearsum.c; ar rcsUu libDDCEVI.a wrtyearsum.o; rm -f wrtyearsum.o
+gcc -O3    -Wall  -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wrtyrcflows.c; ar rcsUu libDDCEVI.a wrtyrcflows.o; rm -f wrtyrcflows.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c wthini.f90; ar rcsUu libDDCEVI.a wthini.o; rm -f wthini.o
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c equilsp.f90; ar rcsUu libDDCEVI.a equilsp.o; rm -f equilsp.o
+gfortran -static -O3   -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 csa_main.f90 libDDCEVI.a -lm -o /data/paustian/Century/bin/DD17centEVI;
+gfortran -static -O3   -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 list100.f90 message.o libDDCEVI.a -o /data/paustian/Century/bin/DD17list100;
+gfortran -O3    -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 -c filext.f; ar rcsUu libDDCEVI.a filext.o; rm -f filext.o
+gfortran -static -O3   -fno-underscoring -Wunused -Waliasing -Wampersand -Wsurprising -Wno-tabs -I/nfs/paustian/Century/DDCent17/Include -I/nfs/paustian/Century/DDCent17 sitarchive.f90 message.o libDDCEVI.a -o /data/paustian/Century/bin/DD17sitarchive;

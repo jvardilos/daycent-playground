@@ -1,0 +1,1682 @@
+NOTE: Removed Trailing Spaces (RTS)
+
+----------------------------------------------------------------------------
+==== 29 Oct 2018 (223)==========================================================
+Nov 29 equilsp.f90    change the name of the equilibrium accelerator module
+Nov 29 fixin.f90      use .inc extension for n2oparam module instead of .f90
+Nov 29 structC2mod.pl minor corrections to spacing and file open/close statements
+                      to ensure compatibility with new compile structure
+n2oparam.f90          deleted; moved to include as n2oparam.inc
+n2oparam.inc          new file for n2oparam module
+Makefile              correct substitution syntax to comply new make version
+MakeLib               call structC2mod.pl n2oparam.inc build.
+                      note changed extension from .f90 to .inc.
+
+==== 26 Oct 2018 (210)==========================================================
+Oct 26 15:11
+treein.f90       bug fix, correctly identify a trailing scalar variable if the
+                 fruit pool is not found.
+                 Prevent the search from generating an index <=0
+initsite_tg      correct the file name in the un-parsable line warning message
+chkdata.f90      address case sensitivity in .100 option names. Search algorithm
+                 now matches, in the following order:
+                  1 Preserve capitalization, names can be differentiated by case.
+                  2 try a case insensitive, all caps, match. Accept if raw match
+                    fails. Log a case mismatch.
+                  3 fatal error if both matches fail.
+                 Recast code to make the option string length a parameter. It is
+                 still 16 characters, but now can be changed with a single entry
+                 A slight in debug output spacing to allow longer variable names
+parse.f90        changed unused lcase routine into a general change case and recast
+                 using matrix and bit intrinsics so it can use processor optimizations
+                 recode isblnk to use new fortran intrinsic
+                 removed case change; call setcase for case changes
+readblk.f90      comment changes; read event type string without case translation
+
+==== 25 Sep 2018 (203)==========================================================
+readblk.f90      Correction to the stochastic weather error trap
+
+==== 15 Aug 2018 (189)==========================================================
+chkdata.f90      make option names case insensitive by uppercase the variable name
+                 read from a .100 file; ths prevents a non-obvious name mismatch
+                 additional testing would be required for case sensitivity
+readblk.f90      comment changes; change local option name to closer match the array
+
+==== 15 Aug 2018 (174)==========================================================
+omadin.f90       declare rawval subroutine
+
+==== 15 Aug 2018 (173)==========================================================
+omadin.f90       made the routine name a parameter instead of hard coding each instance
+showminrl.c      copy space delimited, max 11 characters, of caller routine name to a
+                 local variable; to prevent memory corruption/or crashes
+updateN.c        copy caller routine name to a local variable
+wdeath.f90       Continue clean-up
+
+==== 14 Aug 2018 (172)==========================================================
+messageC.f90     remove posix fsync from flushSTD base, minGW doesn't support it
+
+==== 14 Aug 2018 (171)==========================================================
+dailymoist.f90   remove trace gas argument from rice version
+
+==== 13 Aug 2018 (170)==========================================================
+dailymoist.f90   corrected a divide by zero trap that didn't work
+equilsp.f90      added traps for 0 pool input, output, or setting the SOM pool to Zero
+                 These are extreme cases of a pathological lack of plant/tree growth
+                 that can lead to the program crashing
+wdeath.f90       changed file name for free format continues and line length
+                 several changes to prevent fatal crashes in a decaying, no-growth, forest
+                 set a lower limit on forest pools of 0.01 mg/m2 to prevent underflow;
+                 pools smaller that this are zeroed.
+                 combined root death and maturation to prevent negative root pools
+                 in very small root pools
+                 NOTE: zombie control will stop growth when the Fparts = 0.
+                       with the lower limit on wdeath it is possible to kill a VERY
+                       slow growing tree but the limit is set low enough that this
+                       shouldn't occur in practice.
+messageC.f90     added a routine intended to simplify debugging operations
+                 which encapsolate the flusn and POSIC sync calls. This will write debug
+                 status reporting to disk (hopefully) before a crash condition.\
+                 The synch call is commented since the MinGW currently doesn't support
+                 it. Without the fsynch the routine may/may not capture the output
+MakeLib          changed wdeath source
+
+==== 06 Aug 2018 (169)==========================================================
+chkdata.f90      removed unused and unneeded formal parameters from rawval
+
+==== 01 Aug 2018 (169)==========================================================
+treegrow.f90     Set the maximum respiration to the storage pool
+                 prevents non-growing trees from drawing the storage pool negative
+                 which is fatal.
+
+==== 31 Jul 2018 (168)==========================================================
+sitein.f90       prevent a run with 0 mean weather through improved missing data
+                 weather file identification and error handling
+
+==== 26 Jul 2018 (167)==========================================================
+MakeLib          removed adjustpar from compile
+adjustpar.f90    Removed; moved the weather file message to wthini
+wthini.f90       Log the PET description
+csa_main.f90     correct a bug in weather searching for the initial year by
+                 loading block 0 and 1 events in the master loop when the clock is
+                 running rather than preloading them before the loop start.
+readblk.f90      comment changes
+
+==== 23 Jul 2018 (166)==========================================================
+parse.f90        readclin left justifies string; matches '*' read
+csa_detiv.f90    remove unneeded adjustl
+readblk.f90      minor changes to simplify input of weather file with a path
+                 leading spaces in weather input are ignored
+
+==== 10 Jul 2018 (162)==========================================================
+potfor.f90       made the conversion between w/m2 and Langleys/hr a parameter
+
+==== 29 Jun 2018 (162)==========================================================
+cultiv.f90       remove plant/first and non killing cultivations from zombie control
+
+==== 26 Jun 2018 (161)==========================================================
+crop.f           moved cult call out of crop so you can CULT trees
+cultiv.f90       refactored post cultivation crop limits with matrix syntax; prevent
+                 zeroing minerals while leaving C. lower limit, 1.0e-5, is a parameter
+                 added doy to formal parameters and dovars.inc to include
+getwth.f90       comment changes
+schedl.f90       fixed a bug where SENM inhibited growth of new growth;
+                 FRST and PLTM clear senecnt; increment senecnt
+simsom.f90       move senecnt management to schedl
+                 added zombie control for cultivation (in crop)
+                 removed extra test on senm event; set lower limit on live 10 1.0e-5
+                 comment modifications
+MakeLib          add dovars.inc to cultiv.f90 dependancy
+
+==== 19 Jun 2018 (160)==========================================================
+plot1.inc        added accumulators to plot1
+                 clitad(2)         annual C additions to surface and topsoil litter
+                 elitad(2,NELEM)   annual E additions to surface and topsoil litter
+                 eproda(NELEM)     annual E, mineral, uptake; counterpart to Cprod
+outval.inc       reflects new plot1 size
+table.inc        new accumulator names
+csa_detiv.f90    removed the rather arbitrary N initialization levels to eliminate.
+                 initial N balance warnings. Negative values now initialize to 0.
+cultiv.f90       converted to free format; some E calculations in matrix syntax;
+                 comment changes;
+                 recast root litter/soil to minimize roundoff; since flow uses addition
+                 to pools, calculate soil using subtraction
+annacc.f90       clear new annual accumulators
+                 clitad(2)         C additions to surface and topsoil litter
+                 elitad(2,NELEM)   E additions to surface and topsoil litter
+                 eproda(NELEM)     annual accumulator of E uptake (g/m2/month)
+partit.f90       converted to free format; comment changes
+                 use matrix syntax and added the litter addition accumulators
+simsom.f90       added eproda sum
+                 stop zombie growth; if harvest kills live then do a LAST
+                 copy the 6/12/2001 change made to Century
+MakeLib          partit and cultiv name changes.
+
+==== 15 Jun 2018 (158)==========================================================
+froota.f         gramatical change to error message
+
+==== 15 Jun 2018 (157)==========================================================
+listvar.f90      corrected a crash searching for an undefined output variable
+                 gfortran doesn't short circuit if's
+initlyrs.c       removed an unset (0) value from an equation
+parse.f90        removed typing of len_trim intrinsic; don't risk a compiler redefinition
+                 use scan intrinsic for string validation instead of loops
+treeDynC.f90     comment changes
+
+====  4 June 2018 (155)==========================================================
+csa_detiv.f90    fully implemented the initial conditions, -i, extend.
+                 Corrected binary (.bin) file logic for the case where the new and old
+                 files are the same.
+                 NOTE: the -e extend copies the extend file to the new binary file without
+                       regard to the date/time of the entry. It is up to the user to
+                       to manage overlap and/or continuity. This is a concern for
+                       accelerated equilibriums since the accelerator does not work well
+                       with negative dates
+                 updated manual output
+                 corrected site file identification in schedule file and
+                 parsing binary site file record number
+
+csa_main.f90     added call to write initial conditions to the .lis file
+simsom.f90       minor code reformat;
+                 removed the SOM2 omad input call (EqAclratSom2Add)
+                 corrected an index typo (1,:iel). No idea why the colon is ignored but
+                 it compiled and tests indicate it worked correctly.
+equilsp.f90      correct a bug that crashed if last year occurred during the
+                 relaxation period. corrected the step count for automatic termination
+                 Corrected a bug parsing automatic termination fields
+                 Removed the unused and SOM2 code. SOM2 calculation appears unneeded.
+                 The existing algorithm appears to reduce stability so improvement
+                 requires further development and evaluation.
+schedl.f90       syntax changes for readability
+
+====  2 May 2018 (153)==========================================================
+thawpulse.c      A freeze terminates a FDD triggered pulse
+                 improvements in variable logging messages
+                 remove the decomposition acceleration. (code commented)
+                 updated included documentation; add fix.100 and command input formats
+decomp.f90       commented decomposition acceleration.
+csa_detiv.f90    commented decomposition acceleration.
+thawpulse.h      remove unused header file
+c_shwave.c       remove file; replaced in 24 April update
+dailymoist.f90   comment changes
+
+==== 24 Apr 2018 (151)==========================================================
+chrvar.inc       removed unused initcp,initre       (should have commited on 145?)
+param.inc        f90 syntax on variable definitions (should have commited on 145?)
+parfs.inc        change fnftim to integer days      (should have commited on 145?)
+
+==== 24 Apr 2018 (149/150)==========================================================
+c_shwave.c       Model Change!  unification of solar radiation models
+                 removed file; routine moved to initsrad and uses the stored average
+                 insolation and day length instead of repeating the calculation.
+                 The sipnet calculation included
+                 1 change in radiation from the elliptical orbit
+                 2 The correct the declination calculation  (Shwave used day 77, March 17.
+                   instead of 80.??, March 21)
+                 These changes effect growth and probably evaptranspiration
+calcSrad.h       updates to parameters for readability and precision.
+                 minor updates to solar/orbital parameters.
+                  a) correct the vernal equinox;
+                     The average solstice date for a couple hundred years from the
+                     Naval Observatory tables show date for to be to 80.??, March 21.
+                  b) Use the value from Jean Meeus, 23 deg 26' 21.448" -46.815,
+                     without century level terms for the obliquity of the ecliptic.
+initsrad.c       added c_shwave to file to give it access to package values.
+                 used integral form of flat plate solar radiation, from shwave, instead
+                 of the numeric approximation.
+                 minor changes to improve readability and updatability
+MakeLib          removed rules for c_shwave.c
+
+==== 18 Apr 2018 (147/148)==========================================================
+fracbslos.c      model change: converted the bare soil evaporation fraction to
+                 eq(97) FAO Irrigation and Drainage Paper, No 56, Crop Evapotranspiration
+                 ch 9 pg 186. The old equation kept transpiration at 0.5% even
+                 with no biomass while letting the evaporation go to 0. FAO recommends
+                 a minimum evaporation with transpiration a function of biomass.
+                 to minimise change the minimum bare soil evaporation is set at 5% rather
+                 than FAO's reference of about 10%. This might need changed.
+
+==== 18 Apr 2018 (146)==========================================================
+CodeChanges.txt  documentation correction
+
+==== 18 Apr 2018 (145)==========================================================
+Include freeze/thaw.
+NOTE, freeze/thaw changes are being tested but features may be added, removed, or
+      changed as progress is made.
+Ignoring round-off from pi_funcs.c, tanfunc.c, diffusiv.c, R145 produces the same
+crop growth as the '15 inventory with bug fixes
+csa_detiv.f90    added pulse switches and a routine to parse them
+dailymoist.f90   changes consistant with separating surface/soil respiration for methane
+decomp.f90       modify anaerobic decomposition with freeze/thaw pulse
+denitrify.c      add freeze/thaw pulse to denitrification.
+                 change denitrification to use layer parameters instead of surface conditions
+                 the surface (old) model can be triggered if flood_N2toN2O <0
+fixin.f90        read thaw pulse parameters from the fix.100 file
+litdec.f90       comment changes
+tanfunc.c        comment changes;
+nitrify.c        comment changes; remove the round-off changes in fNwfps calculations
+thawpulse.c      added the freeze/thaw pulse control methods
+watrflow.c       added freeze/thaw pulse header and call to track daily status
+thawpulse.h      headers for freeze/thaw pulse object
+parfs.inc        correction to fruit nut fall parameter
+chrvar.inc       removed initcp and initre; initialization refactored to remove them
+fracbslos.c      test for underflow; simplified calculation ;
+                 comment changes, include FAO form in comments
+
+==== 03 Apr 2018 (141)==========================================================
+maxswpot.f90     recoded to simplify calculations; use vector calculations
+
+==== 30 Mar 2018 (140)==========================================================
+build.f90        plot variable list builder is now more compatible with SVN build
+                  Files checked out of version control loose modification dates.
+                  Build OVERWRITES existing files instead of aborting since it shouldn't
+                  need interrupt a clean build to preserve files in version control.
+                 output modified for the new table.inc
+                 Build has an include search (-I directories) similar to the compiler.
+                 Places new includes in the first include directory if it exists.
+table.inc        include all of the plot variable data in one file; built by build
+MakeLib          New rules to build table.inc, outval.inc and listvar which
+                 should work on a clean install where file times are not ordered.
+                 Added new table.inc outval.inc table.f rule
+Makefile         modifications to support new table.inc and outval.inc rules
+listvar.f90      encapsulate the revised table.in into an oblect module
+                 modifications to use the methods instead of the table commons
+table.f          Deleted; variable names now in table.inc for include into listvar
+
+==== 26 Feb 2018 (131)==========================================================
+initlyrs.c       input check for field capacity > wilting point uses the same units
+
+==== 26 Feb 2018 (121)==========================================================
+pi_funcs.c       simplified confused type casts    roundoff differences
+tanfunc.c        simplified confused type casts    roundoff differences
+maxswpot.f90     refactor to simplify and express in matrix form    roundoff differences
+diffusiv.c       simplified theta_V calculation reduces roundoff
+nitrify.c        simplified casts in fNwfps calculation    roundoff differences
+
+==== 26 Feb 2018 (120)==========================================================
+decomp.f90       added structure for pool dependent anaerobic decomposition in calls
+litdec.f90       added pool dependent anaerobic decomposition
+woodec.f90       added pool dependent anaerobic decomposition
+somdec.f90       added pool dependent anaerobic decomposition
+
+==== 26 Feb 2018 (118)==========================================================
+initialize.f90   updates in comments and vector format; remove variables set in default
+inprac.f90       changes in initialization controls to ensure orchard consistancy
+leafa.f          changes in error reporting
+nitrify.c        change hard coded constants to the globally stored and updatable values
+potfor.f90       pass data to revised treeDynC
+treeDynC.f90     update tree growth for fruit pool
+
+==== 26 Feb 2018 (117)==========================================================
+potfor.f90       update lacalc to a function format (fatal error introduced in r107)
+
+==== 26 Feb 2018 (116)==========================================================
+h2oflux.c        pass inipswc initial water content as argument; is basis for balance check
+watrflow.c       pass inipswc to h2oflux
+dailymoist.f90   drop unneeded real casts on real dysimo
+
+==== 26 Feb 2018 (115)==========================================================
+equilsp.f90      changes in variable definitions
+schedl.f90       changes in scheduling accelerated equilibrium
+readblk.f90      updated accelerated equilibrium controls;
+                 changes to TREM and THRV schduling;
+                 changes in scheduling accelerated equilibrium
+
+==== 26 Feb 2018 (114)==========================================================
+tgmodel.c        changed is_saturatd to a more descriptive surflood since signals surface
+                 soil water above >FC nd not saturation
+denitrify.c      improvements to controls on  nitrification conditions; No thaw pulse (yet)
+
+==== 22 Feb 2018 (113)==========================================================
+cropDynC.f       fix to prevent possible error in root to shoot ratio
+getsoilprop.c    removed unused satcond array
+potprod.f90      tree basal area calculation
+simsom.f90       moved tree basal area calculation to potprod where it is used
+cmplig.f         access the lignin common instead of passing it in
+                 corrects a bug in a previously committed schedl version
+cropin.f90       change cmplig variables
+eachyr.f         recast comments to f90; change cmplig variables
+                 removed time calculation; correctly done in main
+
+==== 22 Feb 2018 (112)==========================================================
+co2eff.f         contain line for possible inlining
+
+==== 22 Feb 2018 (111)==========================================================
+droot.f          contain catanf for possible inlining
+prelim.f         contain catanf for possible inlining; improved file open error handling
+wdeath.f         contain catanf for possible inlining
+decomp.f90       added anerob as a contained function
+anerob.f         removed;
+
+==== 22 Feb 2018 (110)==========================================================
+froota.f         change in error message; include line for compiler inlining
+leafa.f          improved error checking and revised messages
+wthdaily.inc     parameters for weather file year search
+jday.inc         remove leapyr; it is determined by weather
+                 made dysimo a real since it is always used as a real
+csa_detiv.f90    pass binary write to main; dropped initialization of binary write flag
+simsom.f90       pass new arguments into getwth; made dysimo a real
+calcpet.c        removed unused tmn2m and tmx2m from formal parameters
+pevapdly.c       removed unused tmn2m and tmx2m from formal parameters
+dailymoist.f90   made dysimo a real
+default.f90      initialise dysimo using direct assignment instead of parameter
+csa_main.f90     call initialization; receive binary write flag from detiv
+                 initialize binary write flag at creation
+                 do master clock with a do while to facilitate year search weather
+readblk.f90      add support for year search weather; convert if-then to case
+                 code to handle unspecified initial crop/tree
+getwth.f90       rewrite for year search of weather file.
+                 recoded to use a line read and parse instead on multiple read statements
+wthini.f90       support for year search weather option
+                 recoded to use a line read and parse instead on multiple read statements
+csa_detiv.f90    support fon undefined initial crop/tree; pass binary write to main
+
+==== 22 Feb 2018 (r108)==========================================================
+MakeLib
+fertil.inc       added fertnet array
+dailymoist.f90   comment change
+                 modified fertilizer application so it retains the net fertilizer
+                 and the total mineral at application.
+                 Plant uptake removes from net fertilizer until it is zero.
+                 pass change in soil water to warbal
+default.f90      initialize fertnet and the orchard tree fraction
+growth.f90       change savanna fertilizer avalability based on fertilizer application distribution
+                 use matrix calculations instead of explicit loops
+treegrow.f90     remove uptake from available fertilizer
+                 Savanna available fertilizer is determined by application distribution
+watrbal.c        use change in the soil water for calculation
+
+==== 21 Feb 2018 (r107)========================================================
+Include/plot3.inc   added forest age, frstage, to tree description
+Include/outval.inc  added extra variable to plot3
+Include/table.inc   added extra variable to plot3 output
+Include/timvar.inc  removed forstrt from clock variables, it's now frstage
+default.f90      initialze frstage;
+                 initialize scalar defaults to values that won't modify the input
+lacalc.f         make a function instead of a subroutine; simpler syntax
+livrem.f90       reset frstage after excessive removal
+schedl.f90       input frstage;
+                 better error checking on orchard tree fraction and fruit harvest
+sitein.f90       input frstage in tree description
+table.f          added frstage to plot3 output
+treegrow.f90     forest age calculations frstage to plot3 output
+                 use matrix calculations instead of loops. use lacalc function
+                 comment changes
+treein.f90       input age of planted trees
+writsit.f90      added frstage to site output, both binary and .100 formats
+
+==== 20 Feb 2018 =============================================================
+pi.inc           recast the parameter to f90 format
+pheno.inc        removed unused variables tfstmth, frstmth; comment changes
+default.f90      removed unused variables tfstmth, frstmth; comment changes
+
+==== 15 Feb 2018 =============================================================
+restructured code directory to allow easier prototyping and testing.
+All include and header files are in the Include subdirectory.
+Make has been rewritten to search the current source and Include directories then
+search a reference source and include.
+You can now create a new test executable by checking out ONLY the files that
+need to be modified making it easier to track which files have been touched.
+MakeLib          added the search lists and Include directories in build
+Makefile         touched the prerequisits
+
+chkdata.f90      corrected a bug that truncated variables of the .100 name
+cropin.f90       corrected variable names
+fixin.f90        corrected variable names
+treein.f90       corrected variable names
+tremin.f90       corrected variable names
+
+balanceN.c       remove unneeded initial balance code
+
+==== 14 Feb 2018 =============================================================
+update fatal error message routines and messages
+message.f90      standardize the fatal error messages; 'abnormal termination' echoed in terminal in -q mode
+messageC.f90     standardize the fatal error messages; 'abnormal termination' echoed in terminal in -q mode
+mssg.c           standardize the fatal error messages; 'abnormal termination' echoed in terminal in -q mode
+
+updated error messages to use abortrun and reflect new wording
+calciv.f90, chkdata.f90, cropin.f90, csa_detiv.f90, cultin.f90, dailymoist.f90,
+equilsp.f90, extend.f, fertin.f90, fixin.f90, froota.f90, getwth.f90, growth.f90,
+harvin.f90, irrgin.f90, leafa.f, list100.f90, listvar.f90, livrem.f90, nutrlm.f90,
+omadin.f90, parse.f90, readblk.f90, restrp.f90, retarg.f90, schedl.f90, simsom.f90,
+sitarchive.f90, sitein.f90, sitein_grid.f, treeDynC.f90, treegrow.f90, treein.f90,
+writsit.f90, wthini.f90
+
+==== 9 Feb 2018  === By S. Spencer ===========================================
+		 Revision 96 (trunk) was tagged as:
+		 /daycent_inv/DayCent/tags/DayCent_Inv2015_wBugFixes
+		 Note: Tag Inventory 2015 DayCent Version (used in 1990-2015 Inventory)
+		       but includes a number of bug fixes and file upgrades to f90
+		       from Revisions 63-96.
+
+==== 31 Jan 2018 =============================================================
+livrem.f90       changed livrem to f90 free format
+                 correctly clear an accumulator
+
+==== 31 Jan 2018 =============================================================
+csa_detiv.f90    corrected and index error in nitrate initialization
+
+====  2 Dec 2017 =============================================================
+csa_detiv.f90    Prevent a divide by zero bug during N initialization when
+                 minerl, and nitrate/ammonium pools < 0. This slightly changes
+                 nitrate and minerl initialization for very small <10-6, values.
+
+==== 17 Oct 2017 =============================================================
+c_shwave.c       variable changes to improve readability
+
+==== 13 Oct 2017 =============================================================
+sitein.f90       corrected bugs that incorrectly parsed older site files
+                 Improved error checking on weather file input.
+
+==== 29 Sep 2017 =============================================================
+c_shwave.c       correctly identify when the sun never sets and never rises.
+                 A previous correction had removed a negative solar flux when
+                 the sun didn't rise but zero'd the flux during the midnight sun.
+
+====  5 Sep 2017 =============================================================
+csa_detiv.f90    calculate nlayer rather than input
+                 clear minerl, rwcf, nitrate, and swc below profile to prevent random
+                 N and swc balance errors. Recast the initial balance as a routine
+sitein.f90       correction to wood input ratios
+                 calculate numlyrs from the soil profile input
+                 allow user to skip soil layer input below the profile
+                 changes to some error messages
+
+==== 15 Aug 2017 =============================================================
+parse.f90        added a -5 imod option to return the executable
+csa_detiv.f90    report the actual executable in usage
+retarg.f90       added a line echo option and a way to get argument 0, the executable
+                 use fortran intrinsics for command arguments instead of getarg extension
+
+==== 16 Mar 2017 =============================================================
+initsw.c         recast to simplify an error message and improve readability
+
+==== 03 Mar 2017 =============================================================
+fixin.f90        corrected an undefined variable error
+
+==== 14 Feb 2017 =============================================================
+growth.f90       conversion to free format
+potfor.f90       comment changes
+potprod.f90      conversion to free format
+
+==== 01 Feb 2017 =============================================================
+initsw.c         corrected a bad column header in harvest.csv
+                 reformatted harvest file code to improve readability
+wrtharvest.c     reformatted harvest file code to improve readability
+harvst.f90       reformatted harvest file code to improve readability
+
+==== 25 Jan 2017 =============================================================
+list100.f90      removed error from abortrun call
+dailymoist.f90   comment change
+
+==== 23 Nov 2016 =============================================================
+erosn.f90        indentation change for readability
+
+==== 18 Nov 2016 =============================================================
+fixin.f90        improvements in handling SANDEC and ANAEF inputs
+                 error message code changes
+                 do minlch, omlech(3), tmelt(2) tests when read
+adjustpar.f90    removed moved minlch, omlech(3), tmelt(2) input tests
+
+==== 17 Nov 2016 =============================================================
+initlyrs.c       soil input checks ensure porosity > saturation > field capacity
+                 adjust field capacity and/or saturation when field capacity < porosity.
+                 This ordering can be violated by the Saxon equations in high clay soils.
+                 updates to error messages
+grem.f90         changed to f90 free format
+swpotentl.c      combined swpotentl.c and watreqn.c. This is a single model used
+                 to calculate soil water potential. thetas is specific to that
+                 model
+watreqn.c        removed
+
+====  7 Nov 2016 =============================================================
+csa_main.f90     clock time output accounts for date transitions
+
+==== 31 Oct 2016 =============================================================
+simsom.f90       removed an undefined flow moving N from sink to minrl(1,1)
+fertin.f90       use double precision arithmetic for frac_no3_fert
+
+==== 26 Oct 2016 =============================================================
+retarg.f90       corrected a potential string overflow in echo option
+writsit.f90      correctly report binary site read errors
+
+==== 25 Oct 2016 =============================================================
+schedl.f90       corrected a deprecated print syntax
+csa_detiv.f90    reformatted with f90 spacing
+                 moved the argument processing to a contained routine for readabilty
+
+==== 14 Oct 2016 =============================================================
+csa_detiv.f90    removed tbotmn, tbotmx, timlag from the debug print
+initsite_tg.c    label tbotmn, tbotmx, timlag as unused and ignored
+mssg.h
+sitein.f90       label tbotmn, tbotmx, timlag as unused and ignored
+                 changes to error messages
+sitsoil.h/inc    removed the sinusoidal temperature boundary condition parameters
+                 tbotmn, tbotmx, timlag
+soiltemp.c       remove tbotmn, tbotmx, timlag from comments
+writsit.f90      no longer write tbotmn, tbotmx, timlag to site file
+                 use default values on binary write and dummies on binary read
+
+==== 12 Oct 2016 =============================================================
+balanceN.c       corrected a divide by zero error when zero nitrate was input
+                 for soil layers
+
+==== 30 Sept 2016 ============================================================
+retarg.f90       use f2006 command line intrinsics
+                 added a command line echo option
+csa_detiv.f90    add command line to century.log for debugging
+writsit.f90      improved readability of bad site record error message
+Makefile,MakeLib debugged sitarchive build chain
+
+==== 20 Sept 2016 ============================================================
+omadin.f90       corrected a parsing error that was trapping immediate omad.
+
+====  6 Sept 2016 ============================================================
+flowstak.f90     corrected a legacy accepted print statement
+                 probably a debug statement for the stack print
+
+==== 12 Aug 2016 =============================================================
+trwtavg.c        added the CAK comment regarding change in algorithm
+                 NOTE: this should have been in the 2011 file  :-(
+
+==== 20 July 2016 ============================================================
+fertin.f90       Error the ambiguous case where '.' acts as delimiter (example) 0.1.5
+                 Response to Ram discovering an infinite loop while parsing (20.2N. 1.0F)
+                 moved field parsing and initial error checking to routine parsImedFld
+irrigin.f90      used parsImedFld to identify '.' delimeter
+
+==== 19 July 2016 ============================================================
+irrigt.f90       improved space parsing in immediate argument; improved error handling
+omadin.f90       improved space parsing in immediate argument; improved error handling
+fertin.f90       improved space parsing in immediate argument; improved error handling
+chkdata.f90      Corrected handling of string limits of expect in findopt
+                 changes in allowed character list, okalph
+                 use f90 type specification statements
+
+==== 13 July 2016 =============================================================
+surftemp.c       Added EOL, "\n", to snomodel log messages
+
+==== 23 Jun 2016 =============================================================
+treegrow.f90     BUG: removed bad term from srspmth, and srspann accumulators
+growth.f         BUG: corrected a typo in the srspann accumulator
+
+==== 21 Jun 2016 =============================================================
+surftemp.c       BUG: latching the surface temperature at snow is holding and
+                 using the minimum temperature under snow for the entire run.
+                 This shouldn't carry between snow melt events. Ratcheting the
+                 lowest temperature down, even latching an initial temperature
+                 is questionable since since it implies one directional heat flow
+                 BUG: set the lowest temperature under ponding to 0.0 degrees.
+                      liquid water should keep the surface from freezing
+
+                 Removed all low temperature latching from existing snow
+                 buffered runs, SnowFlag=1
+
+                 TEST: changed SnowFlag, snwins, to select between several models
+                    -1 = minimum temperature calculated using snow temp buffering at
+                         snow base during run.
+                         for comparison ONLY; run level retention is a bug.
+                     0 = no snow insulation.
+                     1 = snow temp buffering from Parton paper;
+                         tave > 0 basetemp = -2 + littrC/750
+                         tave < 0 basetemp + 0.13 * tave * (1-3*snowpack/20)
+                     2 = snow insulation around basetemp; may exhibit freeze thaw
+                     3 = low temperature snow insulation; based around minimum of
+                         snowfall or basetemp; may exhibit freeze thaw
+                     4 = constant at basetemp
+                     5 = minimum temperature calculated using snow temp buffering at
+                         snow base under current snowpack.
+
+==== 24 May 2016 =============================================================
+readblk.f90      BUG FIX: corrected a condition where commented global events
+                          would trigger a fatal block parse error
+csa_detiv.f90    Removed the bare read that skipped the 'Year Month Option' line
+
+==== 20 May 2016 =============================================================
+simsom.f90       removed defined but unused variables
+decomp.f90       removed equilibrium acceleration calls not compatible with the
+                 revised API.
+
+==== 19 May 2016 =============================================================
+litburn.f        pass som2 removal out of routine
+
+==== 20 May 2016 =============================================================
+NOTE: The following files were unexpectedly updated in the synch.
+I don't have any way to check what was changed but date information indicates
+that it may have been as simle as clock skew.
+  MakeLib agdrat.f bgdrat.f candec.f90 cflows.inc csa_detiv.f90 dailymoist.f90
+  decomp.f90 erosn.f90 esched.f litdec.f90 mthacc.f n2o_model.h
+  somdec.f90 tgmodel.c woodec.f90
+The creation and deployed code are identical
+
+==== 28 April 2016 ===========================================================
+csa_detiv.c      changed the label for the final sitepar debug output
+                 changed format of sitepar debug to better match the file itself
+
+==== 26 Mar 2016 =============================================================
+initsite_tg.c    BugFix: changed abs to fabs needed for floating arguments (compiler warning)
+
+==== 15 Mar 2016 =============================================================
+Major recode to remove the N balance errors.
+This involves 2 major changes
+  a  remove a running N average used to control decomposition. This over predicted
+     available N and drove the N pool negative
+     aminrl is now only an output variable giving a monthly average mineral available
+     for decomposition
+  b  allow the nitrate pool to go negative reflecting the same condition in minerl.
+     recode the way N is allocated in N limited conditions.
+     balance N then is used to synchronize minerl with the trace gas losses
+Major recoding and restructuring of balanceN.c, tgmodel.c, decomp.f90, dailymoist.f90
+Minor changes, mainly to separate aminrl from the active calculation were made to other files
+MakeLib         May  9 updates to subroutine
+dailymoist.f90  May  9 moved entire decomposition loop to decomp; changed decomp arguments
+                       moved the N balance, update_npool call, and the N gas emission
+                       balance to trace_gas_model.
+                       added cyear to trace_gas_model argument list for debugging
+                       pass cyear and doy into bal_npool
+                       it would make sense to move the daily decomposition print to decomp
+decomp.f90      May 10 moved entire decomposition loop from dailymoist to decomp
+                       including decomposition setup, loop, decomposition C flows,
+                       available mineral and flowup call
+                       Call accelerated equilibrium routine
+                       replaced the running average stored in available mineral, aminrl,
+                       with minrlavail, the current minerl(1,1) modified for availability.
+                       pass minrlavail into decomposition routines.
+                       changed aminrl to output the monthly average mineral available
+                       for decomposition.
+                       added time variables to parameter list
+somdec.f90      May  9 replace aminrl with minrlavail.
+                       pass in equilibrium acceleration arrays couts2, eins2, couts3, eins3,
+                       pass eins2 into declig
+litdec.f90      May  9 replaced aminrl with minrlavail. Pass the SOM2 minral flow out
+esched.f        May  5 added mineral flow from box A as an output argument
+                       f90 comments. reorder calculations. improves readability and
+                       E flow into B in both modes
+woodec.f90      May  5 pass in minrlavail to replace aminrl.
+                       catanf is included
+                       pass out mineral flow to som2 for equilibrium acceleration
+mthacc.f        May  5 zero aminrl average at month start.
+n2o_model.h     May  5 pass total nloss into bal_npool
+simsom.f90      May  5 pass aceqcnt to erosn; monthly average aminrl for output
+                       use forest part constants in tree call
+tgmodel.c       May  5 recode to fix mass balance errors in the mineral N allocations
+                 - immobilization now can set the ammonium and surface nitrate pools
+                   negative mirroring the behavior of minerl(1) and is required to
+                   control decomposition. Used fertilizer allocation to distribute the
+                   nitrate deficit.
+                 - added a code to "re-pay" negative surface nitrate pools before
+                   distributing the remainder. Deficit are re-payed from layer 3 up.
+                   Again this is required for proper control of decomposition routines.
+                   NOTE: distributing nitrate using from decomposition by input (root)
+                   distribution should be reconsidered as most decomposition occurs at
+                   the surface.
+                 - recoded the immobilization mining of subsurface nitrate from the
+                   soil profile so lower layers will not go negative. This entire
+                   calculation should probably be reconsidered since it is not tied
+                   to any physical transport.
+                 - prevent nitrate mining of deep storage layer
+                 - disable NOflux and Dn2oflux flux calculations when potential_NOflux
+                   is less thane or equal to zero preventing the flux calculation from
+                   resetting an ammonium deficit.
+                 - finish N balance here instead of dailymoist
+                    a subtract N gas losses from minerl
+                    b add losses to esrsnkN
+                    c call bal_npool to adjust minerl(N) profile distribution
+                 - argument changes,
+                    added cyear for output warnings
+                    added esrsnkN,  minerl, nlayer for balance
+agdrat.f        May  5 change aminrl to minrlavail;
+grem.f          May  3 readability changes. Made removal and fire separate included
+                       routines instead of large if blocks.
+                       call EqAclratGrem for som3 fire inputs with accelerated equilibrium
+equilsp.f90     May  3 recode to include SOM2 and track mineral flows rather than
+                 use the C/E ratios as a surrogate.
+balanceN.c      May  2 Recoded npool_balance.
+                 It is now is intended to carry the nitrate layer changes back to
+                 minerl N. Only as secondary function does it check balance.
+                 changed output error messages.
+                 only print the profiles in debug 1 (compiled)
+                 only print to STDERR if the errprt is compiled true.
+                 Significantly TIGHTENED the warning limit to a relative error of
+                   7.6e-6 or 4 times that level for small N pools.
+                 added Nloss to parameter list determine relative balance errors.
+                 added a mode to balance N inputs
+Minor changes related to N balance changes
+somdec.f90      May  9 replace aminrl with minrlavail.
+litdec.f90      May  9 replaced aminrl with minrlavail.
+esched.f90      May  5 added mineral flow from box A as an output argument
+                       f90 format. reorder calculations.
+                       improves readability and E flow into B in both modes
+woodec.f90      May  5 pass in minrlavail to replace aminrl.
+                       catanf is included
+mthacc.f90      May  5 convert to f90 format.
+                       zero aminrl average at month start.
+erosn.f90       Apr 11 made soilos an included subroutine to erosn.
+                       acceleration equilibrium. pass aceqcnt as argument.
+                       track the lost C and E for equilibrium acceleration.
+soilos
+cflows.inc      Mar 31 removed variables added for acceleration; comment changes from july 2011
+declig.f        Apr 14 replaced aminrl with minrlavail; passed einflo out of esched
+simsom.f90      May  5 monthly average aminrl for output
+                       use forest part constants in tree call
+readblk.f90            added fatal error messages for non-supported weather options, M, S
+                       and unknown weather options
+cflows.inc      Mar 31 store tcdsom3, total C flow out of SOM3
+
+==== 15 Mar 2016 =============================================================
+balanceN.c       added the year and date to balance prints
+dailymoist.f90   pass cyear and doy into bal_npool
+n2o_model.h      change template for bal_npool
+readblk.f90      added fatal error messages for non-supported weather options, M, S, Y
+
+==== 15 Mar 2016 =============================================================
+sitein.f90       BUG FIX: corrected an infinite loop error doing statistics on
+                          a weather file with a blank line
+
+====  9 Mar 2016 =============================================================
+calciv.f90       BUG FIX: Don't partition litter label fraction and
+                          call partit if litter is zero (no initial crop)
+treein.f90       BUG FIX: corrected a bad call to message
+
+==== 02 Mar 2016 =============================================================
+nutrlm.f90       make autofert local
+
+==== 01 Mar 2016 =============================================================
+sitsoil. (h/inc) added avgsand to sitsoil for SI calculation in methane
+initlyr.c        avgsand is now part of sitepar structure/
+
+==== 29 Feb 2016 =============================================================
+sitein.f90       added a check for a binary file in sitein to trap binary files
+                 called without a record
+methane.c        simplified Feh when Eh < 150
+                 added soil texture calculation, SI; use SI in Cr and Com equations
+
+==== 25 Feb 2015 ===============================================================
+catanf.f  changed comments  added PI as constant instead of PI include
+          Renamed catanf to carctanf to prevent loading the catanf C99 function
+          Also call catanf.f as a local, contains, function for inlining
+line.f    changed comments
+ramp.f    comment changes
+
+==== 24 Feb 2016 =============================================================
+writsit.f90      write out the still active drnlag to the site file
+
+==== 22 Feb 2016 =============================================================
+Corrected diffusiv to 3 parameter form, the 2 parameter was based on an incorrect simplification
+denitrify.c      returned diffusiv to correct 3 parameter form
+methane.c        returned diffusiv to correct 3 parameter form
+diffusive.c      removed incorrect diffusive , combined vfrac, and theta_v blocks
+tgmodel.c        returned diffusiv to 3 correct parameter form
+nitrify.c        removed unused variable avgwfps
+n20_model.h      removed the 2 parameter option for diffusiv
+harvst.f90       corrected an error in fraction of roots going to surface litter,
+                 max was used instead on min which meant the ratio was always 1.0
+getwth.f90       updated a disabled debug print
+
+==== 18 Feb 2016 =============================================================
+denitrify.c      eliminate underflow in fRno3_co2 calculation
+
+====  8 Feb 2016 =============================================================
+cropin.f90       added numerous checks on input values
+                 added crop specific frac_to_exudates, ch4rootlim, zero_root_frac
+                 methane values
+fixin.f90        made the fix methane inputs the default values.
+methane.c        added ch4rootlim to methane_emission call
+                 modified CH4_Ebl calculation to correctly approach zero_root_frac,
+                 the low biomass limit
+sitsoil. (h/inc) added fix, default, variables for frac_to_exudates, ch4rootlim,
+                 zero_root_frac. added ch4rootlim, the zero biomass limit for methane
+tgmodel.c        added ch4rootlim to methane_emission call
+n2o_model.h      added ch4rootlim methane_emission template
+
+==== 28 Jan 2016 =============================================================
+writsit.f90      renamed string buffr to sitlin or erlst depending on it's use
+                 to overcome name confusion and improve readability
+                 improvements in error messages
+                 BUG FIX: included the common with site aspect variables preventing
+                           a possible fatal error when they are checked.
+parse.f90        better error messaged on I/O errors
+mssg.c           changed aborterr so it notifies stderr
+
+==== 21 Jan 2016 =============================================================
+retarg.f90       make sure the file name is not improperly truncated in the open
+                 routine.
+parse.f90        increased error buffer sizes and messages to limit truncation
+                 edited error messages
+mssg.c           Added a new routine aborterr. This adds the string for errno to
+                 the message. Only call after errno is set since it is not regularly
+                 cleared and the message can be misleading
+
+==== 13 Jan 2016 =============================================================
+retarg.f90       changed subroutine call to ensure returning a EOF can be done
+                 without error. Not sure there is a real error but?
+
+==== 18 Dec 2015 =============================================================
+csa_detiv.f90    remove debug print statements
+
+==== 11 Nov 2015 =============================================================
+sitein.f90       BUGFIX. moved initialization of nitrification temperature prameter,
+                 maxt to sitepostp. It wasn't being set for binary site reads causing
+                 changes to the N dynamics.
+                 Moved most Site file post processing, data checks and initialization
+                 of other variables to new routine sitepostp so they will be done
+                 regardless of the site file source.
+                 changes in E/C and C ratios to ensure repeatability
+writsit.f90      changes in E/C and C ratios to ensure repeatability
+csa_detiv.f90    call sitepostp after site reads.
+fertin.f90       fertilizer weighting bug improperly fixed
+
+====  7 Nov 2015 =============================================================
+sitarchive.f90   creating a new archive now ensures the first 44 bytes are initialized
+                 with version and a label. without that the archive is unreadable.
+                  make sure a new archive writes it's t
+
+====  7 Nov 2015 =============================================================
+equilsp.f90      clean up som3 acceleration for inventory use (EXPERIMENTAL)
+
+====  2 Nov 2015 =============================================================
+calciv.f90       changed the grassland surface SOM2 C initialization to 10% of soil SOM2
+                 This was the source of the 0 C/E mineral ratios and didn't reflect
+                 actual calculations.
+
+==== 30 Oct 2015 =============================================================
+writsit.f90      changed the C/E ratios for SOM pools to maintain the values
+                 originally input for unused minerals.
+                 Fixed a bug that allowed 0 C/E ratios generated INF E pools
+
+==== 28 Oct 2015 =============================================================
+csa_detiv.f90    moved the default initialization in front of site file reads.
+somdec.f90       added the som3 decomposition to the equilibrium sum
+initialize.f90   initialize the equilibrium acceleration count
+readblk.f90      ACEQ calls the set command
+dailymoist.f90   enable ACEQ command, ACEQ calls the set command
+erosn.f          call EqSomIO to erosion losses and lower layer inputs to SOM3
+grem.f           call EqSomIO(cpass,0) to add fire C to passive, CPASS, to SOM3C input
+
+====  9 Oct 2015 =============================================================
+nitrify.c
+
+====  8 Oct 2015 =============================================================
+sitein.f90       Added the ability to replace site climate parameters with statistics
+                 on from a weather file.
+                 Change site weather header from "WEATHER PARAMETERS" to
+                 WEATHER STATISTICS and add the weather file name.
+                 (NOTE) it really should read the schedule for the first weather file
+
+====  5 Oct 2015 =============================================================
+readblk.f90      changed the monthly FLOD schedule to:
+                  FLOD 1, 2, 3 occur on day 5 of the month, this is 2 days after planting.
+                  FLOD <= 0    occur 10 days before the end of the month, a week before harvest.
+                  bug: negative days in calendar mode, month/day are now properly
+                  referenced to the end of the month instead of the monthly schedule date
+                  readability:
+                  changed the read loop to a do while instead of goto statements
+                  moved the commented irrigation replication to a contained subroutine
+adjustpar.f90     free format input.
+
+==== 09 Sept 2015 ============================================================
+BUG FIX: corrected a problem scheduling irrigation
+dovars.inc       added irrcnt to keep track of the current irrigation time count.
+                 this replaces logical doirri. Removed doirri. Renamed domiri ro
+                 domirri to signal monthly irrigation.
+                 added irrcnt for live irrigation down count. Set from irintvl.
+                 If < 0 growing season; negative is days irrigated.
+irrgin.f90       changed variable declarations
+schedl.f90       changed IRRI IRIG setup logic
+simsom.f90       Changed irrigation control logic removed doirri and replace with irrcnt.
+                 Changed irractwk with arradd since it has nothing to do with a week
+prelim.f         removed initializations also done it prelim
+default.f90      initialize the current irrigation variables
+
+==== 31 Aug 2015  ===========================================================
+csa_detiv.f90    use oldopen to open the site file. Changes the error reports
+
+==== 29 Sept 2015 ============================================================
+getwth.f90       add checks for weather file existence, and open errors
+                 convert to free form
+wthini.f90       an empty file is a fatal error instead of and infinite rewind loop
+                 convert to free form
+
+==== 27 Aug 2015  ===========================================================
+writsit.f90      Changed the soil layer section header
+csa_detiv.f90    added debug array to calciv.f90
+calciv.f90       refactored to f90.
+                 suppressed nitrate log unless verbose is set
+initsite_tg.c    corrected a typo in parsing sradadj
+sitein.f90       corrected an infinite loop skiping methane parameters in old site files
+                 by recoding the site parameter block.
+                 added a routine that can read through a list of removed parameters
+                 and print a warning. Simplifies identifying active variables
+                 Corrected a bug identifying the
+
+==== 25 June 2015 ===========================================================
+retarg.f90     replaced prsfilnm with subroutine parsfilnam. This returns
+               the location of the substring instead of the copying the string.
+               renamed len, a reserved word, to pl
+
+==== 23 June 2015 ===========================================================
+harvst.f90     convert to free format, mainly the continuation
+               corrected storsrf normalization; it used soillittrm instead of soillittrj
+               eliminate divide by zero error for litter only harvest by putting tests
+               for zero mature and juvenile roots around blocks that allocate
+               storage E and root to surface mixing.
+fertin.f90     Corrected a bug reading .100 options;
+
+==== 31 May 2015 ============================================================
+candec.f       removal of trailing spaces
+
+==== 27 May 2015 ============================================================
+listvar.f90    Minor changes to delimiter processing code
+csa_detiv.f90  changed processing of delimiter to simplify error processing.
+               The character MUST follow the switch although commented code
+               allowing a 2 argument input was left.
+
+==== 22 May 2015 ============================================================
+retarg.f90     reset the buffer pointer when the command file is rewound to ensure
+               the retarg call will reload the first record
+
+==== 19 May 2015 ============================================================
+Several changes to catch and explain schedule file and block header errors
+readblk.f90    Added a series of messages for errors reading block header
+csa_detiv.f90  - Added error messages for CO2 flag, PH effect flag,
+                 soil temperature warming flag, N input scalars flag,
+                 OMAD input scalars flag, weather input scalars flag
+               - For CO2, PH, warming, N, OMAD weather input scalars, the
+                 starting time phtm, ststart, Nstart, OMADstart, wthstart,
+                 and the soil temperature amount, stamt can be placed on the
+                 same line as the flag allowing the number of header lines
+                 to remain constant.
+                 For compatibility with earlier schedules, the parser reads
+                 old format, 1 value per line, without error.
+               - improved name parsing
+
+==== 8 May 2015 ============================================================
+treein.f90      Corrected an error reading tree favail.
+                updated tree some indices to use named constants instead of integers
+
+
+==== 04 May 2015 ============================================================
+Corrected a water balance output bug stemming from not setting the deep storage
+layer before callwatrflow.c rainflux.c initlyrs.c hwdrain.c h2oflux.c
+Removed swcinit, the float copy of swc used for initialization of asmos.
+It looks like this copy is the source of a tempermental bug that gives bad
+values 10**29 for the deep storage layer
+swpotentl.c  initsite_tg.c initlyrs corrected the called by list
+
+setasmos.c soilwater.h   changed the internal swc from float to double
+csa_detiv.f90  pass swc into setasmos instead of swcinit
+watrflow.c     pass swc into setasmos instead of swctemp
+
+dailymoist     use swc for the total profile water instead of asmos.
+
+==== 27 Apr 2015 ============================================================
+fertin.f90 irrgin.f90  delimiter processing changed to allow comma separated
+                       keyed fields
+
+==== 22 Apr 2015 ===========================================================
+irrigt.f90;     refactored to f90 free format
+fixin.f90       refactored to f90 free format
+
+==== 23 Apr 2015 ============================================================
+A major upgrade to the irrigation input to include a daily irrigation IRIG.
+Daily irrigation provides a couple of new capabilities
+  - a specified application as a single event
+  - automatic irrigation for an extended user specified period
+  - automatic irrigation until the end of the growing season (no growth)
+Both the daily IRIG and monthly IRRI events now have
+  - an immediate mode input
+  - a rooting zone only application
+  - changed irri.100 input parameters
+  - a change in the internal clocking of the automatic irrigation with some
+    simplification of calculations.
+
+The effected routines are:
+default.f90  removed twhc, irraut, irricnt
+dovars. inc  added domirr to indicate monthly irrigation
+               aintvl the automatic irrigation interval in days
+               > 0   timed irrigation in progress, 28 month default, 1 day default
+                 0   no irrigation
+               < 0   growing season termination
+irrgin.f90   added domirr and aintvl to arguments
+             added the the immediate mode parser
+irrgin.f90   combined irraut into irramt. input will read the old irraut lines.
+             added auto irrigation interval to the irri.100 file specification
+             This is an extension of the 28 day month period
+             Added the immediate mode for schedule file water application
+             !  Defined irrigation fields:
+             !        A auirri   irrigation type
+             !        C water    added in cm type 0 irramt   type 2 irraut
+             !        F fawhc    fraction available water to initiate irrigation
+             !        L airivl   Auto IRrigation InterVaL, number of days to maintain auto irrigation
+             Changed option name, tomatch, to the standard 28 characters
+             upgraded to use chkdata instead of the legacy ckdata
+             added a stack for irri.100 options
+irrigt.f90   removed tfrac make that adjustment for monthly irrigation on input
+             added the rooting zone irrigation as mode 4
+             refactored irrigt to free format
+             reordered if blocks combining redundant code
+parcp.inc    removed twhc total water holding capacity
+             Removed irraut. It is redundant to irramt since only one can be
+             used at any time
+dovars.inc
+added a monthly irrigation flag to distinguish the IRRI from IRRG
+             irraut the fixed auto irrigation addition
+prelim.f     removed irricnt the count of days since auto irrigation start
+             this is replaced by the interval aintvl
+             removed twhc the total available water loop
+readblk.f90  added the irig command
+schedl.f90   daily irrigation logic and argument changes irig, domirr
+simsom.f90   changed the auto irrigation interval logic
+             formal argument changes in calls
+fixin.f90    changed "8" to unit parameter
+
+==== 22 Apr 2015 ===========================================================
+irrigt.f90     refactored to f90
+fixin.f90      refactored to f90
+
+==== 13 Apr 2015 ============================================================
+Melannie
+
+You were interested in an immediate mode irrigation. I just released a major
+upgrade to the irrigation capabilities in DayCent EVI.
+There are 4 parts and a bug fix to this upgrade.
+
+1  There is a new daily irrigation event, IRIG that provides daily based
+   timing options for DayCent. This in no way impacts the older IRRI event
+   which continues to provide the existing monthly, 4 week, timing.
+   This event provides several new capabilities.
+    - a specified application as a single event
+    - automatic irrigation for an extended user specified period
+    - automatic irrigation until the end of the growing season (no growth)
+    - testing of profile soil water every day, instead of weekly, with
+      irrigation water applied when the available soil water fraction
+      falls below fawc.
+
+   A comparison of the two events is provided in this table.
+    Event                      IRRI                IRIG
+    time basis                 monthly             daily
+    fixed Application      4 weekly parts          1 on event
+    Autofert SW tests          weekly              daily
+    Autofert period            28 day fixed        variable 1 day - growing season
+
+2  As proposed by Yao, there is a new root depth automatic irrigation mode,
+   mode 4. This behaves as mode 1 except the water is summed to the rooting
+   depth instead of 30 cm. This mode is available for both daily IRIG and
+   monthly IRRI irrigation.
+
+3  To support the daily irrigation events the irri.100 parameters have
+   changed. Both the IRRI and IRIG command read the modified irri.100.
+   From irri.def, this is the structure of the updated irri.100.
+
+
+auirri          controls application of automatic irrigation
+              = 0 Single event irrigation; NO automatic application or repeat
+              = 1 irrigate to field capacity
+              = 2 irrigate with the specified amount of water
+              = 3 irrigate to field capacity plus PET
+              = 4 irrigate rooting zone to field capacity
+
+fawhc           fraction of available water holding capacity below which
+                automatic irrigation will occur
+
+irramt          amount of water for application events (auirri = 0 or 2) (cm)
+                NOTE: for compatibility irraut (deprecated) will be read without error
+                      and the proper application will be made.
+
+aintvl          Auto irrigation interval, number of days to maintain auto irrigation
+              valid for daily auto irrigation only
+                 valid for daily input only!
+1  the period in days to maintain auto irrigation
+                 = 1  Irrigate the scheduled day only (default for IRIG events)
+                 = 0  stop irrigation  manually stop automatic irrigation
+                 < 0 growing season irrigation; terminates when growth stops or
+                      when cleared by ANY irrigation event (IRRI or IRIG)
+                 this input is ignored, set to 28, for Monthly irrigation, IRRI,
+              Defaults: = 1  forSingle event irrigation
+
+
+
+4  A new immediate, schedule file, input mode has been added for both daily and
+   monthly irrigation events. Using a syntax similar to the FERT event, the
+   immediate mode input is a 28 character string of delimited values enclosed
+   in parenthesis. Without the parenthesis the irrigation events will read the
+   irri.100 file for a named option.
+
+   Immediate mode input values can be delimited by the variable key, spaces or
+   commas. If the key letter is present then the values can be input in any order.
+   If keys are missing then values will be read in the irri.100 order.
+
+   The arguments keys and the order are:
+      A  auirri  irrigation type
+      F  fawhc   fraction available water to initiate irrigation
+      C  irramt  added in cm    irramt if auirri = 0,  irraut if auirri = 2
+      L  aintvl  Auto irrigation interval
+
+   Immediate mode examples:
+   These examples are some that I used in syntax and functional testing. They
+   are guaranteed to parse correctly however, the values given are tuned for
+   my test site.
+      80 IRIG (1,0 0.925f,100L)        irrigate to field capacity for 100 days
+      80 IRIG (0,5) or 80 IRIG (5C)    single irrigation of 5 cm
+      80 IRIG (1,0 0.925f-1L)          irrigate to field capacity until end of growing season
+      80 IRIG (4A,0.96F,-1)            growing season irrigation of rooting zone to field capacity
+
+      80 IRRI (0 5) or 80 IRRI (5C)    monthly irrigation of 5 cm
+      80 IRRI (4A0.96F)                monthly irrigation of rooting zone to field capacity
+
+      80 IRRI (0L) or 80 IRIG          Stop irrigation, Specifies a single event if 0 cm
+
+
+
+5  The timing for the monthly fixed amount irrigation, IRRI (0A,xC),
+   makes four equal X/4 applications over 28 days. This corrects the
+   existing normalization error that applies only 93.3% of the listed
+   amount is applied.
+
+==== 6 Apr 2015 ============================================================
+irrgin.f90;
+Changed option name, tomatch, to the standard 28 characters
+upgraded to use chkdata instead of the legacy ckdata
+
+==== 26 Mar 2015 ============================================================
+soiltransp : removed set but unused variable crootwp to eliminate compile warning
+trace_gas_model : corrected debug print of CH4_oxid
+
+==== 23 Mar 2015 ============================================================
+setlyrs.c  (24 March 2015)
+ removed the unused local array adepmin
+
+nutrlm.f90 (23 Mar 2015)
+Corrected a bug that mis accounted fixing and auto fertilizer. This is related
+to a bug Melannie reported that suppresses fixation in favor of auto-fertilization.
+
+==== 12 Mar 2015 ============================================================
+treegrow.f90 (12 Mar 2015)
+Minor clarifications comments. Corrected a severe numeric error from accessing
+to eprodf instead of eprodfdy that allows it to grow non-fruit bearing trees
+without error even though fruit/nut extensions are incomplete.
+
+==== 10 Mar 2015 ============================================================
+tgmodel.c methane.c (10 Mar 2015)
+moved the Com weighting from trace_gas_model to methane_production
+  Left the inconsistant usage of C6H12O6_to_CH4 in Com and production equations.
+
+treein.f90 (17 Dec 2014)
+Corrections to the tree input for orchard input. Changed the fruit/nut adaptation
+code to a local subroutine. Treein now reads both the previous and fruit nut versions
+
+==== 3 Mar 2015 ============================================================
+readblk.f90  (2 Mar 2015)
+recoded insertion sort algorithm to handle a nasty double crop test schedule.
+made list print a standalone routine.
+moved the clear AFRT code so it works on daily schedules
+clear the month date shifts at the end of every block
+
+schedl.f90  (27 Feb 2015)
+Prevent the global event pointer from exceeding the event array dimension
+
+csa_detiv.f (27 Feb 2015)
+Added a check for labtyp > 2
+initialize the global event pointer if no events were input.
+
+catanf.f droot.f litdec.f prelim.f pschem.f somdec.f tcalc.f wdeath.f woodec.f
+ (25 Feb 2015)
+Renamed catanf to carctanf to prevent loading the catanf C99 function
+Also call catanf.f as a local, contains, function for inlining
+
+chkdata.f90 (21 Feb 2015)
+Corrects a string 0 index when evaluating parenthesis
+
+parse.f90 (21 Feb 2015)
+Corrected a string index error when searching for quoted comment characters
+
+Pass omad labeling into omadin
+==== 9 Jan 2015 ============================================================
+sitsoil.h,sitsoil.inc     corrected comment spelling
+
+schedl.f90 (15 Jan 2015)
+Pass omad labeling into omadin
+
+omadin.f90 (15 Jan 2015)
+Decomposed omad has had a bug fix and input units change:
+  a  labeled decomposed OMAD is now properly added to labeled surface som2
+  b  OMADTYP now honors the values defined by Cindy
+        1 organic matter will be added to the litter (structural and metabolic pools),
+        2 organic matter added to som2c pool, astlbl = C13/C14  concentration
+        3 organic matter added to the structural and metabolic pools, astlbl = C13/C14 fraction
+        4 organic matter added to som2c pool, astlbl = C13/C14 fraction
+     As before, the EVI version has been extended to include mixed material
+     applications by reading OMADTYP as a real number with the fractional part
+     giving the decomposed, SOM2, fraction of the application.
+     There are 2 valid ranges for OMADTYP:
+        1 <= OMADTYP <=2  astlbl = C13/C14 concentration
+                          decomposed, SOM2, fraction = (OMADTYP-1)
+        3 <= OMADTYP <=4  astlbl = the labeled fraction (Century 4 convention)
+                          decomposed, SOM2, fraction = (OMADTYP-3)
+  NOTE: the astlbl input units DO NOT EFFECT the labeled outputs.
+         Most labeled outputs are concentrations based on the label isotope.
+
+Labeling is input to the omad subroutine
+Concentrations are converted to fractions to remove the extra code during addition
+
+==== 23 Dec 2014 ===============================================================
+simsom.f90
+Calculates fraction of labeled C depending on C14 or C13 labeling
+corrected an index error that put labeled OMAD in the unlabeled pool
+
+==== 17 Dec 2014 ===============================================================
+treein.f90
+Corrections to the tree input for orchard input
+  Added 7th fmrsplai pool, pool references use FROOTM and LWOOD instead
+    of the numbers
+  added extra pool to fcfrac and cerfor;  corrected parsing loops
+  increased size of output buffer string
+
+==== 15 Dec 2014 ===============================================================
+calciv.f
+Corrected an index error in the initialization of som1ci, som2ci, and clittr
+calculated by the initialization equations that forced the surface SOM into
+the soil and zeroed the som2ci. This only effects runs where the initial SOM
+is set using the equations.
+
+==== 30 Nov 2014 ===============================================================
+growth.f  changed comment character
+Per Melannie check clsgres instead of flsgres for late season crop restriction
+and limit it to perennials
+(Note late season restriction may need to be applied seeding annuals)
+
+nutrlm.f90 (Aug 2014)
+The N fixation reported was changed to correct a N balance error. The total
+fixation was adjusted to reflect nutrient limited production rather than the growth
+potential (C source). This adjustment was not iterative, meaning nutrient allocation
+to growth was done using the potential fixation but the adjusted value was used
+for output variables. This resulted to a discrepancy between N sources and live N.
+There were two potential corrections. Removing the fixation adjustment returned the
+code to the Century practice. The other option, limiting growth to reflect the growth
+limited fixation, is an iterative calculation that I was able to prove converges
+only at 0 fixation; obviously not the correct answer.
+
+Reordered a number of calculations to use Fortran 90 matrix syntax. Using this syntax,
+rather than existing loops, allows the compiler to use vector or even parallel processing
+features.
+
+Reformated to use F90 comments, continuations, and longer lines
+_____________________________________________________________________________
+
+==== 24 Jun 2014 ===============================================================
+trwtavg.c   removed the unused callname string to avoid compiler warning.
+            Moved swp exponential outside the max loop.
+
+==== May 2014 ===============================================================
+
+froota:  Limit the great plains equation          KLK 8/15/2002
+the current parameters for the great plains equation have a pole at
+about 5 cm annual precip. To avoid this force the yearly precipitation
+used to be greater than both the pole and zero
+Then bound the root/shoot ratio  0.25 <= rtsh <= 5.0
+This corrects problems with the equation in desert areas like the Southwest.
+
+calciv.f  Keough May 8, 2014,
+Correct the double accounting of labeled C while initializing C pools
+Restructured the Burke Equation initialization to simplify and remove redundant code KLK
+
+==== Mar 2014 ===============================================================
+Removed C flow INTERFACE statements from crop.f. These should have been removed
+when the calflow module was USE.  (Note Cindy does omad in crop where is it really done_
+
+Removed MAXLYR from the code. The constant was soil water layers, 21
+in C code and the Century layers, 10, in fortran code.
+
+Made MXSWLYR the soil water layer depth, 21.
+Changed MAXLYR to MXSWLYR the soil water layer depth, 21, in all C code and headers.
+  balanceN.c denitrify.c h2oflux.c hwdrain.c initdaily.c initlyrs.c
+  initsw.c leachdly.c rainflux.c setamov.c setasmos.c showminrl.c
+  soiltemp.c soiltransp.c tgmodel.c therm.c watrflow.c
+Changed SWMAXLYR to MXSWLYR in all Fortran code and includes
+  csa_detiv.f90 dailymoist.f modifyInvKsatdsa.f90 modifydsa.f90 sitarchive.f \
+  sitarchive.f90 sitein.f90 tstwritsit.f90 writsit.f90 const.inc
+
+Made CMXLYR the century maximum layer depth, 10.
+Changed CENTMAXLYR to CMXLYR in C code and headers
+  balanceN.c, cmpnfrac.c, initsw.c, setamov.c, setasmos.c, setlyrs.c \
+  showminrl.c testcmpnfrac.c, watrflow.c, sitepar.h, soilwater.h, swconst.h:1
+Changed MAXLYR to CMXLYR in fortran code and includes
+  csa_detiv.f90 declig.f decomp.f fixin.f respir.f sitein.f90 sitein_grid.f \
+  somdec.f writsit.f90 const.inc:1
+
+==== Dec 2013 ===============================================================
+Add the C and E from harvst clearing "zeroed" above and below ground live
+to sinks csrsnk and esrsnk
+
+==== Nov 26 2013 ============================================================
+Changed the definition of prcann back to an actual accumulator of (weather file)
+current year rain. It was misleading as an output variable since it reported the
+constant sum of the annual average precip from the site file (sum precip). The
+site precip sum needed for initialization, N and S deposition is now a new
+variable, precipyr, in param, and is used in:
+eachyr:  baseNdep = epnfa(INTCPT)+epnfa(SLOPE)*MIN(precipyr,80.0)
+growth:  agnpp = (-40.0 + 3.0 * precipyr)/2. maintenance respiration estimate
+simsom:  Wet fall N, wdfxma, Monthly N  deposition, wdfxms,
+         Monthly atmospheric S deposition, satm,
+precipyr is initialized in writsit, initialize
+
+Changed  initsite_tg error messages to use the standard abortrun routine
+Changed  structure of weather file read so usexdrvrs=0 is an explicit option
+Changed  the existance check on nflux.out, daily.out, summary.out so it only
+         happens the first call. Updated  declarations in dailymoist.
+
+==== Nov 19 2013 ============================================================
+Corrected a bug that resulted in the data from last year of a truncated EVI
+file to persist for the rest of the run.
+ - changed array evi(367) to scalar intermediate variable eviday in
+   evivars.inc, potcrp.f, default.f90
+ - potcrp.f   defined a parameter for watts to langleys
+ - getwth.f   Reordered code to handle missing records in file or a truncated
+              file (EOF) Ensured file errors and missing values return <0
+
+==== Oct 23 2013 ============================================================
+Corrected a bug in csa_detiv that checked for an undefined schedule file
+and a check on a bare -n switch.
+Added a switch '--TMXNPP' that allows the user to re-institutes the TMAX bug
+on growth. Carries a logical from detive through main into simsom. Done
+with logical argument tmaxnpp instead of a common to minimize impact on
+common blocks.
+
+==== Oct 17 2013 ============================================================
+Corrected a bug in simsom that resulted in the daily temperature being the
+max rather than the "mean".
+From: Hartman,Melannie
+Sent: Thursday, October 17, 2013 12:03 PM
+        tavedly = tmxs_mlt * tempmax(curday) + tmns_mlt * tempmax(curday)
+This essentially sets tavedly to tempmax.
+Should the calculation instead be this?
+        tavedly = tmxs_mlt * tempmax(curday) + tmns_mlt * tempmin(curday)
+
+==== Sept 2013 ==============================================================
+Added input checking to catch and convert the water stress parameters
+used by Bill and Cindy to the independent form.
+
+==== Aug 2013 ===============================================================
+On Aug 28, 2013, at 10:29 AM, Keough,Cynthia wrote:
+The code was using the grass/crop frstmth variable rather than the forest tfstmth
+variable in the do loop that resets the monthly forest production output variables
+in csa_main.f.  Corrected code:
+     if (month .lt. tfstmth) then
+       do 110 mon = MONTHS, tfstmth, -1
+
+Minor changes in snlq calculation to eliminate roundoff reducing snlq to snow/2
+snowcent.c snowmodel.c
+==== Jul 2013 ===============================================================
+Updated the help message to include the list100 options
+Corrected a bug in the parsing of inhibitor specified immediate format
+
+==== Jul 2013 ===============================================================
+Corrected comments and (RTS) in listvar. Corrected some
+output spacing in .lis file (have a 13 character version)
+Converted getwth to f90 comments and variable definitions.
+Improved handling of missing values.
+
+
+==== Mar 1 2013 =============================================================
+On Mar 1, 2013, at 8:53 AM, delgro wrote:
+yes - what Ernie suggests should be our default assumption
+On Thu, 28 Feb 2013 19:58:11 -0700, Ernie Marx <erniemarx@gmail.com> wrote:
+What do y'all think about changing the default to 80% NH4 and 20% NO3?
+
+Changed writsit to handle 7 digit site archive record indexes.
+Changed binary record error reporting construction. Allows non-fatal error
+checking to allow sitarchive to scan an archive and report all errors.
+
+==== Feb 2013 ===============================================================
+chkdata  modified to allow '_' in variable names to accommodate frac_nh4.
+         explicitly limit routin interactions with lstroutin to 4 characters
+         this is sufficient to identify a change in file needed for error reports
+         (RTS)
+list100  changed goto to cycle. corrected bug parsing input files
+         Improved help message and output error message construction.
+
+
+==== 8 Feb 2013 =============================================================
+Added Bill Parton's crop/tree specific inputs for water stress
+On Jan 29, 2013, at 5:41 PM, "Keough,Cynthia" <Cindy.Keough@colostate.edu> wrote:
+
+We made the water stress equation species specific by adding two
+coefficients to the crop.100 and tree.100 files to replace the
+constants in the equations in the potcrp and potfor subroutines.  We
+are using the same coefficients for the grain water stress equation in
+the dailymoist subroutine.
+Routines changed: potcrp, potfor, dailymoist, default, treein, cropin.
+
+dailymoist changed water stress (RTS).
+cropin     Added optional water stress equation coefficients cwscoef
+           to match Cindy moved the favail input and allow favail to
+           input either N availability or all elements
+           changed cfrtc? error checking and unrolled some short loops for readability
+treein     Added optional water stress equation coefficients twscoef
+           converted to f90 and to use chkdata input so twscoef could be made optional
+default    initialize cwscoef and twscoef (RTS)
+simsom     calculate both crop and tree water availability (RTS)
+potcrp     changed water stress (RTS)
+potfor     changed water stress (RTS)
+
+The equation for water stress was changed from that proposed to make
+a form where the input parameters are independent of each other:
+     1.0/(1.0 + exp(cwscoef(2) * (cwscoef(1)-cwstress)))
+The parameters are defined to be:
+wscoef(1)   water stress for 50% potential growth, the inflection point.
+wscoef(2)   1/4 the slope at the inflection point
+
+
+
+==== Jan 17, 2013 ===========================================================
+Keough,Cynthia wrote:
+
+The calculation for the effect of litter carbon on soil surface temperature
+was using an equation that was having too much of a warming effect.  Also,
+the temperature value that was being used to determine if a soil layer was
+frozen needs to be increased.
+
+CAK - 01/16/2013
+=============================================================================
+SURFTEMP.C:
+Modify the constants in the equation that is calculating effect of surface
+litter on soil surface temperature.
+
+Code before:
+     basetemp = min((2.0f - (-2.0f)) / (1000.0f - 0.0f) *
+                    (litrcrbn - 1000.0f) + 2.0f, 0.0f);
+
+Code after:
+     basetemp = min((2.0f - (-2.0f)) / (3000.0f - 0.0f) *
+                    (litrcrbn - 3000.0f) + 2.0f, 0.0f);
+
+=============================================================================
+SWCONST.H:
+Change FRZSOIL constant.
+
+Code before:
+#define FRZSOIL -1.0   /* temperature at which soil is considered frozen (deg C) */
+
+Code after:
+#define FRZSOIL -0.5   /* temperature at which soil is considered frozen (deg C) */
+
+==== 30 Dec 2012 ============================================================
+Changed the plant specific favail to make it both crop and tree specific.
+- Both the crop and tree values default to the parameters input in fix.100
+- Both crop and trees can input sfavail, the nitrogen availability to be compatible
+  with Cindy K's modification.
+- Both crop and tree parameters can the entire favail array.
+- Moved the crop favail input to after npp2cs in the crop.100 file to be compatible
+  with Cindy K's modification.
+- Required adding favail as a parameter to the restrp call since it now
+  is important whether it is working on crop or trees. This changed calls in
+  growth.f and treegrow.f.
+- favail(2) calculation in simsom is now a F90 array calculation
+- fixin now inputs fixfavail. No change in fix file input
+- eavail in cropDynC and treeDynC use favail(:FORSYS) and favail(:CRPSYS) respectively
+Added crop/tree specific favail
+cropDynC   converted to use crop favail
+treeDynC   converted to use tree favail
+growth     Added crop favail as a parameter to the restrp call (RTS)
+treegrow   Added tree favail as a parameter to the restrp call (RTS)
+fixin      fix file favail,fixfavail, values are baseline for crop and tree specific
+restrp     added favail to argument list; do not load parfx common
+
+==== 13 Dec 2012 ============================================================
+wthini     log weather drivers being used
+
+==== 6 Dec 2012 =============================================================
+omadin     changed omadtyp input to match Cindy's 1, 2 definition rewrote comments
+readblk and schedl    delay SENM until after harvest.
+
+==== 6 Nov 2012 =============================================================
+sitein     changed the file name in chkdata to a parameter instead of repeating
+            the string in every call  f90 variable definitions
+
+=============================================================================
+Nov 2010 inventory rerun code updates.
+
+These updates are from the spring inventory and ICF runs.
+The base code includes the bug fix to the binary extend logic.
+This bug was in the summer inventory and ICF runs but had
+NO impact since the script extends did not read a text site file.
+
+
+==== includes ===============================================================
+
+parfx.inc
+  added fixfavail array to hold default read from fix.100 file
+
+dovars.inc
+  changed comments explaining new behavior of dosene
+
+swconst.h
+  changed PI to a double constant conditional if PI not defined
+
+comput.inc
+  added surface C/E ratios    MDH 9/24/2012
+
+==== Minor (code syntax) changes ============================================
+
+csa_detiv.f90
+  changed the version date and annotated as DailyDayCentEVI
+
+getwth.f       getwthR.f
+  changed error messages to explicitly identify missing leap year errors in data
+
+listvar.f90 (partial)
+  changed to F90
+  added a comma separator
+
+fertin.f90
+  Changed the routine name from a string in each chkdata call to a parameter
+
+somdec.f
+  Minor changes KLK Nov 2012
+  Use agdrat for som2 surface decomposition. -MDH 9/24/2012
+  terminated do loops with enddo instead of continue
+  F90 comments, '!', instead of the F77 c
+
+initialize.f90
+  removed commented code
+
+initsw.c
+  put comment character '#' in front of headings
+
+ramp.f
+  don't call line. The call takes more time than the equation.
+
+methane.c
+  rewrote comment explaining fix to correct numerical instability when Wopt <= Wmin
+
+==== Bug Fix =====================
+
+sitein.f90     siteinR.f90
+  Corrected a bug that prevents soil parameters stored in enhanced site files
+  when doing a binary extend.
+  Changed the routine name from a string in each chkdata call to a parameter
+  changed variable declaration statements
+
+calciv.f
+  changed structure of initialization code based on ivauto. Removed redundant code
+  Helped address binary extend problem
+
+tgmodel.c      tgmodelR.c    (Rmatch)
+  limited the LAI to 8 before calculating canopy_reduction, near the minimum
+  of the parabola which prevents decreasing reabsorption with increasing LAI
+  eventually becoming negative.
+  Remove the reabsorption from the NOflux.
+
+====crop specific favail ====================================================
+
+fixin.f        fixinR.f
+  store favail in the fixfavail array
+
+cropin.f90     cropinR.f90
+  Changed the routine name from a string in each chkdata call to a parameter
+  added favail as an optional crop specific parameter
+
+====Surface soil C/N split ==================================================
+
+decomp.f
+  calculate both soil and surface decomposition ratios
+  changed comments to f90 standrd '!'
+
+default.f90
+  initialize both surface and soil ratios   MDH 9/24/2012
+
+litdec.f
+  separate surface and soil C/E ratios MDH Nov 2012
+
+woodec.f
+  ! separate surface and soil C/E ratios MDH Nov 2012
+
+====Senescence =====================
+
+simsom.f       simsomR.f     (Rmatch)
+  move statement to trigger senescence and set dosene here
+  changed htran, and hpttr(month) definitions to correct HI
+
+schedl.f90
+  DO NOT set dosene with the event.
+  senmschd now exclusively carries the fact that senescence is scheduled
+
+dshoot.f       dshootR.f
+  moved dosene calculation to simsom;     KLK 15 Nov 2012
+  some changes to various indexes
+
+droot.f        drootR.f
+  added root death during senescence
+  perennial senescence is a parameter and not an input variable like Century 4
+  simplified some algebra
+  included juvenile aging in death block after death is calculated. Easier to
+  do large fractional removal. This produces a small change in output since the
+  root maturation is slightly smaller
+
+====Storage =================================================================
+
+cultiv.f       cultivR.f
+  changed storage removal from aglivc loss to root loss to be consistant
+  with convention in harvst. This returns stored E to both surface and soil
+  metabolic. Helps fix a bug where crpstg is non-zero with no live crop/grass.
+
+harvst.f       harvstR.f
+  Helps fix a bug where crpstg is non-zero with no live crop/grass. Moved
+  storage removal during root harvest to harvest sections so it can be added
+  to the harvested E. Transfer storage to metabolic litter during root death.
+
+
+====not on server ===========================================================
+
+listvar.f
+  change in output field width
+
+
+list100.f90
+sitarchive.f90
+
+calciv.f comput.inc cropin.f90 cultiv.f decomp.f default.f90 dovars.inc droot.f \
+dshoot.f fertin.f fixin.f getwth.f harvst.f initialize.f90 initsw.c litdec.f \
+methane.c parfx.inc ramp.f schedl.f90 simsom.f sitein.f90 somdec.f swconst.h \
+tgmodel.c woodec.f
+
+ listvar.f

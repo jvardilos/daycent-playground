@@ -1,0 +1,24 @@
+C        Field Cultivators and Planters
+0.0               'CULTRA(1)'
+0.0               'CULTRA(2)'
+0.0               'CULTRA(3)'
+0.1               'CULTRA(4)'
+0.5               'CULTRA(5)'
+0.17              'CULTRA(6)'
+0.0               'CULTRA(7)'
+2.69              'CLTEFF(1)' # century 1.843
+2.69              'CLTEFF(2)'
+1.00              'CLTEFF(3)'
+2.69              'CLTEFF(4)'
+K     Moldboard Plow
+0.0               'CULTRA(1)'
+0.05              'CULTRA(2)'
+0.95              'CULTRA(3)'
+0.05              'CULTRA(4)'
+0.95              'CULTRA(5)'
+0.95              'CULTRA(6)'
+1.0               'CULTRA(7)'
+10.0              'CLTEFF(1)' # century 5.5
+10.0              'CLTEFF(2)'
+1.00              'CLTEFF(3)'
+10.0              'CLTEFF(4)'

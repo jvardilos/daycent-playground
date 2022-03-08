@@ -1,0 +1,599 @@
+${LIBCX}:${LIBCX}(adjlig.o)	${LIBCX}(agdrat.o)  	${LIBCX}(annacc.o) \
+	${LIBCX}(balanceN.o)	${LIBCX}(bgdrat.o) \
+	${LIBCX}(calcdefac.o)	${LIBCX}(calciv.o)  	${LIBCX}(calcpet.o) \
+	${LIBCX}(calcSrad.o)	${LIBCX}(candec.o)  	${LIBCX}(catanf.o) \
+	${LIBCX}(chkdata.o) \
+	${LIBCX}(climscale.o)	${LIBCX}(closefiles.o)	${LIBCX}(cmplig.o) \
+	${LIBCX}(cmpnfrac.o)	${LIBCX}(co2eff.o)  	${LIBCX}(crop.o) \
+	${LIBCX}(cropDynC.o)	${LIBCX}(cropin.o)  	${LIBCX}(csa_detiv.o) \
+	${LIBCX}(csched.o)  	${LIBCX}(cultin.o)  	${LIBCX}(cultiv.o) \
+	${LIBCX}(cutrtn.o)  	${LIBCX}(cycle.o) \
+	${LIBCX}(dailymoist.o)	${LIBCX}(declig.o)  	${LIBCX}(decomp.o) \
+	${LIBCX}(dedrem.o)  	${LIBCX}(default.o) 	${LIBCX}(denitrify.o) \
+	${LIBCX}(diffusiv.o)	${LIBCX}(droot.o)   	${LIBCX}(dshoot.o) \
+	${LIBCX}(eachyr.o)  	${LIBCX}(erosn.o)   	${LIBCX}(esched.o) \
+	${LIBCX}(extend.o) \
+	${LIBCX}(falstd.o)  	${LIBCX}(fertin.o)  	${LIBCX}(firein.o) \
+	${LIBCX}(firrtn.o)  	${LIBCX}(fixin.o)   	${LIBCX}(fltce.o) \
+	${LIBCX}(fracbslos.o)	${LIBCX}(fracis.o)  	${LIBCX}(frem.o) \
+	${LIBCX}(froota.o)  	${LIBCX}(fsfunc.o) \
+	${LIBCX}(getdiff.o) 	${LIBCX}(getsoilprop.o)	${LIBCX}(getwth.o) \
+	${LIBCX}(gpdf.o)    	${LIBCX}(grazin.o)  	${LIBCX}(grazrst.o) \
+	${LIBCX}(grem.o)    	${LIBCX}(grochk.o)  	${LIBCX}(growth.o) \
+	${LIBCX}(h2oflux.o) 	${LIBCX}(harvin.o)  	${LIBCX}(harvst.o) \
+	${LIBCX}(hwdrain.o) \
+	${LIBCX}(initdaily.o)	${LIBCX}(initialize.o)	${LIBCX}(initlyrs.o) \
+	${LIBCX}(initprod.o)	${LIBCX}(initsite_tg.o)	${LIBCX}(initsrad.o) \
+	${LIBCX}(initsw.o)  	${LIBCX}(inprac.o)  	${LIBCX}(irrgin.o) \
+	${LIBCX}(irrigt.o) \
+	${LIBCX}(killrt.o) \
+	${LIBCX}(lacalc.o)  	${LIBCX}(laprod.o)  	${LIBCX}(leachdly.o) \
+	${LIBCX}(leafa.o)   	${LIBCX}(listvar.o)   	${LIBCX}(litburn.o) \
+	${LIBCX}(line.o) \
+	${LIBCX}(litdec.o)  	${LIBCX}(litstcrev.o)	${LIBCX}(livrem.o) \
+	${LIBCX}(maxswpot.o)	${LIBCX}(messageC.o)	${LIBCX}(mssg.o) \
+	${LIBCX}(methane.o) 	${LIBCX}(mnracc.o)  	${LIBCX}(mthacc.o) \
+	${LIBCX}(nitrify.o) 	${LIBCX}(nox_pulse.o)	${LIBCX}(nscale.o) \
+	${LIBCX}(nutrlm.o) \
+	${LIBCX}(omadin.o)  	${LIBCX}(omadscale.o) \
+	${LIBCX}(parse.o)   	${LIBCX}(partit.o)  	${LIBCX}(petrad.o) \
+	${LIBCX}(pevapdly.o)	${LIBCX}(phshift.o) 	${LIBCX}(pi_funcs.o) \
+	${LIBCX}(potbse.o)  	${LIBCX}(potbst.o)  	${LIBCX}(potcrp.o) \
+	${LIBCX}(potfor.o)  	${LIBCX}(potprod.o) 	${LIBCX}(pprdwc.o) \
+	${LIBCX}(prcgrw.o)  	${LIBCX}(prelim.o)  	${LIBCX}(pschem.o) \
+	${LIBCX}(pteevap.o) \
+	${LIBCX}(rainflux.o)	${LIBCX}(ramp.o)    	${LIBCX}(readblk.o) \
+	${LIBCX}(respir.o)  	${LIBCX}(restrp.o)  	${LIBCX}(retarg.o) \
+	${LIBCX}(rtimp.o) \
+	${LIBCX}(savarp.o)  	${LIBCX}(schedl.o)  	${LIBCX}(setamov.o) \
+	${LIBCX}(setasmos.o)	${LIBCX}(setlyrs.o) 	${LIBCX}(showlyrs.o) \
+	${LIBCX}(showminrl.o)	${LIBCX}(simsom.o)  	${LIBCX}(sitein.o) \
+	${LIBCX}(sitein_grid.o)	${LIBCX}(snowcent.o)	${LIBCX}(snowmodel.o) \
+	${LIBCX}(soiltemp.o)	${LIBCX}(soiltransp.o)	${LIBCX}(somdec.o) \
+	${LIBCX}(sumcar.o)  	${LIBCX}(svapor.o)  	${LIBCX}(swpotentl.o) \
+	${LIBCX}(tanfunc.o) 	${LIBCX}(tcalc.o)   	${LIBCX}(tgmodel.o) \
+	${LIBCX}(thawpulse.o) \
+	${LIBCX}(treeDynC.o)	${LIBCX}(treegrow.o)	${LIBCX}(treein.o) \
+	${LIBCX}(trees.o)   	${LIBCX}(tremin.o)  	${LIBCX}(trwtavg.o) \
+	${LIBCX}(updateN.o) \
+	${LIBCX}(watrbal.o) 	${LIBCX}(watrflow.o)	${LIBCX}(watrlit.o) \
+	${LIBCX}(watrstcr.o)	${LIBCX}(wdeath.o)  	${LIBCX}(wfps.o) \
+	${LIBCX}(wfunc_pulse.o)	${LIBCX}(woodec.o)  	${LIBCX}(writsit.o) \
+	${LIBCX}(wrtbin.o)  	${LIBCX}(wrtbio.o)  	${LIBCX}(wrtcflows.o) \
+	${LIBCX}(wrtco2.o)  	${LIBCX}(wrtdcsip.o)	${LIBCX}(wrtdeadc.o) \
+	${LIBCX}(wrtdels.o) 	${LIBCX}(wrtdN2lyr.o)	${LIBCX}(wrtdN2Olyr.o) \
+	${LIBCX}(wrtgresp.o)	${LIBCX}(wrtharvest.o)	${LIBCX}(wrtlivec.o) \
+	${LIBCX}(wrtmresp.o)	${LIBCX}(wrtsoilc.o)	${LIBCX}(wrtsoiln.o) \
+	${LIBCX}(wrtstemp.o)	${LIBCX}(wrtswc.o)  	${LIBCX}(wrtsysc.o) \
+	${LIBCX}(wrttgmonth.o)	${LIBCX}(wrtwflux.o)	${LIBCX}(wrtwfps.o) \
+	${LIBCX}(wrtyearsum.o)	${LIBCX}(wrtyrcflows.o)	${LIBCX}(wthini.o) \
+	${LIBCX}(flowstak.o)	${LIBCX}(equilsp.o)
+
+
+.INTERMEDIATE: %.o
+message.o: message.f90
+	${FC} ${OPT} ${DBG} ${FFLAGS} $(INCLUDES) -c $<;
+
+
+.INTERMEDIATE: build
+# the objects are are required for build but we don’t need to rebuild the program
+# just because those utilities changed
+build: build.f90 | message.o  ${LIBCX}(parse.o) ${LIBCX}(retarg.o)
+	${FC} -O -fno-underscoring -fcheck=bounds  -fbacktrace $(INCLUDES) $^ message.o ${LIBCX} -o $@;
+
+
+# make sure the output files are correct with the plot includes
+# The GNU make manual says: "Pattern rules may have more than one target.
+# Unlike normal rules, this does not act as many different rules with the same
+# prerequisites and commands. If a pattern rule has multiple targets, make knows
+# that the rule's commands are responsible for making all of the targets.
+# The commands are executed only once to make all the targets."
+# rules need build but don’t rebuild the includes just because build code change
+table%inc outval%inc: plot1.inc plot2.inc plot3.inc | build
+	build $(INCLUDES) $^
+
+
+# fixes a library/loader bug which ignores block data without executable statements
+# reformatted listvar to put table and its methods in a module;
+# table.inc is now the plot include description to be included in the module
+${LIBCX}(listvar.o): listvar.f90 table.inc outval.inc
+
+
+sitsoil.inc: sitsoil.h
+	export PATH=..:$$PATH; echo $$PATH; structC2com.pl  $?
+
+n2oparam.inc: n2oparam.h
+	export PATH=..:$$PATH; echo $$PATH; structC2mod.pl  $?
+# ${LIBCX}(n2oparam.o) n2oparam.mod: n2oparam.f90
+
+#${LIBCX}(csa_main.o): csa_main.f90 cflows.inc const.inc dovars.inc jday.inc monprd.inc \
+#	param.inc pheno.inc plot1.inc plot3.inc timvar.inc wth.inc zztim.inc
+
+${LIBCX}(flowstak.o) flowstak.mod calflow.mod: flowstak.f90
+
+${LIBCX}(adjlig.o): adjlig.f
+
+# ${LIBCX}(adjustpar.o): adjustpar.f90 const.inc parfx.inc sitsoil.inc
+
+${LIBCX}(agdrat.o): agdrat.f
+
+${LIBCX}(annacc.o): annacc.f cflows.inc const.inc monprd.inc \
+    plot1.inc plot2.inc param.inc
+
+${LIBCX}(bgdrat.o): bgdrat.f
+
+${LIBCX}(calciv.o): calciv.f90 chrvar.inc const.inc fertil.inc ligvar.inc \
+    param.inc parcp.inc parfs.inc plot1.inc plot2.inc plot3.inc potent.inc \
+    seq.inc site.inc wth.inc zztim.inc ${LIBCX}(flowstak.o)
+
+${LIBCX}(candec.o): candec.f90 const.inc
+
+${LIBCX}(catanf.o): catanf.f
+
+${LIBCX}(chkdata.o) chkdatstat.mod: chkdata.f90
+
+${LIBCX}(climscale.o): climscale.f wth.inc
+
+${LIBCX}(cmplig.o): cmplig.f const.inc ligvar.inc param.inc wth.inc
+
+${LIBCX}(co2eff.o): co2eff.f const.inc param.inc parfx.inc plot1.inc line.f
+
+${LIBCX}(crop.o): crop.f const.inc dovars.inc fertil.inc ligvar.inc param.inc \
+    parcp.inc plot2.inc timvar.inc
+
+${LIBCX}(cropDynC.o): cropDynC.f comput.inc const.inc param.inc parcp.inc \
+    parfx.inc plot1.inc potent.inc
+
+${LIBCX}(cropin.o): cropin.f90 chrvar.inc const.inc isovar.inc \
+    param.inc parcp.inc parfs.inc parfx.inc pheno.inc plot1.inc seq.inc
+
+${LIBCX}(csa_detiv.o): csa_detiv.f90 chrvar.inc const.inc doubles.inc \
+    dovars.inc fertil.inc param.inc parcp.inc parfs.inc parfx.inc plot1.inc \
+    plot3.inc potent.inc seq.inc site.inc sitsoil.inc timvar.inc wth.inc \
+    wthdaily.inc zztim.inc
+
+${LIBCX}(csched.o): csched.f const.inc zztim.inc
+
+${LIBCX}(cultin.o): cultin.f90 parcp.inc
+
+${LIBCX}(cultiv.o): cultiv.f90 const.inc dovars.inc param.inc parcp.inc \
+    plot1.inc plot2.inc zztim.inc
+
+${LIBCX}(cutrtn.o): cutrtn.f const.inc forrem.inc param.inc parfs.inc \
+    plot1.inc plot2.inc plot3.inc zztim.inc
+
+${LIBCX}(cycle.o): cycle.f const.inc dovars.inc plot2.inc plot3.inc
+
+${LIBCX}(dailymoist.o): dailymoist.f90 cflows.inc const.inc doubles.inc \
+    dovars.inc fertil.inc jday.inc monprd.inc param.inc parcp.inc parfs.inc \
+    parfx.inc pheno.inc plot1.inc plot2.inc plot3.inc timvar.inc seq.inc \
+    site.inc sitsoil.inc wth.inc wthdaily.inc zztim.inc line.f
+
+${LIBCX}(declig.o): declig.f const.inc
+
+${LIBCX}(decomp.o): decomp.f90 cflows.inc comput.inc const.inc dovars.inc param.inc \
+    parcp.inc parfx.inc plot1.inc plot2.inc sitsoil.inc
+
+${LIBCX}(dedrem.o): dedrem.f const.inc forrem.inc param.inc plot2.inc plot3.inc \
+    zztim.inc
+
+${LIBCX}(default.o): default.f90 const.inc chrvar.inc comput.inc doubles.inc \
+    dovars.inc dynam.inc fertil.inc forrem.inc isovar.inc jday.inc ligvar.inc \
+    monprd.inc param.inc parcp.inc parfs.inc parfx.inc pheno.inc \
+    plot1.inc plot2.inc plot3.inc potent.inc seq.inc site.inc timvar.inc \
+    wth.inc wthdaily.inc zztim.inc evivars.inc
+
+${LIBCX}(droot.o): droot.f const.inc dovars.inc param.inc parcp.inc parfx.inc \
+    plot1.inc plot2.inc zztim.inc catanf.f
+
+${LIBCX}(dshoot.o): dshoot.f const.inc dovars.inc param.inc parcp.inc pheno.inc \
+    plot1.inc plot2.inc zztim.inc
+
+${LIBCX}(eachyr.o): eachyr.f comput.inc const.inc dovars.inc isovar.inc \
+    param.inc parcp.inc parfs.inc plot1.inc plot2.inc \
+    plot3.inc potent.inc seq.inc site.inc wth.inc zztim.inc
+
+${LIBCX}(equilsp.o): equilsp.f90 cflows.inc plot1.inc zztim.inc
+
+${LIBCX}(erosn.o): erosn.f90 const.inc plot1.inc plot2.inc zztim.inc
+
+${LIBCX}(esched.o): esched.f90 zztim.inc
+
+${LIBCX}(extend.o): extend.f outval.inc
+
+${LIBCX}(falstd.o): falstd.f const.inc param.inc parcp.inc plot1.inc
+
+${LIBCX}(fertin.o): fertin.f90 const.inc fertil.inc
+
+${LIBCX}(firein.o): firein.f90 const.inc parcp.inc
+
+${LIBCX}(firrtn.o): firrtn.f const.inc fertil.inc forrem.inc param.inc \
+    plot1.inc plot2.inc plot3.inc zztim.inc
+
+${LIBCX}(fixin.o): fixin.f90 const.inc parfx.inc sitsoil.inc n2oparam.inc
+
+${LIBCX}(fltce.o): fltce.f comput.inc const.inc dovars.inc parcp.inc
+
+${LIBCX}(fracis.o): fracis.f const.inc
+
+${LIBCX}(frem.o): frem.f const.inc forrem.inc
+
+${LIBCX}(froota.o): froota.f90 const.inc dovars.inc param.inc parcp.inc parfs.inc \
+    parfx.inc plot1.inc line.f
+
+${LIBCX}(fsfunc.o): fsfunc.f
+
+${LIBCX}(getwth.o): getwth.f90 const.inc jday.inc evivars.inc sitsoil.inc timvar.inc
+
+${LIBCX}(gpdf.o): gpdf.f
+
+${LIBCX}(grazin.o): grazin.f90 const.inc parcp.inc
+
+${LIBCX}(grazrst.o): grazrst.f
+
+${LIBCX}(grem.o): grem.f90 const.inc dovars.inc fertil.inc param.inc \
+    parcp.inc parfx.inc plot1.inc plot2.inc plot3.inc seq.inc site.inc \
+    zztim.inc line.f
+
+${LIBCX}(grochk.o): grochk.f pheno.inc timvar.inc zztim.inc
+
+${LIBCX}(growth.o): growth.f90 comput.inc const.inc dovars.inc fertil.inc \
+    isovar.inc monprd.inc param.inc parcp.inc parfx.inc \
+    pheno.inc plot1.inc plot2.inc potent.inc seq.inc site.inc \
+    zztim.inc evivars.inc line.f
+
+${LIBCX}(harvin.o): harvin.f90 parcp.inc param.inc
+
+${LIBCX}(harvst.o): harvst.f90 const.inc fertil.inc monprd.inc param.inc \
+    parcp.inc pheno.inc plot1.inc plot2.inc zztim.inc
+
+${LIBCX}(initialize.o): initialize.f90 chrvar.inc const.inc dovars.inc \
+    fertil.inc param.inc plot1.inc plot2.inc plot3.inc seq.inc sitsoil.inc \
+    timvar.inc wth.inc zztim.inc
+
+${LIBCX}(initprod.o): initprod.f const.inc pheno.inc plot1.inc plot3.inc
+
+${LIBCX}(inprac.o): inprac.f90 const.inc dovars.inc parcp.inc \
+    parfs.inc plot1.inc plot2.inc plot3.inc
+
+${LIBCX}(irrgin.o): irrgin.f90 parcp.inc
+
+${LIBCX}(irrigt.o): irrigt.f90 fertil.inc param.inc parcp.inc parfx.inc plot1.inc
+
+${LIBCX}(killrt.o): killrt.f const.inc forrem.inc param.inc parfs.inc plot3.inc \
+    zztim.inc
+
+${LIBCX}(lacalc.o): lacalc.f
+
+${LIBCX}(laprod.o): laprod.f
+
+${LIBCX}(leafa.o): leafa.f parfs.inc
+
+${LIBCX}(line.o): line.f
+
+${LIBCX}(litburn.o): litburn.f const.inc param.inc parcp.inc \
+    plot1.inc plot2.inc zztim.inc
+
+${LIBCX}(litdec.o): litdec.f90 cflows.inc comput.inc const.inc \
+    param.inc parfx.inc plot1.inc plot2.inc catanf.f
+
+${LIBCX}(livrem.o): livrem.f90 const.inc forrem.inc param.inc \
+    plot2.inc plot3.inc timvar.inc zztim.inc
+
+${LIBCX}(maxswpot.o): maxswpot.f90 parfx.inc plot1.inc site.inc
+
+${LIBCX}(messageC.o): messageC.f90
+
+${LIBCX}(mnracc.o): mnracc.f
+
+${LIBCX}(mthacc.o): mthacc.f90 const.inc monprd.inc param.inc \
+    plot1.inc plot2.inc plot3.inc
+
+${LIBCX}(nscale.o): nscale.f fertil.inc
+
+${LIBCX}(nutrlm.o): nutrlm.f90 const.inc timvar.inc
+
+${LIBCX}(omadin.o): omadin.f90 const.inc parcp.inc
+
+${LIBCX}(omadscale.o): omadscale.f fertil.inc
+
+${LIBCX}(parse.o): parse.f90
+
+${LIBCX}(partit.o): partit.f90 const.inc fertil.inc param.inc parfx.inc plot1.inc zztim.inc
+
+${LIBCX}(phshift.o): phshift.f param.inc
+
+${LIBCX}(potcrp.o): potcrp.f comput.inc const.inc dovars.inc monprd.inc \
+    param.inc parcp.inc parfx.inc plot1.inc plot3.inc potent.inc seq.inc \
+    site.inc evivars.inc
+
+${LIBCX}(potfor.o): potfor.f90 comput.inc const.inc dynam.inc monprd.inc param.inc \
+    parfs.inc parfx.inc plot1.inc plot3.inc potent.inc site.inc
+
+${LIBCX}(potprod.o): potprod.f90 comput.inc const.inc parcp.inc parfs.inc \
+    pheno.inc plot1.inc plot3.inc potent.inc seq.inc timvar.inc
+
+${LIBCX}(pprdwc.o): pprdwc.f
+
+${LIBCX}(prcgrw.o): prcgrw.f const.inc parcp.inc param.inc wth.inc
+
+${LIBCX}(prelim.o): prelim.f comput.inc const.inc dovars.inc param.inc \
+    parcp.inc parfs.inc parfx.inc pheno.inc plot1.inc plot2.inc \
+    plot3.inc seq.inc site.inc timvar.inc wth.inc zztim.inc catanf.f line.f
+
+${LIBCX}(pschem.o): pschem.f const.inc doubles.inc fertil.inc param.inc \
+    parfx.inc plot1.inc site.inc zztim.inc
+
+${LIBCX}(ramp.o): ramp.f
+
+${LIBCX}(readblk.o): readblk.f90 chrvar.inc const.inc jday.inc param.inc \
+    parcp.inc parfs.inc seq.inc site.inc timvar.inc zztim.inc
+
+${LIBCX}(respir.o): respir.f const.inc param.inc parfx.inc zztim.inc
+
+${LIBCX}(restrp.o): restrp.f90 const.inc fertil.inc evivars.inc
+
+${LIBCX}(retarg.o): retarg.f90
+
+${LIBCX}(rtimp.o): rtimp.f
+
+${LIBCX}(savarp.o): savarp.f90 comput.inc const.inc param.inc plot1.inc plot2.inc \
+    plot3.inc
+
+${LIBCX}(schedl.o): schedl.f90 chrvar.inc const.inc dovars.inc fertil.inc \
+    param.inc parcp.inc parfs.inc plot1.inc plot3.inc seq.inc timvar.inc \
+    zztim.inc
+
+${LIBCX}(simsom.o): simsom.f90 comput.inc const.inc dovars.inc fertil.inc \
+    isovar.inc jday.inc ligvar.inc monprd.inc param.inc parcp.inc parfs.inc \
+    parfx.inc pheno.inc plot1.inc plot2.inc plot3.inc seq.inc site.inc \
+    timvar.inc wth.inc wthdaily.inc zztim.inc
+
+${LIBCX}(sitein.o): sitein.f90 const.inc doubles.inc fertil.inc param.inc \
+    plot1.inc plot2.inc plot3.inc site.inc sitsoil.inc wth.inc
+
+${LIBCX}(sitein_grid.o): sitein_grid.f const.inc doubles.inc param.inc \
+    plot1.inc plot3.inc site.inc wth.inc
+
+${LIBCX}(somdec.o): somdec.f90 cflows.inc comput.inc const.inc param.inc \
+    parfx.inc plot1.inc plot2.inc seq.inc timvar.inc zztim.inc catanf.f
+
+${LIBCX}(sumcar.o): sumcar.f90 plot1.inc plot2.inc plot3.inc timvar.inc
+
+${LIBCX}(tcalc.o): tcalc.f90 catanf.f
+
+${LIBCX}(treeDynC.o): treeDynC.f90 comput.inc const.inc param.inc parfs.inc \
+    parfx.inc pheno.inc plot1.inc plot3.inc
+
+${LIBCX}(treegrow.o): treegrow.f90 const.inc dovars.inc dynam.inc fertil.inc \
+    isovar.inc monprd.inc param.inc parfs.inc parfx.inc pheno.inc plot1.inc \
+    plot2.inc plot3.inc potent.inc timvar.inc zztim.inc line.f
+
+${LIBCX}(treein.o): treein.f90 chrvar.inc const.inc dynam.inc isovar.inc \
+    param.inc parcp.inc parfs.inc pheno.inc site.inc
+
+${LIBCX}(trees.o): trees.f const.inc dovars.inc fertil.inc \
+    param.inc parcp.inc plot2.inc timvar.inc zztim.inc
+
+${LIBCX}(tremin.o): tremin.f90 const.inc forrem.inc
+
+${LIBCX}(wdeath.o): wdeath.f90 const.inc forrem.inc isovar.inc param.inc \
+    parfs.inc pheno.inc plot1.inc plot2.inc plot3.inc site.inc timvar.inc \
+    zztim.inc catanf.f
+
+${LIBCX}(woodec.o): woodec.f90 cflows.inc comput.inc const.inc param.inc \
+    parfs.inc parfx.inc plot1.inc plot2.inc plot3.inc catanf.f
+
+${LIBCX}(wrtbin.o): wrtbin.f outval.inc
+
+${LIBCX}(writsit.o) wrtsitfil.mod: writsit.f90 const.inc fertil.inc param.inc \
+    plot1.inc plot2.inc plot3.inc site.inc sitsoil.inc wth.inc
+
+${LIBCX}(wthini.o): wthini.f90 chrvar.inc const.inc wthdaily.inc
+
+
+# -------- C routines Generated by gcc -MM  *.c >> Makefile
+# -------- s/^(\w+)\.o\: /\n${LIBCX}\(\1.o\): /
+${LIBCX}(balanceN.o): balanceN.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(calcSrad.o): calcSrad.c calcSrad.h
+
+${LIBCX}(calcdefac.o): calcdefac.c soilwater.h swconst.h sitsoil.h n2o_model.h mssg.h
+
+${LIBCX}(calcpet.o): calcpet.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(closefiles.o): closefiles.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(cmpnfrac.o): cmpnfrac.c swconst.h mssg.h
+
+${LIBCX}(denitrify.o): denitrify.c n2o_model.h n2oparam.h soilwater.h swconst.h sitsoil.h thawpulse.h
+
+${LIBCX}(diffusiv.o): diffusiv.c mssg.h
+
+${LIBCX}(fracbslos.o): fracbslos.c
+
+${LIBCX}(getdiff.o): getdiff.c
+
+${LIBCX}(getsoilprop.o): getsoilprop.c soilwater.h swconst.h sitsoil.h mssg.h
+
+${LIBCX}(h2oflux.o): h2oflux.c soilwater.h swconst.h sitsoil.h mssg.h
+
+${LIBCX}(hwdrain.o): hwdrain.c swconst.h
+
+${LIBCX}(initdaily.o): initdaily.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(initlyrs.o): initlyrs.c soilwater.h swconst.h sitsoil.h n2o_model.h mssg.h
+
+${LIBCX}(initsite_tg.o): initsite_tg.c soilwater.h swconst.h sitsoil.h mssg.h
+
+${LIBCX}(initsrad.o): initsrad.c calcSrad.h swconst.h mssg.h
+
+${LIBCX}(initsw.o): initsw.c soilwater.h swconst.h sitsoil.h mssg.h
+
+${LIBCX}(leachdly.o): leachdly.c swconst.h
+
+${LIBCX}(litstcrev.o): litstcrev.c
+
+${LIBCX}(methane.o): methane.c soilwater.h swconst.h sitsoil.h n2o_model.h
+
+${LIBCX}(mssg.o): mssg.c mssg.h
+
+${LIBCX}(nitrify.o): nitrify.c soilwater.h swconst.h sitsoil.h n2o_model.h n2oparam.h
+
+${LIBCX}(nox_pulse.o): nox_pulse.c
+
+${LIBCX}(petrad.o): petrad.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(pevapdly.o): pevapdly.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(pi_funcs.o): pi_funcs.c
+
+${LIBCX}(potbse.o): potbse.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(potbst.o): potbst.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(pteevap.o): pteevap.c
+
+${LIBCX}(rainflux.o): rainflux.c soilwater.h swconst.h sitsoil.h mssg.h
+
+${LIBCX}(setamov.o): setamov.c swconst.h
+
+${LIBCX}(setasmos.o): setasmos.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(setlyrs.o): setlyrs.c soilwater.h swconst.h sitsoil.h mssg.h
+
+${LIBCX}(showlyrs.o): showlyrs.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(showminrl.o): showminrl.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(snowcent.o): snowcent.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(snowmodel.o): snowmodel.c swconst.h soilwater.h sitsoil.h
+
+${LIBCX}(soiltemp.o): soiltemp.c soilwater.h swconst.h sitsoil.h mssg.h
+
+${LIBCX}(soiltransp.o): soiltransp.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(svapor.o): svapor.c
+
+${LIBCX}(swpotentl.o): swpotentl.c soilwater.h swconst.h sitsoil.h mssg.h
+
+${LIBCX}(tanfunc.o): tanfunc.c swconst.h
+
+${LIBCX}(tgmodel.o): tgmodel.c soilwater.h swconst.h sitsoil.h n2o_model.h
+
+${LIBCX}(thawpulse.o): thawpulse.c thawpulse.h
+
+${LIBCX}(trwtavg.o): trwtavg.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(updateN.o): updateN.c soilwater.h swconst.h sitsoil.h mssg.h
+
+${LIBCX}(watrbal.o): watrbal.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(watrflow.o): watrflow.c soilwater.h swconst.h sitsoil.h mssg.h thawpulse.h
+
+${LIBCX}(watrlit.o): watrlit.c
+
+${LIBCX}(watrstcr.o): watrstcr.c
+
+${LIBCX}(wfps.o): wfps.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wfunc_pulse.o): wfunc_pulse.c
+
+${LIBCX}(wrtbio.o): wrtbio.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtcflows.o): wrtcflows.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtco2.o): wrtco2.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtdN2Olyr.o): wrtdN2Olyr.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtdN2lyr.o): wrtdN2lyr.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtdcsip.o): wrtdcsip.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtdeadc.o): wrtdeadc.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtdels.o): wrtdels.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtgresp.o): wrtgresp.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtharvest.o): wrtharvest.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtlivec.o): wrtlivec.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtmresp.o): wrtmresp.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtsoilc.o): wrtsoilc.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtsoiln.o): wrtsoiln.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtstemp.o): wrtstemp.c
+
+${LIBCX}(wrtswc.o): wrtswc.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtsysc.o): wrtsysc.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrttgmonth.o): wrttgmonth.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtwflux.o): wrtwflux.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtwfps.o): wrtwfps.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtyearsum.o): wrtyearsum.c soilwater.h swconst.h sitsoil.h
+
+${LIBCX}(wrtyrcflows.o): wrtyrcflows.c soilwater.h swconst.h sitsoil.h
+
+
+
+#Here is a table of automatic variables:
+#
+#$@ - The file name of the target of the rule. If the target is an archive
+#      member, then ‘$@’ is the name of the archive file. In a pattern rule
+#      that has multiple targets (see Introduction to Pattern Rules),
+#      ‘$@’ is the name of whichever target caused the rule's recipe to be run.
+#
+#$% - The target member name, when the target is an archive member. See Archives.
+#     For example, if the target is foo.a(bar.o) then ‘$%’ is bar.o and ‘$@’
+#     is foo.a. ‘$%’ is empty when the target is not an archive member.
+#
+#$< - The name of the first prerequisite. If the target got its recipe from
+#     an implicit rule, this will be the first prerequisite added by the
+#     implicit rule (see Implicit Rules).
+#
+#$? - The names of all the prerequisites that are newer than the target, with
+#     spaces between them. For prerequisites which are archive members, only
+#     the named member is used (see Archives).
+#
+#$^ - The names of all the prerequisites, with spaces between them. For
+#     prerequisites which are archive members, only the named member is used
+#     (see Archives). A target has only one prerequisite on each other file
+#     it depends on, no matter how many times each file is listed as a
+#     prerequisite. So if you list a prerequisite more than once for a target,
+#     the value of $^ contains just one copy of the name. This list does not
+#     contain any of the order-only prerequisites; for those see
+#     the ‘$|’ variable, below.
+#
+#$+ - This is like ‘$^’, but prerequisites listed more than once are
+#     duplicated in the order they were listed in the makefile. This is
+#     primarily useful for use in linking commands where it is meaningful
+#     to repeat library file names in a particular order.
+#
+#$| - The names of all the order-only prerequisites, with spaces between them.
+#
+#$* - The stem with which an implicit rule matches (see How Patterns Match).
+#     If the target is dir/a.foo.b and the target pattern is a.%.b then the
+#     stem is dir/foo. The stem is useful for constructing names of related
+#     files. In a static pattern rule, the stem is part of the file name that
+#     matched the ‘%’ in the target pattern.
+#
+#     In an explicit rule, there is no stem; so ‘$*’ cannot be determined in
+#     that way. Instead, if the target name ends with a recognized suffix
+#     (see Old-Fashioned Suffix Rules), ‘$*’ is set to the target name minus
+#     the suffix. For example, if the target name is ‘foo.c’, then ‘$*’ is
+#     set to ‘foo’, since ‘.c’ is a suffix. GNU make does this bizarre thing
+#     only for compatibility with other implementations of make. You should
+#     generally avoid using ‘$*’ except in implicit rules or static pattern rules.
+#
+#If the target name in an explicit rule does not end with a recognized suffix, ‘$*’ is set to the empty string for that rule.
+
