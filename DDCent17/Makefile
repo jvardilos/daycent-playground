@@ -86,7 +86,7 @@
  FLOW     = flowstak.f90
 
 # directory for the executables When commented place them in the working directory
- DEST     = /home/jacob/modelrocket/daycent-playground/
+ DEST     = /usr/bin/
 
 # optimization level
  OPT        = -O3  # release
