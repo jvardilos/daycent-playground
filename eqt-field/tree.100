@@ -1,0 +1,2053 @@
+LEMON    From citrus- CENTURY
+0       DECID     
+2.5     PRDX(2)  0.58 saw
+30.     PPDF(1)  28 saw 
+40.     PPDF(2) 6/21/05 mark   
+0.5     PPDF(3)   
+2.5     PPDF(4)   
+17      CERFOR(1,1,1) EM leaves
+300     CERFOR(1,1,2)
+300     CERFOR(1,1,3)
+26      CERFOR(1,2,1) EM fine root
+250     CERFOR(1,2,2)
+250     CERFOR(1,2,3)
+70      CERFOR(1,3,1) EM fine branch
+1100    CERFOR(1,3,2)
+1100    CERFOR(1,3,3)
+85      CERFOR(1,4,1) EM large wood
+4000    CERFOR(1,4,2)
+4000    CERFOR(1,4,3)
+60      CERFOR(1,5,1) EM coarse roots
+4000    CERFOR(1,5,2)
+4000    CERFOR(1,5,3)
+25.0    CERFOR(1,6,1) saw
+0.0     CERFOR(1,6,2) min C/P Fruit
+0.0     CERFOR(1,6,3) min C/S Fruit
+55      CERFOR(2,1,1) EM leaves max #50, MJC 4/19/17, published data
+300     CERFOR(2,1,2)
+300     CERFOR(2,1,3)
+50      CERFOR(2,2,1) EM fine root max
+250     CERFOR(2,2,2)
+250     CERFOR(2,2,3)
+55      CERFOR(2,3,1) EM fine branch max
+1100    CERFOR(2,3,2)
+1100    CERFOR(2,3,3)
+106     CERFOR(2,4,1) EM large wood #95, MJC 4/19/17, published data
+4000    CERFOR(2,4,2)
+4000    CERFOR(2,4,3)
+71      CERFOR(2,5,1) EM coarse roots
+4000    CERFOR(2,5,2)
+4000    CERFOR(2,5,3)
+35.      CERFOR(2,6,1) saw
+0.0     CERFOR(2,6,2) max C/P Fruit
+0.0     CERFOR(2,6,3) max C/S Fruit
+19.33   CERFOR(3,1,1) EM leaves
+300     CERFOR(3,1,2)
+300     CERFOR(3,1,3)
+30      CERFOR(3,2,1) EM fine root
+250     CERFOR(3,2,2)
+250     CERFOR(3,2,3)
+71      CERFOR(3,3,1) EM fine branch
+1100    CERFOR(3,3,2)
+1100    CERFOR(3,3,3)
+92      CERFOR(3,4,1) EM large wood
+4000    CERFOR(3,4,2)
+4000    CERFOR(3,4,3)
+66      CERFOR(3,5,1) EM coarse roots
+4000    CERFOR(3,5,2)
+4000    CERFOR(3,5,3)
+23.9    CERFOR(3,6,1) initial C/N Fruit (from leaf EM)
+0.0     CERFOR(3,6,2) initial C/P Fruit
+0.0     CERFOR(3,6,3) initial C/S Fruit
+1.5     DECW1         EM from TMMX 06/18/07
+0.5     DECW2         EM from TMMX 06/18/07
+0.6     DECW3         EM from TMMX 06/18/07 
+0.08   FCFRAC(1,1) leaves   #MJC: Values for Juv growth taken from Literature 4/25/2017, 0.18, 0.14
+0.19    FCFRAC(2,1) fine roots # 0.17
+0.08    FCFRAC(3,1) fine branch # 0.12
+0.48    FCFRAC(4,1) large wood # 0.46, 0.50
+0.17    FCFRAC(5,1) coarse roots
+0.15    FCFRAC(6,1) C allocation Fruit Juv (EM), 0.20, 0.30
+0.09    FCFRAC(1,2) leaves, 0.17, 0.15 #Taken from literature
+0.17    FCFRAC(2,2) fine roots, 0.21, 0.15 #Taken from Lit for citrus
+0.16    FCFRAC(3,2) fine branches, 0.25, 0.15 #Taken from Lit for citrus 
+0.46    FCFRAC(4,2) large wood, 0.20, 0.26 #Taken from Lit for citrus
+0.12    FCFRAC(5,2) coarse roots, 0.17 #Taken from Lit for citrus
+0.30    FCFRAC(6,2)  C allocation Fruit Mat (EM), 0.80, 0.6
+0.20      TFRTCN(1)
+0.20      TFRTCN(2)
+0.20      TFRTCW(1)
+0.20      TFRTCW(2)
+1.       FNFTIM'     Fruit fall time in months (EM)
+1700.   FNGDDL(1) length fruit growing in DD (EM)
+12      FNGDDL(2) Base temp for growing DD (EM), 12.8
+40.     FNGDDL(2) Max temp for growing DD
+0.025   LEAFDR(1)  
+0.025   LEAFDR(2) 
+0.025   LEAFDR(3) 
+0.025   LEAFDR(4) 
+0.025   LEAFDR(5) 
+0.025   LEAFDR(6) 
+0.025   LEAFDR(7) 
+0.025   LEAFDR(8) 
+0.025   LEAFDR(9) 
+0.025   LEAFDR(10)
+0.025   LEAFDR(11)
+0.025   LEAFDR(12)
+0.010   BTOLAI    
+249.37  KLAI   EM 06/16/07  #171.49, 249.37 
+-0.47   LAITOP    
+9.0     MAXLAI #EM 06/16/07, 3.0 #value of 10 taken from literature for Citrus
+0.0     MAXLDR    
+0.5     FORRTF(1) 
+0.0     FORRTF(2) 
+0.0     FORRTF(3) 
+1500.0  SAPK   EM 07/21/07  from Tea     
+4.0     SWOLD  6  saw
+0.036   WDLIG(1) EM 06/14/07 
+0.2     WDLIG(2)  
+0.18    WDLIG(3) EM 06/14/07 
+0.18    WDLIG(4) EM 06/14/07
+0.27    WDLIG(5) EM 06/15/07
+0.13    WDLIG(6) ligin fruit EM 07/09/07
+0.00    WOODDR(1) 
+0.04    WOODDR(2) fine roots, 
+0.004   WOODDR(3) fine branches, EM
+0.004   WOODDR(4) large wood, EM
+0.008   WOODDR(5) coarse roots,
+0.       WOODDR(6) monthly death rate fruit growth
+0.495	WOODDR(7) monthly death rate fine roots mature
+0.20	WRDSRFC #fine roots transferred to surface litter
+0.90	WMRTFRAC #mature root fraction 79
+0.0     SNFXMX(2) 
+0.0     DEL13C    
+0.0     CO2IPR(2) 
+0.0     CO2ITR(2) 
+0.0     CO2ICE(2,1,1)
+0.0     CO2ICE(2,1,2)
+0.0     CO2ICE(2,1,3)
+0.0     CO2ICE(2,2,1)
+0.0     CO2ICE(2,2,2)
+0.0     CO2ICE(2,2,3)
+0.0     CO2IRS(2) 
+1.0     BASFC2    
+400.0   BASFCT    
+1.0     SITPOT
+13.0      MAXNP
+0.20000  	'FKMRSPMX(1)'
+0.15000  	'FKMRSPMX(2)'
+0.00160  	'FKMRSPMX(3)'
+0.00030  	'FKMRSPMX(4)'
+0.00400  	'FKMRSPMX(5)'
+0.05000  	'FKMRSPMX(6)'
+0.05000  	'FKMRSPMX(7)'
+0.00000  	'FMRSPLAI(1)'
+0.00000  	'FMRSPLAI(2)'
+0.75000  	'FMRSPLAI(3)'
+1.00000  	'FMRSPLAI(4)'
+2.00000  	'FMRSPLAI(5)'
+2.00000  	'FMRSPLAI(6)'
+2.00000  	'FMRSPLAI(7)'
+0.23300  	'FGRESP(1)'
+0.23300  	'FGRESP(2)'
+0.23300  	'FGRESP(3)'
+0.23300  	'FGRESP(4)'
+0.23300  	'FGRESP(5)'
+0.23300  	'FGRESP(6)'
+0.23300  	'FGRESP(7)'
+0.50000  	'NO3PREF(2)'
+7.00000  	'TLAYPG'
+0.08000  	'TMIX'
+7.00000  	'TMPLFF'
+10.00000  	'TMPLFS'
+120.0  	'FURGDYS'
+1.0  	'FLSGRES'
+0.12  	  'TMXTURN'
+1.0    	'NPP2CS'
+0.2  	  'FAVAIL(1)'
+0.3  	  'FAVAIL(3)'
+0.4  	  'FAVAIL(4)'
+0.5  	  'FAVAIL(5)'
+0.6  	  'FAVAIL(6)'
+NECT     #Nectarines
+1         DECID
+2.5       PRDX(2)  0.4   0.5 EM
+25.       PPDF(1) widespread use of this value as base 10 JRS
+36.       PPDF(2) 6/21/05 mark 
+0.5       PPDF(3)
+2.5       PPDF(4)
+11        CERFOR(1,1,1) EM leaves
+300       CERFOR(1,1,2)
+300       CERFOR(1,1,3)
+21        CERFOR(1,2,1) EM fine root
+250       CERFOR(1,2,2)
+250       CERFOR(1,2,3)
+70        CERFOR(1,3,1) EM fine branch
+1100      CERFOR(1,3,2)
+1100      CERFOR(1,3,3)
+68        CERFOR(1,4,1) EM large wood
+4000      CERFOR(1,4,2)
+4000      CERFOR(1,4,3)
+60        CERFOR(1,5,1) EM coarse roots
+4000      CERFOR(1,5,2)
+4000      CERFOR(1,5,3)
+24.0      CERFOR(1,6,1) min C/N Fruit (from leaf EM)
+0.0       CERFOR(1,6,2) min C/P Fruit
+0.0       CERFOR(1,6,3) min C/S Fruit
+17        CERFOR(2,1,1) EM leaves max
+300       CERFOR(2,1,2)
+300       CERFOR(2,1,3)
+40        CERFOR(2,2,1) EM fine root max
+250       CERFOR(2,2,2)
+250       CERFOR(2,2,3)
+136       CERFOR(2,3,1) EM fine branch max
+1100      CERFOR(2,3,2)
+1100      CERFOR(2,3,3)
+280       CERFOR(2,4,1) EM large wood
+4000      CERFOR(2,4,2)
+4000      CERFOR(2,4,3)
+88        CERFOR(2,5,1) EM coarse roots
+4000      CERFOR(2,5,2)
+4000      CERFOR(2,5,3)
+62        CERFOR(2,6,1) max C/N Fruit (from leaf EM)
+0.0       CERFOR(2,6,2) max C/P Fruit
+0.0       CERFOR(2,6,3) max C/S Fruit
+12        CERFOR(3,1,1) EM leaves
+300       CERFOR(3,1,2)
+300       CERFOR(3,1,3)
+30        CERFOR(3,2,1) EM fine root
+250       CERFOR(3,2,2)
+250       CERFOR(3,2,3)
+71        CERFOR(3,3,1) EM fine branch
+1100      CERFOR(3,3,2)
+1100      CERFOR(3,3,3)
+84        CERFOR(3,4,1) EM large wood
+4000      CERFOR(3,4,2)
+4000      CERFOR(3,4,3)
+66        CERFOR(3,5,1) EM coarse roots
+4000      CERFOR(3,5,2)
+4000      CERFOR(3,5,3)
+25        CERFOR(3,6,1) initial C/N Fruit (from leaf EM)
+0.0       CERFOR(3,6,2) initial C/P Fruit
+0.0       CERFOR(3,6,3) initial C/S Fruit
+1.5       DECW1         EM from TMMX 06/18/07
+0.5       DECW2         EM from TMMX 06/18/07
+0.6       DECW3         EM from TMMX 06/18/07
+0.32      FCFRAC(1,1)   leaves
+0.12      FCFRAC(2,1)   fine roots
+0.1      FCFRAC(3,1)   fine branch
+0.34      FCFRAC(4,1)   large wood
+0.12      FCFRAC(5,1)   coarse roots
+0.10      FCFRAC(6,1)   C allocation Fruit Juv (EM)
+0.30      FCFRAC(1,2)   leaves
+0.07      FCFRAC(2,2)   fine roots
+0.21      FCFRAC(3,2)   0.25  fine branches
+0.25      FCFRAC(4,2)   large wood
+0.07      FCFRAC(5,2)   0.14  coarse roots
+0.20      FCFRAC(6,2)   C allocation Fruit  
+0.20      TFRTCN(1) #nutrient stress
+0.04      TFRTCN(2)
+0.25      TFRTCW(1) #water stress
+0.06      TFRTCW(2)
+1         FNFTIM'     Fruit fall time in months (EM)
+2400.     FNGDDL(1) length fruit growing in DD 1700(EM) Nappa GDD 2916
+7.        FNGDDL(2) Base temp for growing DD (EM)
+35.       FNGDDL(3) Max temp for growing DD
+0.00      LEAFDR(1)  
+0.00      LEAFDR(2)  
+0.00      LEAFDR(3)  
+0.000     LEAFDR(4) 
+0.000     LEAFDR(5)  
+0.000     LEAFDR(6)  
+0.000     LEAFDR(7)  
+0.000     LEAFDR(8) 
+0.000     LEAFDR(9)  
+1.0       LEAFDR(10)  
+0.0       LEAFDR(11)  
+0.0       LEAFDR(12)  
+0.01      BTOLAI    0.01  .8661 .012632 .042969
+500.0     KLAI   268.0   EM 06/16/07
+-0.47     LAITOP -0.30 -0.47
+5.0       MAXLAI  3.5
+0.0       MAXLDR
+0.5       FORRTF(1)
+0.0       FORRTF(2)
+0.0       FORRTF(3)
+1500.0    SAPK   EM 07/21/07  from Tea
+4         SWOLD  
+0.036     WDLIG(1) EM 06/14/07
+0.2       WDLIG(2)
+0.18      WDLIG(3) EM 06/14/07
+0.18      WDLIG(4) EM 06/14/07
+0.27      WDLIG(5) EM 06/15/07
+0.13      WDLIG(6) ligin fruit EM 07/09/07
+1.00      WOODDR(1)  leaves 1.00  .8291
+0.04      WOODDR(2) fine roots juv 0.4,
+0.004     WOODDR(3) fine branches .004, EM
+0.005     WOODDR(4) large wood, .004 EM
+0.008     WOODDR(5) coarse roots .008,
+0.0       WOODDR(6) monthly death rate fruit growth GRAPE
+0.395     WOODDR(7) monthly death rate fine roots mature
+0.20      WRDSRFC #fine roots transferred to surface litter
+0.79      WMRTFRAC #mature root fraction
+0.0       SNFXMX(2)
+0.0       DEL13C
+0.0       CO2IPR(2)
+0.0       CO2ITR(2)
+0.0       CO2ICE(2,1,1)
+0.0       CO2ICE(2,1,2)
+0.0       CO2ICE(2,1,3)
+0.0       CO2ICE(2,2,1)
+0.0       CO2ICE(2,2,2)
+0.0       CO2ICE(2,2,3)
+0.0       CO2IRS(2)
+1.00      BASFC2
+400.00          BASFCT
+0.5             SITPOT #higher value gives pref to grass not tree 
+13.0            MAXNP
+0.20000  	'FKMRSPMX(1)'
+0.15000  	'FKMRSPMX(2)'
+0.00160  	'FKMRSPMX(3)'
+0.00030  	'FKMRSPMX(4)'
+0.00400  	'FKMRSPMX(5)'
+0.05000  	'FKMRSPMX(6)'
+0.05000  	'FKMRSPMX(7)'
+0.00000  	'FMRSPLAI(1)'
+0.00000  	'FMRSPLAI(2)'
+0.75000  	'FMRSPLAI(3)'
+1.00000  	'FMRSPLAI(4)'
+2.00000  	'FMRSPLAI(5)'
+2.00000  	'FMRSPLAI(6)'
+2.00000  	'FMRSPLAI(7)'
+0.23300  	'FGRESP(1)'
+0.23300  	'FGRESP(2)'
+0.23300  	'FGRESP(3)'
+0.23300  	'FGRESP(4)'
+0.23300  	'FGRESP(5)'
+0.23300  	'FGRESP(6)'
+0.23300  	'FGRESP(7)'
+0.50000  	'NO3PREF(2)'
+8.00000  	'TLAYPG'
+0.08000  	'TMIX'
+7.00000  	'TMPLFF'
+10.00000  	'TMPLFS'
+120.0  	        'FURGDYS'
+1.0  	        'FLSGRES'
+0.12  	        'TMXTURN'
+1.0  	        'NPP2CS'
+0.1  	        'FAVAIL(1)'
+0.3  	        'FAVAIL(3)'
+0.4  	        'FAVAIL(4)'
+0.5  	        'FAVAIL(5)'
+0.6  	        'FAVAIL(6)'
+PEACH2    # shorter season peach from - Pistachio from the ALMOND
+1         DECID
+2.5       PRDX(2)  0.4   0.5 EM
+25.       PPDF(1) widespread use of this value as base 10 JRS
+36.       PPDF(2) 6/21/05 mark 
+0.5       PPDF(3)
+2.5       PPDF(4)
+11        CERFOR(1,1,1) EM leaves
+300       CERFOR(1,1,2)
+300       CERFOR(1,1,3)
+21        CERFOR(1,2,1) EM fine root
+250       CERFOR(1,2,2)
+250       CERFOR(1,2,3)
+70        CERFOR(1,3,1) EM fine branch
+1100      CERFOR(1,3,2)
+1100      CERFOR(1,3,3)
+68        CERFOR(1,4,1) EM large wood
+4000      CERFOR(1,4,2)
+4000      CERFOR(1,4,3)
+60        CERFOR(1,5,1) EM coarse roots
+4000      CERFOR(1,5,2)
+4000      CERFOR(1,5,3)
+40.0      CERFOR(1,6,1) min C/N Fruit 
+0.0       CERFOR(1,6,2) min C/P Fruit
+0.0       CERFOR(1,6,3) min C/S Fruit
+17        CERFOR(2,1,1) EM leaves max
+300       CERFOR(2,1,2)
+300       CERFOR(2,1,3)
+40        CERFOR(2,2,1) EM fine root max
+250       CERFOR(2,2,2)
+250       CERFOR(2,2,3)
+136       CERFOR(2,3,1) EM fine branch max
+1100      CERFOR(2,3,2)
+1100      CERFOR(2,3,3)
+280       CERFOR(2,4,1) EM large wood
+4000      CERFOR(2,4,2)
+4000      CERFOR(2,4,3)
+88        CERFOR(2,5,1) EM coarse roots
+4000      CERFOR(2,5,2)
+4000      CERFOR(2,5,3)
+100        CERFOR(2,6,1) max C/N Fruit 
+0.0       CERFOR(2,6,2) max C/P Fruit
+0.0       CERFOR(2,6,3) max C/S Fruit
+12        CERFOR(3,1,1) EM leaves
+300       CERFOR(3,1,2)
+300       CERFOR(3,1,3)
+30        CERFOR(3,2,1) EM fine root
+250       CERFOR(3,2,2)
+250       CERFOR(3,2,3)
+71        CERFOR(3,3,1) EM fine branch
+1100      CERFOR(3,3,2)
+1100      CERFOR(3,3,3)
+84        CERFOR(3,4,1) EM large wood
+4000      CERFOR(3,4,2)
+4000      CERFOR(3,4,3)
+66        CERFOR(3,5,1) EM coarse roots
+4000      CERFOR(3,5,2)
+4000      CERFOR(3,5,3)
+60        CERFOR(3,6,1) initial C/N Fruit (from leaf EM)
+0.0       CERFOR(3,6,2) initial C/P Fruit
+0.0       CERFOR(3,6,3) initial C/S Fruit
+1.5       DECW1         EM from TMMX 06/18/07
+0.5       DECW2         EM from TMMX 06/18/07
+0.6       DECW3         EM from TMMX 06/18/07
+0.32      FCFRAC(1,1)   leaves
+0.12      FCFRAC(2,1)   fine roots
+0.1      FCFRAC(3,1)   fine branch
+0.34      FCFRAC(4,1)   large wood
+0.12      FCFRAC(5,1)   coarse roots
+0.10      FCFRAC(6,1)   C allocation Fruit Juv (EM)
+0.30      FCFRAC(1,2)   leaves
+0.07      FCFRAC(2,2)   fine roots
+0.21      FCFRAC(3,2)   0.25  fine branches
+0.25      FCFRAC(4,2)   large wood
+0.07      FCFRAC(5,2)   0.14  coarse roots
+0.20      FCFRAC(6,2)   C allocation Fruit  
+0.20      TFRTCN(1) #nutrient stress
+0.04      TFRTCN(2)
+0.25      TFRTCW(1) #water stress
+0.06      TFRTCW(2)
+1         FNFTIM'     Fruit fall time in months (EM)
+2000.     FNGDDL(1) length fruit growing in DD 2400
+7.        FNGDDL(2) Base temp for growing DD (EM)
+35.       FNGDDL(3) Max temp for growing DD
+0.00      LEAFDR(1)  
+0.00      LEAFDR(2)  
+0.00      LEAFDR(3)  
+0.000     LEAFDR(4) 
+0.000     LEAFDR(5)  
+0.000     LEAFDR(6)  
+0.000     LEAFDR(7)  
+0.000     LEAFDR(8) 
+0.000     LEAFDR(9)  
+1.0       LEAFDR(10)  
+0.0       LEAFDR(11)  
+0.0       LEAFDR(12)  
+0.01      BTOLAI    0.01  .8661 .012632 .042969
+500.0     KLAI   268.0   EM 06/16/07
+-0.47     LAITOP -0.30 -0.47
+5.0       MAXLAI  3.5
+0.0       MAXLDR
+0.5       FORRTF(1)
+0.0       FORRTF(2)
+0.0       FORRTF(3)
+1500.0    SAPK   EM 07/21/07  from Tea
+3         SWOLD  5 saw
+0.036     WDLIG(1) EM 06/14/07
+0.2       WDLIG(2)
+0.18      WDLIG(3) EM 06/14/07
+0.18      WDLIG(4) EM 06/14/07
+0.27      WDLIG(5) EM 06/15/07
+0.13      WDLIG(6) ligin fruit EM 07/09/07
+1.00      WOODDR(1)  leaves 1.00  .8291
+0.04      WOODDR(2) fine roots juv 0.4,
+0.004     WOODDR(3) fine branches .004, EM
+0.005     WOODDR(4) large wood, .004 EM
+0.008     WOODDR(5) coarse roots .008,
+0.0       WOODDR(6) monthly death rate fruit growth GRAPE
+0.395     WOODDR(7) monthly death rate fine roots mature
+0.20      WRDSRFC #fine roots transferred to surface litter
+0.79      WMRTFRAC #mature root fraction
+0.0       SNFXMX(2)
+0.0       DEL13C
+0.0       CO2IPR(2)
+0.0       CO2ITR(2)
+0.0       CO2ICE(2,1,1)
+0.0       CO2ICE(2,1,2)
+0.0       CO2ICE(2,1,3)
+0.0       CO2ICE(2,2,1)
+0.0       CO2ICE(2,2,2)
+0.0       CO2ICE(2,2,3)
+0.0       CO2IRS(2)
+1.00      BASFC2
+400.00          BASFCT
+0.5             SITPOT #higher value gives pref to grass not tree 
+13.0            MAXNP
+0.20000  	'FKMRSPMX(1)'
+0.15000  	'FKMRSPMX(2)'
+0.00160  	'FKMRSPMX(3)'
+0.00030  	'FKMRSPMX(4)'
+0.00400  	'FKMRSPMX(5)'
+0.05000  	'FKMRSPMX(6)'
+0.05000  	'FKMRSPMX(7)'
+0.00000  	'FMRSPLAI(1)'
+0.00000  	'FMRSPLAI(2)'
+0.75000  	'FMRSPLAI(3)'
+1.00000  	'FMRSPLAI(4)'
+2.00000  	'FMRSPLAI(5)'
+2.00000  	'FMRSPLAI(6)'
+2.00000  	'FMRSPLAI(7)'
+0.23300  	'FGRESP(1)'
+0.23300  	'FGRESP(2)'
+0.23300  	'FGRESP(3)'
+0.23300  	'FGRESP(4)'
+0.23300  	'FGRESP(5)'
+0.23300  	'FGRESP(6)'
+0.23300  	'FGRESP(7)'
+0.50000  	'NO3PREF(2)'
+8.00000  	'TLAYPG'
+0.08000  	'TMIX'
+7.00000  	'TMPLFF'
+10.00000  	'TMPLFS'
+120.0  	        'FURGDYS'
+1.0  	        'FLSGRES'
+0.12  	        'TMXTURN'
+1.0  	        'NPP2CS'
+0.1  	        'FAVAIL(1)'
+0.3  	        'FAVAIL(3)'
+0.4  	        'FAVAIL(4)'
+0.5  	        'FAVAIL(5)'
+0.6  	        'FAVAIL(6)'
+CHERRY      #Pistachio Copied over from the ALMOND crop as a baseline
+1         DECID
+2.5       PRDX(2)  0.4   0.5 EM
+25.       PPDF(1) widespread use of this value as base 10 JRS
+36.       PPDF(2) 6/21/05 mark 
+0.5       PPDF(3)
+2.5       PPDF(4)
+11        CERFOR(1,1,1) EM leaves
+300       CERFOR(1,1,2)
+300       CERFOR(1,1,3)
+21        CERFOR(1,2,1) EM fine root
+250       CERFOR(1,2,2)
+250       CERFOR(1,2,3)
+70        CERFOR(1,3,1) EM fine branch
+1100      CERFOR(1,3,2)
+1100      CERFOR(1,3,3)
+68        CERFOR(1,4,1) EM large wood
+4000      CERFOR(1,4,2)
+4000      CERFOR(1,4,3)
+60        CERFOR(1,5,1) EM coarse roots
+4000      CERFOR(1,5,2)
+4000      CERFOR(1,5,3)
+24.0      CERFOR(1,6,1) min C/N Fruit (from leaf EM)
+0.0       CERFOR(1,6,2) min C/P Fruit
+0.0       CERFOR(1,6,3) min C/S Fruit
+17        CERFOR(2,1,1) EM leaves max
+300       CERFOR(2,1,2)
+300       CERFOR(2,1,3)
+40        CERFOR(2,2,1) EM fine root max
+250       CERFOR(2,2,2)
+250       CERFOR(2,2,3)
+136       CERFOR(2,3,1) EM fine branch max
+1100      CERFOR(2,3,2)
+1100      CERFOR(2,3,3)
+280       CERFOR(2,4,1) EM large wood
+4000      CERFOR(2,4,2)
+4000      CERFOR(2,4,3)
+88        CERFOR(2,5,1) EM coarse roots
+4000      CERFOR(2,5,2)
+4000      CERFOR(2,5,3)
+62        CERFOR(2,6,1) max C/N Fruit (from leaf EM)
+0.0       CERFOR(2,6,2) max C/P Fruit
+0.0       CERFOR(2,6,3) max C/S Fruit
+12        CERFOR(3,1,1) EM leaves
+300       CERFOR(3,1,2)
+300       CERFOR(3,1,3)
+30        CERFOR(3,2,1) EM fine root
+250       CERFOR(3,2,2)
+250       CERFOR(3,2,3)
+71        CERFOR(3,3,1) EM fine branch
+1100      CERFOR(3,3,2)
+1100      CERFOR(3,3,3)
+84        CERFOR(3,4,1) EM large wood
+4000      CERFOR(3,4,2)
+4000      CERFOR(3,4,3)
+66        CERFOR(3,5,1) EM coarse roots
+4000      CERFOR(3,5,2)
+4000      CERFOR(3,5,3)
+25        CERFOR(3,6,1) initial C/N Fruit (from leaf EM)
+0.0       CERFOR(3,6,2) initial C/P Fruit
+0.0       CERFOR(3,6,3) initial C/S Fruit
+1.5       DECW1         EM from TMMX 06/18/07
+0.5       DECW2         EM from TMMX 06/18/07
+0.6       DECW3         EM from TMMX 06/18/07
+0.32      FCFRAC(1,1)   leaves
+0.12      FCFRAC(2,1)   fine roots
+0.1      FCFRAC(3,1)   fine branch
+0.34      FCFRAC(4,1)   large wood
+0.12      FCFRAC(5,1)   coarse roots
+0.10      FCFRAC(6,1)   C allocation Fruit Juv (EM)
+0.30      FCFRAC(1,2)   leaves
+0.07      FCFRAC(2,2)   fine roots
+0.21      FCFRAC(3,2)   0.25  fine branches
+0.25      FCFRAC(4,2)   large wood
+0.07      FCFRAC(5,2)   0.14  coarse roots
+0.20      FCFRAC(6,2)   C allocation Fruit  
+0.20      TFRTCN(1) #nutrient stress
+0.04      TFRTCN(2)
+0.25      TFRTCW(1) #water stress
+0.06      TFRTCW(2)
+1         FNFTIM'     Fruit fall time in months (EM)
+2400.     FNGDDL(1) length fruit growing in DD 1700(EM) Nappa GDD 2916
+7.        FNGDDL(2) Base temp for growing DD (EM)
+35.       FNGDDL(3) Max temp for growing DD
+0.00      LEAFDR(1)  
+0.00      LEAFDR(2)  
+0.00      LEAFDR(3)  
+0.000     LEAFDR(4) 
+0.000     LEAFDR(5)  
+0.000     LEAFDR(6)  
+0.000     LEAFDR(7)  
+0.000     LEAFDR(8) 
+0.000     LEAFDR(9)  
+1.0       LEAFDR(10)  
+0.0       LEAFDR(11)  
+0.0       LEAFDR(12)  
+0.01      BTOLAI    0.01  .8661 .012632 .042969
+500.0     KLAI   268.0   EM 06/16/07
+-0.47     LAITOP -0.30 -0.47
+5.0       MAXLAI  3.5
+0.0       MAXLDR
+0.5       FORRTF(1)
+0.0       FORRTF(2)
+0.0       FORRTF(3)
+1500.0    SAPK   EM 07/21/07  from Tea
+5         SWOLD  
+0.036     WDLIG(1) EM 06/14/07
+0.2       WDLIG(2)
+0.18      WDLIG(3) EM 06/14/07
+0.18      WDLIG(4) EM 06/14/07
+0.27      WDLIG(5) EM 06/15/07
+0.13      WDLIG(6) ligin fruit EM 07/09/07
+1.00      WOODDR(1)  leaves 1.00  .8291
+0.04      WOODDR(2) fine roots juv 0.4,
+0.004     WOODDR(3) fine branches .004, EM
+0.005     WOODDR(4) large wood, .004 EM
+0.008     WOODDR(5) coarse roots .008,
+0.0       WOODDR(6) monthly death rate fruit growth GRAPE
+0.395     WOODDR(7) monthly death rate fine roots mature
+0.20      WRDSRFC #fine roots transferred to surface litter
+0.79      WMRTFRAC #mature root fraction
+0.0       SNFXMX(2)
+0.0       DEL13C
+0.0       CO2IPR(2)
+0.0       CO2ITR(2)
+0.0       CO2ICE(2,1,1)
+0.0       CO2ICE(2,1,2)
+0.0       CO2ICE(2,1,3)
+0.0       CO2ICE(2,2,1)
+0.0       CO2ICE(2,2,2)
+0.0       CO2ICE(2,2,3)
+0.0       CO2IRS(2)
+1.00      BASFC2
+400.00          BASFCT
+0.5             SITPOT #higher value gives pref to grass not tree 
+13.0            MAXNP
+0.20000  	'FKMRSPMX(1)'
+0.15000  	'FKMRSPMX(2)'
+0.00160  	'FKMRSPMX(3)'
+0.00030  	'FKMRSPMX(4)'
+0.00400  	'FKMRSPMX(5)'
+0.05000  	'FKMRSPMX(6)'
+0.05000  	'FKMRSPMX(7)'
+0.00000  	'FMRSPLAI(1)'
+0.00000  	'FMRSPLAI(2)'
+0.75000  	'FMRSPLAI(3)'
+1.00000  	'FMRSPLAI(4)'
+2.00000  	'FMRSPLAI(5)'
+2.00000  	'FMRSPLAI(6)'
+2.00000  	'FMRSPLAI(7)'
+0.23300  	'FGRESP(1)'
+0.23300  	'FGRESP(2)'
+0.23300  	'FGRESP(3)'
+0.23300  	'FGRESP(4)'
+0.23300  	'FGRESP(5)'
+0.23300  	'FGRESP(6)'
+0.23300  	'FGRESP(7)'
+0.50000  	'NO3PREF(2)'
+8.00000  	'TLAYPG'
+0.08000  	'TMIX'
+7.00000  	'TMPLFF'
+10.00000  	'TMPLFS'
+120.0  	        'FURGDYS'
+1.0  	        'FLSGRES'
+0.12  	        'TMXTURN'
+1.0  	        'NPP2CS'
+0.1  	        'FAVAIL(1)'
+0.3  	        'FAVAIL(3)'
+0.4  	        'FAVAIL(4)'
+0.5  	        'FAVAIL(5)'
+0.6  	        'FAVAIL(6)'
+PLUM      #Pistachio Copied over from the ALMOND crop as a baseline
+1         DECID
+2.5       PRDX(2)  0.4   0.5 EM
+25.       PPDF(1) widespread use of this value as base 10 JRS
+36.       PPDF(2) 6/21/05 mark 
+0.5       PPDF(3)
+2.5       PPDF(4)
+11        CERFOR(1,1,1) EM leaves
+300       CERFOR(1,1,2)
+300       CERFOR(1,1,3)
+21        CERFOR(1,2,1) EM fine root
+250       CERFOR(1,2,2)
+250       CERFOR(1,2,3)
+70        CERFOR(1,3,1) EM fine branch
+1100      CERFOR(1,3,2)
+1100      CERFOR(1,3,3)
+68        CERFOR(1,4,1) EM large wood
+4000      CERFOR(1,4,2)
+4000      CERFOR(1,4,3)
+60        CERFOR(1,5,1) EM coarse roots
+4000      CERFOR(1,5,2)
+4000      CERFOR(1,5,3)
+24.0      CERFOR(1,6,1) min C/N Fruit (from leaf EM)
+0.0       CERFOR(1,6,2) min C/P Fruit
+0.0       CERFOR(1,6,3) min C/S Fruit
+17        CERFOR(2,1,1) EM leaves max
+300       CERFOR(2,1,2)
+300       CERFOR(2,1,3)
+40        CERFOR(2,2,1) EM fine root max
+250       CERFOR(2,2,2)
+250       CERFOR(2,2,3)
+136       CERFOR(2,3,1) EM fine branch max
+1100      CERFOR(2,3,2)
+1100      CERFOR(2,3,3)
+280       CERFOR(2,4,1) EM large wood
+4000      CERFOR(2,4,2)
+4000      CERFOR(2,4,3)
+88        CERFOR(2,5,1) EM coarse roots
+4000      CERFOR(2,5,2)
+4000      CERFOR(2,5,3)
+62        CERFOR(2,6,1) max C/N Fruit (from leaf EM)
+0.0       CERFOR(2,6,2) max C/P Fruit
+0.0       CERFOR(2,6,3) max C/S Fruit
+12        CERFOR(3,1,1) EM leaves
+300       CERFOR(3,1,2)
+300       CERFOR(3,1,3)
+30        CERFOR(3,2,1) EM fine root
+250       CERFOR(3,2,2)
+250       CERFOR(3,2,3)
+71        CERFOR(3,3,1) EM fine branch
+1100      CERFOR(3,3,2)
+1100      CERFOR(3,3,3)
+84        CERFOR(3,4,1) EM large wood
+4000      CERFOR(3,4,2)
+4000      CERFOR(3,4,3)
+66        CERFOR(3,5,1) EM coarse roots
+4000      CERFOR(3,5,2)
+4000      CERFOR(3,5,3)
+25        CERFOR(3,6,1) initial C/N Fruit (from leaf EM)
+0.0       CERFOR(3,6,2) initial C/P Fruit
+0.0       CERFOR(3,6,3) initial C/S Fruit
+1.5       DECW1         EM from TMMX 06/18/07
+0.5       DECW2         EM from TMMX 06/18/07
+0.6       DECW3         EM from TMMX 06/18/07
+0.32      FCFRAC(1,1)   leaves
+0.12      FCFRAC(2,1)   fine roots
+0.1      FCFRAC(3,1)   fine branch
+0.34      FCFRAC(4,1)   large wood
+0.12      FCFRAC(5,1)   coarse roots
+0.10      FCFRAC(6,1)   C allocation Fruit Juv (EM)
+0.30      FCFRAC(1,2)   leaves
+0.07      FCFRAC(2,2)   fine roots
+0.21      FCFRAC(3,2)   0.25  fine branches
+0.25      FCFRAC(4,2)   large wood
+0.07      FCFRAC(5,2)   0.14  coarse roots
+0.30      FCFRAC(6,2)   C allocation Fruit  
+0.20      TFRTCN(1) #nutrient stress
+0.04      TFRTCN(2)
+0.25      TFRTCW(1) #water stress
+0.06      TFRTCW(2)
+1         FNFTIM'     Fruit fall time in months (EM)
+2400.     FNGDDL(1) length fruit growing in DD 1700(EM) Nappa GDD 2916
+7.        FNGDDL(2) Base temp for growing DD (EM)
+35.       FNGDDL(3) Max temp for growing DD
+0.00      LEAFDR(1)  
+0.00      LEAFDR(2)  
+0.00      LEAFDR(3)  
+0.000     LEAFDR(4) 
+0.000     LEAFDR(5)  
+0.000     LEAFDR(6)  
+0.000     LEAFDR(7)  
+0.000     LEAFDR(8) 
+0.000     LEAFDR(9)  
+1.0       LEAFDR(10)  
+0.0       LEAFDR(11)  
+0.0       LEAFDR(12)  
+0.01      BTOLAI    0.01  .8661 .012632 .042969
+500.0     KLAI   268.0   EM 06/16/07
+-0.47     LAITOP -0.30 -0.47
+5.0       MAXLAI  3.5
+0.0       MAXLDR
+0.5       FORRTF(1)
+0.0       FORRTF(2)
+0.0       FORRTF(3)
+1500.0    SAPK   EM 07/21/07  from Tea
+4         SWOLD  
+0.036     WDLIG(1) EM 06/14/07
+0.2       WDLIG(2)
+0.18      WDLIG(3) EM 06/14/07
+0.18      WDLIG(4) EM 06/14/07
+0.27      WDLIG(5) EM 06/15/07
+0.13      WDLIG(6) ligin fruit EM 07/09/07
+1.00      WOODDR(1)  leaves 1.00  .8291
+0.04      WOODDR(2) fine roots juv 0.4,
+0.004     WOODDR(3) fine branches .004, EM
+0.005     WOODDR(4) large wood, .004 EM
+0.008     WOODDR(5) coarse roots .008,
+0.0       WOODDR(6) monthly death rate fruit growth GRAPE
+0.395     WOODDR(7) monthly death rate fine roots mature
+0.20      WRDSRFC #fine roots transferred to surface litter
+0.79      WMRTFRAC #mature root fraction
+0.0       SNFXMX(2)
+0.0       DEL13C
+0.0       CO2IPR(2)
+0.0       CO2ITR(2)
+0.0       CO2ICE(2,1,1)
+0.0       CO2ICE(2,1,2)
+0.0       CO2ICE(2,1,3)
+0.0       CO2ICE(2,2,1)
+0.0       CO2ICE(2,2,2)
+0.0       CO2ICE(2,2,3)
+0.0       CO2IRS(2)
+1.00      BASFC2
+400.00          BASFCT
+0.5             SITPOT #higher value gives pref to grass not tree 
+13.0            MAXNP
+0.20000  	'FKMRSPMX(1)'
+0.15000  	'FKMRSPMX(2)'
+0.00160  	'FKMRSPMX(3)'
+0.00030  	'FKMRSPMX(4)'
+0.00400  	'FKMRSPMX(5)'
+0.05000  	'FKMRSPMX(6)'
+0.05000  	'FKMRSPMX(7)'
+0.00000  	'FMRSPLAI(1)'
+0.00000  	'FMRSPLAI(2)'
+0.75000  	'FMRSPLAI(3)'
+1.00000  	'FMRSPLAI(4)'
+2.00000  	'FMRSPLAI(5)'
+2.00000  	'FMRSPLAI(6)'
+2.00000  	'FMRSPLAI(7)'
+0.23300  	'FGRESP(1)'
+0.23300  	'FGRESP(2)'
+0.23300  	'FGRESP(3)'
+0.23300  	'FGRESP(4)'
+0.23300  	'FGRESP(5)'
+0.23300  	'FGRESP(6)'
+0.23300  	'FGRESP(7)'
+0.50000  	'NO3PREF(2)'
+8.00000  	'TLAYPG'
+0.08000  	'TMIX'
+7.00000  	'TMPLFF'
+10.00000  	'TMPLFS'
+120.0  	        'FURGDYS'
+1.0  	        'FLSGRES'
+0.12  	        'TMXTURN'
+1.0  	        'NPP2CS'
+0.1  	        'FAVAIL(1)'
+0.3  	        'FAVAIL(3)'
+0.4  	        'FAVAIL(4)'
+0.5  	        'FAVAIL(5)'
+0.6  	        'FAVAIL(6)'
+PEACH      #Pistachio Copied over from the ALMOND crop as a baseline
+1         DECID
+2.5       PRDX(2)  0.4   0.5 EM
+25.       PPDF(1) widespread use of this value as base 10 JRS
+36.       PPDF(2) 6/21/05 mark 
+0.5       PPDF(3)
+2.5       PPDF(4)
+11        CERFOR(1,1,1) EM leaves
+300       CERFOR(1,1,2)
+300       CERFOR(1,1,3)
+21        CERFOR(1,2,1) EM fine root
+250       CERFOR(1,2,2)
+250       CERFOR(1,2,3)
+70        CERFOR(1,3,1) EM fine branch
+1100      CERFOR(1,3,2)
+1100      CERFOR(1,3,3)
+68        CERFOR(1,4,1) EM large wood
+4000      CERFOR(1,4,2)
+4000      CERFOR(1,4,3)
+60        CERFOR(1,5,1) EM coarse roots
+4000      CERFOR(1,5,2)
+4000      CERFOR(1,5,3)
+40.0      CERFOR(1,6,1) min C/N Fruit 
+0.0       CERFOR(1,6,2) min C/P Fruit
+0.0       CERFOR(1,6,3) min C/S Fruit
+17        CERFOR(2,1,1) EM leaves max
+300       CERFOR(2,1,2)
+300       CERFOR(2,1,3)
+40        CERFOR(2,2,1) EM fine root max
+250       CERFOR(2,2,2)
+250       CERFOR(2,2,3)
+136       CERFOR(2,3,1) EM fine branch max
+1100      CERFOR(2,3,2)
+1100      CERFOR(2,3,3)
+280       CERFOR(2,4,1) EM large wood
+4000      CERFOR(2,4,2)
+4000      CERFOR(2,4,3)
+88        CERFOR(2,5,1) EM coarse roots
+4000      CERFOR(2,5,2)
+4000      CERFOR(2,5,3)
+100        CERFOR(2,6,1) max C/N Fruit 
+0.0       CERFOR(2,6,2) max C/P Fruit
+0.0       CERFOR(2,6,3) max C/S Fruit
+12        CERFOR(3,1,1) EM leaves
+300       CERFOR(3,1,2)
+300       CERFOR(3,1,3)
+30        CERFOR(3,2,1) EM fine root
+250       CERFOR(3,2,2)
+250       CERFOR(3,2,3)
+71        CERFOR(3,3,1) EM fine branch
+1100      CERFOR(3,3,2)
+1100      CERFOR(3,3,3)
+84        CERFOR(3,4,1) EM large wood
+4000      CERFOR(3,4,2)
+4000      CERFOR(3,4,3)
+66        CERFOR(3,5,1) EM coarse roots
+4000      CERFOR(3,5,2)
+4000      CERFOR(3,5,3)
+60        CERFOR(3,6,1) initial C/N Fruit (from leaf EM)
+0.0       CERFOR(3,6,2) initial C/P Fruit
+0.0       CERFOR(3,6,3) initial C/S Fruit
+1.5       DECW1         EM from TMMX 06/18/07
+0.5       DECW2         EM from TMMX 06/18/07
+0.6       DECW3         EM from TMMX 06/18/07
+0.32      FCFRAC(1,1)   leaves
+0.12      FCFRAC(2,1)   fine roots
+0.1      FCFRAC(3,1)   fine branch
+0.34      FCFRAC(4,1)   large wood
+0.12      FCFRAC(5,1)   coarse roots
+0.10      FCFRAC(6,1)   C allocation Fruit Juv (EM)
+0.30      FCFRAC(1,2)   leaves
+0.07      FCFRAC(2,2)   fine roots
+0.21      FCFRAC(3,2)   0.25  fine branches
+0.25      FCFRAC(4,2)   large wood
+0.07      FCFRAC(5,2)   0.14  coarse roots
+0.30      FCFRAC(6,2)   C allocation Fruit  
+0.20      TFRTCN(1) #nutrient stress
+0.04      TFRTCN(2)
+0.25      TFRTCW(1) #water stress
+0.06      TFRTCW(2)
+1         FNFTIM'     Fruit fall time in months (EM)
+2700.     FNGDDL(1) length fruit growing in DD 2400
+7.        FNGDDL(2) Base temp for growing DD (EM)
+35.       FNGDDL(3) Max temp for growing DD
+0.00      LEAFDR(1)  
+0.00      LEAFDR(2)  
+0.00      LEAFDR(3)  
+0.000     LEAFDR(4) 
+0.000     LEAFDR(5)  
+0.000     LEAFDR(6)  
+0.000     LEAFDR(7)  
+0.000     LEAFDR(8) 
+0.000     LEAFDR(9)  
+1.0       LEAFDR(10)  
+0.0       LEAFDR(11)  
+0.0       LEAFDR(12)  
+0.01      BTOLAI    0.01  .8661 .012632 .042969
+500.0     KLAI   268.0   EM 06/16/07
+-0.47     LAITOP -0.30 -0.47
+5.0       MAXLAI  3.5
+0.0       MAXLDR
+0.5       FORRTF(1)
+0.0       FORRTF(2)
+0.0       FORRTF(3)
+1500.0    SAPK   EM 07/21/07  from Tea
+3         SWOLD  5 saw
+0.036     WDLIG(1) EM 06/14/07
+0.2       WDLIG(2)
+0.18      WDLIG(3) EM 06/14/07
+0.18      WDLIG(4) EM 06/14/07
+0.27      WDLIG(5) EM 06/15/07
+0.13      WDLIG(6) ligin fruit EM 07/09/07
+1.00      WOODDR(1)  leaves 1.00  .8291
+0.04      WOODDR(2) fine roots juv 0.4,
+0.004     WOODDR(3) fine branches .004, EM
+0.005     WOODDR(4) large wood, .004 EM
+0.008     WOODDR(5) coarse roots .008,
+0.0       WOODDR(6) monthly death rate fruit growth GRAPE
+0.395     WOODDR(7) monthly death rate fine roots mature
+0.20      WRDSRFC #fine roots transferred to surface litter
+0.79      WMRTFRAC #mature root fraction
+0.0       SNFXMX(2)
+0.0       DEL13C
+0.0       CO2IPR(2)
+0.0       CO2ITR(2)
+0.0       CO2ICE(2,1,1)
+0.0       CO2ICE(2,1,2)
+0.0       CO2ICE(2,1,3)
+0.0       CO2ICE(2,2,1)
+0.0       CO2ICE(2,2,2)
+0.0       CO2ICE(2,2,3)
+0.0       CO2IRS(2)
+1.00      BASFC2
+400.00          BASFCT
+0.5             SITPOT #higher value gives pref to grass not tree 
+13.0            MAXNP
+0.20000  	'FKMRSPMX(1)'
+0.15000  	'FKMRSPMX(2)'
+0.00160  	'FKMRSPMX(3)'
+0.00030  	'FKMRSPMX(4)'
+0.00400  	'FKMRSPMX(5)'
+0.05000  	'FKMRSPMX(6)'
+0.05000  	'FKMRSPMX(7)'
+0.00000  	'FMRSPLAI(1)'
+0.00000  	'FMRSPLAI(2)'
+0.75000  	'FMRSPLAI(3)'
+1.00000  	'FMRSPLAI(4)'
+2.00000  	'FMRSPLAI(5)'
+2.00000  	'FMRSPLAI(6)'
+2.00000  	'FMRSPLAI(7)'
+0.23300  	'FGRESP(1)'
+0.23300  	'FGRESP(2)'
+0.23300  	'FGRESP(3)'
+0.23300  	'FGRESP(4)'
+0.23300  	'FGRESP(5)'
+0.23300  	'FGRESP(6)'
+0.23300  	'FGRESP(7)'
+0.50000  	'NO3PREF(2)'
+8.00000  	'TLAYPG'
+0.08000  	'TMIX'
+7.00000  	'TMPLFF'
+10.00000  	'TMPLFS'
+120.0  	        'FURGDYS'
+1.0  	        'FLSGRES'
+0.12  	        'TMXTURN'
+1.0  	        'NPP2CS'
+0.1  	        'FAVAIL(1)'
+0.3  	        'FAVAIL(3)'
+0.4  	        'FAVAIL(4)'
+0.5  	        'FAVAIL(5)'
+0.6  	        'FAVAIL(6)'
+PIST      #Pistachio Copied over from the ALMOND crop as a baseline
+1         DECID
+2.5       PRDX(2)  0.4   0.5 EM
+25.       PPDF(1) widespread use of this value as base 10 JRS
+36.       PPDF(2) 6/21/05 mark 
+0.5       PPDF(3)
+2.5       PPDF(4)
+11        CERFOR(1,1,1) EM leaves
+300       CERFOR(1,1,2)
+300       CERFOR(1,1,3)
+21        CERFOR(1,2,1) EM fine root
+250       CERFOR(1,2,2)
+250       CERFOR(1,2,3)
+70        CERFOR(1,3,1) EM fine branch
+1100      CERFOR(1,3,2)
+1100      CERFOR(1,3,3)
+68        CERFOR(1,4,1) EM large wood
+4000      CERFOR(1,4,2)
+4000      CERFOR(1,4,3)
+60        CERFOR(1,5,1) EM coarse roots
+4000      CERFOR(1,5,2)
+4000      CERFOR(1,5,3)
+24.0      CERFOR(1,6,1) min C/N Fruit (from leaf EM)
+0.0       CERFOR(1,6,2) min C/P Fruit
+0.0       CERFOR(1,6,3) min C/S Fruit
+17        CERFOR(2,1,1) EM leaves max
+300       CERFOR(2,1,2)
+300       CERFOR(2,1,3)
+40        CERFOR(2,2,1) EM fine root max
+250       CERFOR(2,2,2)
+250       CERFOR(2,2,3)
+136       CERFOR(2,3,1) EM fine branch max
+1100      CERFOR(2,3,2)
+1100      CERFOR(2,3,3)
+280       CERFOR(2,4,1) EM large wood
+4000      CERFOR(2,4,2)
+4000      CERFOR(2,4,3)
+88        CERFOR(2,5,1) EM coarse roots
+4000      CERFOR(2,5,2)
+4000      CERFOR(2,5,3)
+62        CERFOR(2,6,1) max C/N Fruit (from leaf EM)
+0.0       CERFOR(2,6,2) max C/P Fruit
+0.0       CERFOR(2,6,3) max C/S Fruit
+12        CERFOR(3,1,1) EM leaves
+300       CERFOR(3,1,2)
+300       CERFOR(3,1,3)
+30        CERFOR(3,2,1) EM fine root
+250       CERFOR(3,2,2)
+250       CERFOR(3,2,3)
+71        CERFOR(3,3,1) EM fine branch
+1100      CERFOR(3,3,2)
+1100      CERFOR(3,3,3)
+84        CERFOR(3,4,1) EM large wood
+4000      CERFOR(3,4,2)
+4000      CERFOR(3,4,3)
+66        CERFOR(3,5,1) EM coarse roots
+4000      CERFOR(3,5,2)
+4000      CERFOR(3,5,3)
+25        CERFOR(3,6,1) initial C/N Fruit (from leaf EM)
+0.0       CERFOR(3,6,2) initial C/P Fruit
+0.0       CERFOR(3,6,3) initial C/S Fruit
+1.5       DECW1         EM from TMMX 06/18/07
+0.5       DECW2         EM from TMMX 06/18/07
+0.6       DECW3         EM from TMMX 06/18/07
+0.32      FCFRAC(1,1)   leaves
+0.12      FCFRAC(2,1)   fine roots
+0.1      FCFRAC(3,1)   fine branch
+0.34      FCFRAC(4,1)   large wood
+0.12      FCFRAC(5,1)   coarse roots
+0.00      FCFRAC(6,1)   C allocation Fruit Juv (EM)
+0.30      FCFRAC(1,2)   leaves
+0.07      FCFRAC(2,2)   fine roots
+0.21      FCFRAC(3,2)   0.25  fine branches
+0.25      FCFRAC(4,2)   large wood
+0.07      FCFRAC(5,2)   0.14  coarse roots
+0.10      FCFRAC(6,2)   C allocation Fruit  
+0.20      TFRTCN(1) #nutrient stress
+0.04      TFRTCN(2)
+0.25      TFRTCW(1) #water stress
+0.06      TFRTCW(2)
+1         FNFTIM'     Fruit fall time in months (EM)
+2400.     FNGDDL(1) length fruit growing in DD 1700(EM) Nappa GDD 2916
+7.        FNGDDL(2) Base temp for growing DD (EM)
+35.       FNGDDL(3) Max temp for growing DD
+0.00      LEAFDR(1)  
+0.00      LEAFDR(2)  
+0.00      LEAFDR(3)  
+0.000     LEAFDR(4) 
+0.000     LEAFDR(5)  
+0.000     LEAFDR(6)  
+0.000     LEAFDR(7)  
+0.000     LEAFDR(8) 
+0.000     LEAFDR(9)  
+1.0       LEAFDR(10)  
+0.0       LEAFDR(11)  
+0.0       LEAFDR(12)  
+0.01      BTOLAI    0.01  .8661 .012632 .042969
+500.0     KLAI   268.0   EM 06/16/07
+-0.47     LAITOP -0.30 -0.47
+5.0       MAXLAI  3.5
+0.0       MAXLDR
+0.5       FORRTF(1)
+0.0       FORRTF(2)
+0.0       FORRTF(3)
+1500.0    SAPK   EM 07/21/07  from Tea
+5         SWOLD  
+0.036     WDLIG(1) EM 06/14/07
+0.2       WDLIG(2)
+0.18      WDLIG(3) EM 06/14/07
+0.18      WDLIG(4) EM 06/14/07
+0.27      WDLIG(5) EM 06/15/07
+0.13      WDLIG(6) ligin fruit EM 07/09/07
+1.00      WOODDR(1)  leaves 1.00  .8291
+0.04      WOODDR(2) fine roots juv 0.4,
+0.004     WOODDR(3) fine branches .004, EM
+0.005     WOODDR(4) large wood, .004 EM
+0.008     WOODDR(5) coarse roots .008,
+0.0       WOODDR(6) monthly death rate fruit growth GRAPE
+0.395     WOODDR(7) monthly death rate fine roots mature
+0.20      WRDSRFC #fine roots transferred to surface litter
+0.79      WMRTFRAC #mature root fraction
+0.0       SNFXMX(2)
+0.0       DEL13C
+0.0       CO2IPR(2)
+0.0       CO2ITR(2)
+0.0       CO2ICE(2,1,1)
+0.0       CO2ICE(2,1,2)
+0.0       CO2ICE(2,1,3)
+0.0       CO2ICE(2,2,1)
+0.0       CO2ICE(2,2,2)
+0.0       CO2ICE(2,2,3)
+0.0       CO2IRS(2)
+1.00      BASFC2
+400.00          BASFCT
+0.5             SITPOT #higher value gives pref to grass not tree 
+13.0            MAXNP
+0.20000  	'FKMRSPMX(1)'
+0.15000  	'FKMRSPMX(2)'
+0.00160  	'FKMRSPMX(3)'
+0.00030  	'FKMRSPMX(4)'
+0.00400  	'FKMRSPMX(5)'
+0.05000  	'FKMRSPMX(6)'
+0.05000  	'FKMRSPMX(7)'
+0.00000  	'FMRSPLAI(1)'
+0.00000  	'FMRSPLAI(2)'
+0.75000  	'FMRSPLAI(3)'
+1.00000  	'FMRSPLAI(4)'
+2.00000  	'FMRSPLAI(5)'
+2.00000  	'FMRSPLAI(6)'
+2.00000  	'FMRSPLAI(7)'
+0.23300  	'FGRESP(1)'
+0.23300  	'FGRESP(2)'
+0.23300  	'FGRESP(3)'
+0.23300  	'FGRESP(4)'
+0.23300  	'FGRESP(5)'
+0.23300  	'FGRESP(6)'
+0.23300  	'FGRESP(7)'
+0.50000  	'NO3PREF(2)'
+8.00000  	'TLAYPG'
+0.08000  	'TMIX'
+7.00000  	'TMPLFF'
+10.00000  	'TMPLFS'
+120.0  	        'FURGDYS'
+1.0  	        'FLSGRES'
+0.12  	        'TMXTURN'
+1.0  	        'NPP2CS'
+0.1  	        'FAVAIL(1)'
+0.3  	        'FAVAIL(3)'
+0.4  	        'FAVAIL(4)'
+0.5  	        'FAVAIL(5)'
+0.6  	        'FAVAIL(6)'
+
+GRAPEC Defin
+1         DECID
+0.8    PRDX(2)  0.4   0.5 EM
+10.       PPDF(1) widespread use of this value as base 10 JRS
+36.       PPDF(2) 6/21/05 mark 
+1       PPDF(3)
+5       PPDF(4)
+40       CERFOR(1,1,1) EM leaves MIN
+300       CERFOR(1,1,2)
+300       CERFOR(1,1,3)
+20        CERFOR(1,2,1) EM fine root
+250       CERFOR(1,2,2)
+250       CERFOR(1,2,3)
+25        CERFOR(1,3,1) EM fine branch
+1100      CERFOR(1,3,2)
+1100      CERFOR(1,3,3)
+100        CERFOR(1,4,1) EM large wood
+4000      CERFOR(1,4,2)
+4000      CERFOR(1,4,3)
+36        CERFOR(1,5,1) EM coarse roots
+4000      CERFOR(1,5,2)
+4000      CERFOR(1,5,3)
+40.0      CERFOR(1,6,1) min C/N Fruit (from leaf EM)
+0.0       CERFOR(1,6,2) min C/P Fruit
+0.0       CERFOR(1,6,3) min C/S Fruit
+80        CERFOR(2,1,1) EM leaves max 50
+300       CERFOR(2,1,2)
+300       CERFOR(2,1,3)
+41        CERFOR(2,2,1) EM fine root max
+250       CERFOR(2,2,2)
+250       CERFOR(2,2,3)
+400       CERFOR(2,3,1) EM fine branch max
+1100      CERFOR(2,3,2)
+1100      CERFOR(2,3,3)
+800       CERFOR(2,4,1) EM large wood
+4000      CERFOR(2,4,2)
+4000      CERFOR(2,4,3)
+116       CERFOR(2,5,1) EM coarse roots
+4000      CERFOR(2,5,2)
+4000      CERFOR(2,5,3)
+100        CERFOR(2,6,1) max C/N Fruit (from leaf EM)42
+0.0       CERFOR(2,6,2) max C/P Fruit
+0.0       CERFOR(2,6,3) max C/S Fruit
+45        CERFOR(3,1,1) EM initial leaves 10.1
+300       CERFOR(3,1,2)
+300       CERFOR(3,1,3)
+5         CERFOR(3,2,1) EM initial fine root
+250       CERFOR(3,2,2)
+250       CERFOR(3,2,3)
+300        CERFOR(3,3,1) EM initial fine branch
+1100      CERFOR(3,3,2)
+1100      CERFOR(3,3,3)
+400        CERFOR(3,4,1) EM initial large wood
+4000      CERFOR(3,4,2)
+4000      CERFOR(3,4,3)
+80        CERFOR(3,5,1) EM initial coarse roots
+4000      CERFOR(3,5,2)
+4000      CERFOR(3,5,3)
+60        CERFOR(3,6,1) initial C/N Fruit (from leaf EM)
+300.0       CERFOR(3,6,2) initial C/P Fruit
+300.0       CERFOR(3,6,3) initial C/S Fruit
+0.8       DECW1         EM from TMMX 06/18/07 decomp dead fine  .8658
+0.5       DECW2         EM from TMMX 06/18/07 lg wood
+0.6       DECW3         EM from TMMX 06/18/07 coarse root .04
+0.20      FCFRAC(1,1) leaves   0.33
+0.03      FCFRAC(2,1) fine roots    0.10
+0.31      FCFRAC(3,1) fine branch   0.31
+0.31      FCFRAC(4,1) large wood    0.19
+0.15      FCFRAC(5,1) coarse roots
+0.99     FCFRAC(6,1) C allocation Fruit Juv (EM)    0.00
+0.20      FCFRAC(1,2) leaves    0.28
+0.001      FCFRAC(2,2) fine roots     0.12
+0.32      FCFRAC(3,2) fine branches   0.35
+0.32      FCFRAC(4,2) large wood     0.15
+0.155      FCFRAC(5,2) coarse roots    0.10
+0.99      FCFRAC(6,2)  C allocation Fruit Mat (EM)0.50 45-48 of totbiomass 
+0.30      TFRTCN(1) #nutrient stress
+0.04      TFRTCN(2)
+0.45      TFRTCW(1) #water stress
+0.06      TFRTCW(2)
+1         FNFTIM'     Fruit fall time in months (EM)
+2916.     FNGDDL(1) length fruit growing in DD 1700(EM) Nappa GDD 2916
+10.       FNGDDL(2) Base temp for growing DD (EM)
+36.      FNGDDL(3) Max temp for growing DD
+0.00     LEAFDR(1)
+0.00     LEAFDR(2)
+0.00     LEAFDR(3)
+0.000    LEAFDR(4) budbreak 4/1
+0.000     LEAFDR(5)
+0.000    LEAFDR(6)
+0.000     LEAFDR(7)
+0.000  LEAFDR(8) harvest
+0.000     LEAFDR(9)
+1.0     LEAFDR(10)
+0.0     LEAFDR(11)
+0.0     LEAFDR(12)
+0.4    BTOLAI    0.01  .8661 .012632 .042969 limits leaves
+100.0     KLAI   200 268.0   EM 06/16/07
+-0.47     LAITOP -0.30 -0.47
+17.0      MAXLAI  2.0   3.0  7.5         EM 06/16/07   3.0
+0.0       MAXLDR
+0.0       FORRTF(1)
+0.0       FORRTF(2)
+0.0       FORRTF(3)
+1500.0    SAPK   EM 07/21/07  from Tea
+0      SWOLD  these are mature grapes
+0.036     WDLIG(1) EM 06/14/07
+0.2       WDLIG(2)
+0.18      WDLIG(3) EM 06/14/07
+0.18      WDLIG(4) EM 06/14/07
+0.27      WDLIG(5) EM 06/15/07
+0.47      WDLIG(6) ligin fruit EM 07/09/07
+0.001      WOODDR(1)  leaves 1.00  .8291
+0.12     WOODDR(2) fine roots juv 0.4,
+0.001     WOODDR(3) fine branches .004, EM
+0.05     WOODDR(4) large wood, .004 EM
+0.05    WOODDR(5) coarse roots .008,
+0.001   WOODDR(6) monthly death rate fruit growth GRAPE
+0.495	WOODDR(7) monthly death rate fine roots mature
+0.20	WRDSRFC #fine roots transferred to surface litter
+0.90	WMRTFRAC #mature root fraction 79
+0.0       SNFXMX(2)
+0.0       DEL13C
+0.0       CO2IPR(2)
+0.0       CO2ITR(2)
+0.0       CO2ICE(2,1,1)
+0.0       CO2ICE(2,1,2)
+0.0       CO2ICE(2,1,3)
+0.0       CO2ICE(2,2,1)
+0.0       CO2ICE(2,2,2)
+0.0       CO2ICE(2,2,3)
+0.0       CO2IRS(2)
+1.00      BASFC2
+1.00      BASFCT
+1000    SITPOT '1000 higher value gives pref to grass not tree 2400
+13.0      MAXNP
+0.20000  	'FKMRSPMX(1)'
+0.15000  	'FKMRSPMX(2)'
+0.00160  	'FKMRSPMX(3)'
+0.00030  	'FKMRSPMX(4)'
+0.00400  	'FKMRSPMX(5)'
+0.05000  	'FKMRSPMX(6)'
+0.05000  	'FKMRSPMX(7)'
+0.00000  	'FMRSPLAI(1)'
+0.00000  	'FMRSPLAI(2)'
+0.75000  	'FMRSPLAI(3)'
+1.00000  	'FMRSPLAI(4)'
+2.00000  	'FMRSPLAI(5)'
+2.00000  	'FMRSPLAI(6)'
+2.00000  	'FMRSPLAI(7)'
+0.23300  	'FGRESP(1)'
+0.23300  	'FGRESP(2)'
+0.23300  	'FGRESP(3)'
+0.23300  	'FGRESP(4)'
+0.23300  	'FGRESP(5)'
+0.23300  	'FGRESP(6)'
+0.23300  	'FGRESP(7)'
+0.50000  	'NO3PREF(2)'
+8.00000  	'TLAYPG'
+0.08000  	'TMIX'
+7.00000  	'TMPLFF'
+10.00000  	'TMPLFS'
+120.0  	'FURGDYS'
+1.0  	'FLSGRES'
+0.12  	  'TMXTURN'
+1.0  	'NPP2CS'
+0.1  	  'FAVAIL(1)'
+0.3  	  'FAVAIL(3)'
+0.4  	  'FAVAIL(4)'
+0.5  	  'FAVAIL(5)'
+0.6  	  'FAVAIL(6)'
+GRAPE Definitivo JAF 5/12/09
+1         DECID
+0.496    PRDX(2)  0.4   0.5 EM
+10.       PPDF(1) widespread use of this value as base 10 JRS
+36.       PPDF(2) 6/21/05 mark 
+1       PPDF(3)
+5       PPDF(4)
+40       CERFOR(1,1,1) EM leaves MIN
+300       CERFOR(1,1,2)
+300       CERFOR(1,1,3)
+20        CERFOR(1,2,1) EM fine root
+250       CERFOR(1,2,2)
+250       CERFOR(1,2,3)
+25        CERFOR(1,3,1) EM fine branch
+1100      CERFOR(1,3,2)
+1100      CERFOR(1,3,3)
+100        CERFOR(1,4,1) EM large wood
+4000      CERFOR(1,4,2)
+4000      CERFOR(1,4,3)
+36        CERFOR(1,5,1) EM coarse roots
+4000      CERFOR(1,5,2)
+4000      CERFOR(1,5,3)
+17.0      CERFOR(1,6,1) min C/N Fruit (from leaf EM)
+0.0       CERFOR(1,6,2) min C/P Fruit
+0.0       CERFOR(1,6,3) min C/S Fruit
+80        CERFOR(2,1,1) EM leaves max 50
+300       CERFOR(2,1,2)
+300       CERFOR(2,1,3)
+41        CERFOR(2,2,1) EM fine root max
+250       CERFOR(2,2,2)
+250       CERFOR(2,2,3)
+400       CERFOR(2,3,1) EM fine branch max
+1100      CERFOR(2,3,2)
+1100      CERFOR(2,3,3)
+800       CERFOR(2,4,1) EM large wood
+4000      CERFOR(2,4,2)
+4000      CERFOR(2,4,3)
+116       CERFOR(2,5,1) EM coarse roots
+4000      CERFOR(2,5,2)
+4000      CERFOR(2,5,3)
+80        CERFOR(2,6,1) max C/N Fruit (from leaf EM)42
+0.0       CERFOR(2,6,2) max C/P Fruit
+0.0       CERFOR(2,6,3) max C/S Fruit
+45        CERFOR(3,1,1) EM initial leaves 10.1
+300       CERFOR(3,1,2)
+300       CERFOR(3,1,3)
+5         CERFOR(3,2,1) EM initial fine root
+250       CERFOR(3,2,2)
+250       CERFOR(3,2,3)
+300        CERFOR(3,3,1) EM initial fine branch
+1100      CERFOR(3,3,2)
+1100      CERFOR(3,3,3)
+400        CERFOR(3,4,1) EM initial large wood
+4000      CERFOR(3,4,2)
+4000      CERFOR(3,4,3)
+80        CERFOR(3,5,1) EM initial coarse roots
+4000      CERFOR(3,5,2)
+4000      CERFOR(3,5,3)
+40        CERFOR(3,6,1) initial C/N Fruit (from leaf EM)
+300.0       CERFOR(3,6,2) initial C/P Fruit
+300.0       CERFOR(3,6,3) initial C/S Fruit
+0.8       DECW1         EM from TMMX 06/18/07 decomp dead fine  .8658
+0.5       DECW2         EM from TMMX 06/18/07 lg wood
+0.6       DECW3         EM from TMMX 06/18/07 coarse root .04
+0.20      FCFRAC(1,1) leaves   0.33
+0.03      FCFRAC(2,1) fine roots    0.10
+0.31      FCFRAC(3,1) fine branch   0.31
+0.31      FCFRAC(4,1) large wood    0.19
+0.15      FCFRAC(5,1) coarse roots
+0.95     FCFRAC(6,1) C allocation Fruit Juv (EM)    0.00
+0.20      FCFRAC(1,2) leaves    0.28
+0.001      FCFRAC(2,2) fine roots     0.12
+0.32      FCFRAC(3,2) fine branches   0.35
+0.32      FCFRAC(4,2) large wood     0.15
+0.155      FCFRAC(5,2) coarse roots    0.10
+0.95      FCFRAC(6,2)  C allocation Fruit Mat (EM)0.50 45-48 of totbiomass 
+0.20      TFRTCN(1) #nutrient stress
+0.04      TFRTCN(2)
+0.35      TFRTCW(1) #water stress
+0.06      TFRTCW(2)
+1         FNFTIM'     Fruit fall time in months (EM)
+2916.     FNGDDL(1) length fruit growing in DD 1700(EM) Nappa GDD 2916
+10.       FNGDDL(2) Base temp for growing DD (EM)
+36.      FNGDDL(3) Max temp for growing DD
+0.00     LEAFDR(1)
+0.00     LEAFDR(2)
+0.00     LEAFDR(3)
+0.000    LEAFDR(4) budbreak 4/1
+0.000     LEAFDR(5)
+0.000    LEAFDR(6)
+0.000     LEAFDR(7)
+0.000  LEAFDR(8) harvest
+0.000     LEAFDR(9)
+1.0     LEAFDR(10)
+0.0     LEAFDR(11)
+0.0     LEAFDR(12)
+0.04     BTOLAI    0.01  .8661 .012632 .042969
+200.0     KLAI   268.0   EM 06/16/07
+-0.25     LAITOP -0.30 -0.47
+14.5      MAXLAI  2.0   3.0  7.5         EM 06/16/07   3.0
+0.0       MAXLDR
+0.0       FORRTF(1)
+0.0       FORRTF(2)
+0.0       FORRTF(3)
+1500.0    SAPK   EM 07/21/07  from Tea
+0      SWOLD  these are mature grapes
+0.036     WDLIG(1) EM 06/14/07
+0.2       WDLIG(2)
+0.18      WDLIG(3) EM 06/14/07
+0.18      WDLIG(4) EM 06/14/07
+0.27      WDLIG(5) EM 06/15/07
+0.13      WDLIG(6) ligin fruit EM 07/09/07
+0.8291      WOODDR(1)  leaves 1.00  .8291
+0.3     WOODDR(2) fine roots juv 0.4,
+0.001     WOODDR(3) fine branches .004, EM
+0.01     WOODDR(4) large wood, .004 EM
+0.025    WOODDR(5) coarse roots .008,
+0.0001   WOODDR(6) monthly death rate fruit growth GRAPE
+0.395	WOODDR(7) monthly death rate fine roots mature
+0.20	WRDSRFC #fine roots transferred to surface litter
+0.79	WMRTFRAC #mature root fraction
+0.0       SNFXMX(2)
+0.0       DEL13C
+0.0       CO2IPR(2)
+0.0       CO2ITR(2)
+0.0       CO2ICE(2,1,1)
+0.0       CO2ICE(2,1,2)
+0.0       CO2ICE(2,1,3)
+0.0       CO2ICE(2,2,1)
+0.0       CO2ICE(2,2,2)
+0.0       CO2ICE(2,2,3)
+0.0       CO2IRS(2)
+1.00      BASFC2
+1.00      BASFCT
+2400    SITPOT '1000 higher value gives pref to grass not tree
+13.0      MAXNP
+0.20000  	'FKMRSPMX(1)'
+0.15000  	'FKMRSPMX(2)'
+0.00160  	'FKMRSPMX(3)'
+0.00030  	'FKMRSPMX(4)'
+0.00400  	'FKMRSPMX(5)'
+0.05000  	'FKMRSPMX(6)'
+0.05000  	'FKMRSPMX(7)'
+0.00000  	'FMRSPLAI(1)'
+0.00000  	'FMRSPLAI(2)'
+0.75000  	'FMRSPLAI(3)'
+1.00000  	'FMRSPLAI(4)'
+2.00000  	'FMRSPLAI(5)'
+2.00000  	'FMRSPLAI(6)'
+2.00000  	'FMRSPLAI(7)'
+0.23300  	'FGRESP(1)'
+0.23300  	'FGRESP(2)'
+0.23300  	'FGRESP(3)'
+0.23300  	'FGRESP(4)'
+0.23300  	'FGRESP(5)'
+0.23300  	'FGRESP(6)'
+0.23300  	'FGRESP(7)'
+0.50000  	'NO3PREF(2)'
+8.00000  	'TLAYPG'
+0.08000  	'TMIX'
+7.00000  	'TMPLFF'
+10.00000  	'TMPLFS'
+120.0  	'FURGDYS'
+1.0  	'FLSGRES'
+0.12  	  'TMXTURN'
+1.0  	'NPP2CS'
+0.1  	  'FAVAIL(1)'
+0.3  	  'FAVAIL(3)'
+0.4  	  'FAVAIL(4)'
+0.5  	  'FAVAIL(5)'
+0.6  	  'FAVAIL(6)'
+GRAPEJ  JRS GRAPES Juv  5/12/09
+1         DECID
+0.82  PRDX(2)  0.4   0.5 EM  1.1 jrs
+10.       PPDF(1) widespread use of this value as base 10 JRS
+36.       PPDF(2) 6/21/05 mark 
+1       PPDF(3)
+5       PPDF(4)
+40       CERFOR(1,1,1) EM leaves 8.1 9.6 Leaves 40-80
+300       CERFOR(1,1,2)
+300       CERFOR(1,1,3)
+20        CERFOR(1,2,1) EM fine root 20
+250       CERFOR(1,2,2)
+250       CERFOR(1,2,3)
+25        CERFOR(1,3,1) EM fine branch 17 Shrub trimmings 53 
+1100      CERFOR(1,3,2)
+1100      CERFOR(1,3,3)
+100        CERFOR(1,4,1) EM large wood 74 Hardwood 100-400
+4000      CERFOR(1,4,2)
+4000      CERFOR(1,4,3)
+36        CERFOR(1,5,1) EM coarse roots 36
+4000      CERFOR(1,5,2)
+4000      CERFOR(1,5,3)
+17.0      CERFOR(1,6,1) min C/N Fruit (from leaf EM) Fruit  20-50
+0.0       CERFOR(1,6,2) min C/P Fruit
+0.0       CERFOR(1,6,3) min C/S Fruit
+80        CERFOR(2,1,1) EM leaves max 50 
+300       CERFOR(2,1,2)
+300       CERFOR(2,1,3)
+41      CERFOR(2,2,1) EM fine root max 40.5
+250       CERFOR(2,2,2)
+250       CERFOR(2,2,3)
+400       CERFOR(2,3,1) EM 121fine branch max Shrub trimmings 53 
+1100      CERFOR(2,3,2)
+1100      CERFOR(2,3,3) 
+800       CERFOR(2,4,1) EM large wood 155 400
+4000      CERFOR(2,4,2)
+4000      CERFOR(2,4,3)
+116       CERFOR(2,5,1) EM coarse roots 116
+4000      CERFOR(2,5,2)
+4000      CERFOR(2,5,3)
+50        CERFOR(2,6,1) max C/N Fruit (from leaf EM) 42
+0.0       CERFOR(2,6,2) max C/P Fruit
+0.0       CERFOR(2,6,3) max C/S Fruit
+45     CERFOR(3,1,1) initial EM leaves 11
+300       CERFOR(3,1,2)
+300       CERFOR(3,1,3)
+5        CERFOR(3,2,1) initial EM fine root 25
+250       CERFOR(3,2,2)
+250       CERFOR(3,2,3)
+300        CERFOR(3,3,1) initial EM fine branch 25
+1100      CERFOR(3,3,2)
+1100      CERFOR(3,3,3)
+400        CERFOR(3,4,1) initial EM large wood 80
+4000      CERFOR(3,4,2)
+4000      CERFOR(3,4,3)
+5        CERFOR(3,5,1) initial EM coarse roots 45
+4000      CERFOR(3,5,2)
+4000      CERFOR(3,5,3)
+40        CERFOR(3,6,1) initial C/N Fruit (from leaf EM) 18
+0.0       CERFOR(3,6,2) initial C/P Fruit
+0.0       CERFOR(3,6,3) initial C/S Fruit
+0.8658      DECW1         EM from TMMX 06/18/07 decomp dead fine branch  .8658
+0.5       DECW2         EM from TMMX 06/18/07 lg wood 0.5
+0.6      DECW3         EM from TMMX 06/18/07 coarse root 0.6
+0.20      FCFRAC(1,1) leaves   0.33
+0.07      FCFRAC(2,1) fine roots    0.10
+0.31      FCFRAC(3,1) fine branch   0.31
+0.31      FCFRAC(4,1) large wood    0.19
+0.11      FCFRAC(5,1) coarse roots
+0.00      FCFRAC(6,1) C allocation Fruit Juv (EM)    0.00
+0.20    FCFRAC(1,2) leaves    0.28
+0.03     FCFRAC(2,2) fine roots     0.12 
+0.31     FCFRAC(3,2) fine branches   0.35
+0.31      FCFRAC(4,2) large wood     0.15
+0.15     FCFRAC(5,2) coarse roots    0.10
+0.80      FCFRAC(6,2)  C allocation Fruit45-48 biomass 44 to 69 
+0.20      TFRTCN(1) #nutrient stress
+0.04      TFRTCN(2)
+0.25      TFRTCW(1) #water stress
+0.06      TFRTCW(2)
+1        FNFTIM'     Fruit fall time in months (EM)
+2916.     FNGDDL(1) length fruit growing in DD 1700(EM) Nappa GGD 2916
+10.       FNGDDL(2) Base temp for growing DD (EM)
+36.      FNGDDL(3) Max temp for growing DD
+0.0   LEAFDR(1)
+0.0     LEAFDR(2)
+0.0     LEAFDR(3)
+0.0     LEAFDR(4) budbreak 4/1
+0.0     LEAFDR(5)
+0.0     LEAFDR(6)
+0.00    LEAFDR(7)
+0.00     LEAFDR(8)
+0.00     LEAFDR(9) harvest
+1.0    LEAFDR(10)
+0.0     LEAFDR(11)
+0.0     LEAFDR(12)
+0.030   BTOLAI 0.007  .8661 .012632 .008551 hi val kps lvs from growing
+209.0     KLAI   285 268.0EM-lg wood mass for 1/2 lai hi val lmts lf gwth
+-0.20     LAITOP -0.30 -0.47
+9.5      MAXLAI  2.0   3.0  7.5 r2=64%@4
+0.0       MAXLDR (evergreen only)
+0.0       FORRTF(1) N 0
+0.0       FORRTF(2) P
+0.0       FORRTF(3) S
+1500.0    SAPK   EM 1500 from Tea
+5    SWOLD  EM 03/29/07 average vines come into full maturity 11 yrs jrs
+0.036     WDLIG(1) EM 06/14/07
+0.2       WDLIG(2)
+0.18      WDLIG(3) EM 06/14/07
+0.18      WDLIG(4) EM 06/14/07
+0.27      WDLIG(5) EM 06/15/07
+0.13      WDLIG(6) ligin fruit EM 07/09/07
+0.8291      WOODDR(1)  leaves 1.00  .8291
+0.6    WOODDR(2) fine roots 0.4 JUV,
+0.001     WOODDR(3) fine branches .004, EM
+0.001     WOODDR(4) large wood, .004 EM
+0.08     WOODDR(5) .008 coarse averaging 50% greater than fine roots
+0.001   WOODDR(6) monthly death rate fruit growth GRAPEJ
+0.75	WOODDR(7) monthly death rate fine roots mature
+0.25	WRDSRFC #fine roots transferred to surface litter 0.14
+0.6	WMRTFRAC #mature fine root fraction
+0.0       SNFXMX(2)
+0.0       DEL13C
+0.0       CO2IPR(2)
+0.0       CO2ITR(2)
+0.0       CO2ICE(2,1,1)
+0.0       CO2ICE(2,1,2)
+0.0       CO2ICE(2,1,3)
+0.0       CO2ICE(2,2,1)
+0.0       CO2ICE(2,2,2)
+0.0       CO2ICE(2,2,3)
+0.0       CO2IRS(2)
+1.00      BASFC2
+1.00      BASFCT
+2400    SITPOT '1000 higher value gives pref to grass not tree grapej
+13.0      MAXNP
+0.20000  	'FKMRSPMX(1)'
+0.15000  	'FKMRSPMX(2)'
+0.00160  	'FKMRSPMX(3)'
+0.00030  	'FKMRSPMX(4)'
+0.00400  	'FKMRSPMX(5)'
+0.05000  	'FKMRSPMX(6)'
+0.05000  	'FKMRSPMX(7)'
+0.00000  	'FMRSPLAI(1)'
+0.00000  	'FMRSPLAI(2)'
+0.75000  	'FMRSPLAI(3)'
+1.00000  	'FMRSPLAI(4)'
+2.00000  	'FMRSPLAI(5)'
+2.00000  	'FMRSPLAI(6)'
+2.00000  	'FMRSPLAI(7)'
+0.23300  	'FGRESP(1)'
+0.23300  	'FGRESP(2)'
+0.23300  	'FGRESP(3)'
+0.23300  	'FGRESP(4)'
+0.23300  	'FGRESP(5)'
+0.23300  	'FGRESP(6)'
+0.23300  	'FGRESP(7)'
+0.50000  	'NO3PREF(2)'
+8.00000  	'TLAYPG'
+0.08000  	'TMIX'
+7.00000  	'TMPLFF'
+10.00000  	'TMPLFS'
+120.0  	'FURGDYS'
+1.0  	'FLSGRES'
+0.12  	  'TMXTURN'
+1.0  	'NPP2CS'
+0.1  	  'FAVAIL(1)'
+0.3  	  'FAVAIL(3)'
+0.4  	  'FAVAIL(4)'
+0.5  	  'FAVAIL(5)'
+0.6  	  'FAVAIL(6)'
+ALMOND_OLD #MJE, created 12/18/2015 for California Almonds - changed to "old" because of problems, MJE 1/8/2015
+1         DECID
+0.8    PRDX(2)  0.4   0.5 EM
+10.       PPDF(1) widespread use of this value as base 10 JRS
+36.       PPDF(2) 6/21/05 mark 
+1       PPDF(3)
+5       PPDF(4)
+40       CERFOR(1,1,1) EM leaves MIN
+300       CERFOR(1,1,2)
+300       CERFOR(1,1,3)
+20        CERFOR(1,2,1) EM fine root
+250       CERFOR(1,2,2)
+250       CERFOR(1,2,3)
+25        CERFOR(1,3,1) EM fine branch
+1100      CERFOR(1,3,2)
+1100      CERFOR(1,3,3)
+100        CERFOR(1,4,1) EM large wood
+4000      CERFOR(1,4,2)
+4000      CERFOR(1,4,3)
+36        CERFOR(1,5,1) EM coarse roots
+4000      CERFOR(1,5,2)
+4000      CERFOR(1,5,3)
+40.0      CERFOR(1,6,1) min C/N Fruit (from leaf EM)
+0.0       CERFOR(1,6,2) min C/P Fruit
+0.0       CERFOR(1,6,3) min C/S Fruit
+80        CERFOR(2,1,1) EM leaves max 50
+300       CERFOR(2,1,2)
+300       CERFOR(2,1,3)
+41        CERFOR(2,2,1) EM fine root max
+250       CERFOR(2,2,2)
+250       CERFOR(2,2,3)
+400       CERFOR(2,3,1) EM fine branch max
+1100      CERFOR(2,3,2)
+1100      CERFOR(2,3,3)
+800       CERFOR(2,4,1) EM large wood
+4000      CERFOR(2,4,2)
+4000      CERFOR(2,4,3)
+116       CERFOR(2,5,1) EM coarse roots
+4000      CERFOR(2,5,2)
+4000      CERFOR(2,5,3)
+100        CERFOR(2,6,1) max C/N Fruit (from leaf EM)42
+0.0       CERFOR(2,6,2) max C/P Fruit
+0.0       CERFOR(2,6,3) max C/S Fruit
+45        CERFOR(3,1,1) EM initial leaves 10.1
+300       CERFOR(3,1,2)
+300       CERFOR(3,1,3)
+5         CERFOR(3,2,1) EM initial fine root
+250       CERFOR(3,2,2)
+250       CERFOR(3,2,3)
+300        CERFOR(3,3,1) EM initial fine branch
+1100      CERFOR(3,3,2)
+1100      CERFOR(3,3,3)
+400        CERFOR(3,4,1) EM initial large wood
+4000      CERFOR(3,4,2)
+4000      CERFOR(3,4,3)
+80        CERFOR(3,5,1) EM initial coarse roots
+4000      CERFOR(3,5,2)
+4000      CERFOR(3,5,3)
+60        CERFOR(3,6,1) initial C/N Fruit (from leaf EM)
+300.0       CERFOR(3,6,2) initial C/P Fruit
+300.0       CERFOR(3,6,3) initial C/S Fruit
+0.8       DECW1         EM from TMMX 06/18/07 decomp dead fine  .8658
+0.5       DECW2         EM from TMMX 06/18/07 lg wood
+0.6       DECW3         EM from TMMX 06/18/07 coarse root .04
+0.20      FCFRAC(1,1) leaves   0.33
+0.03      FCFRAC(2,1) fine roots    0.10
+0.31      FCFRAC(3,1) fine branch   0.31
+0.31      FCFRAC(4,1) large wood    0.19
+0.15      FCFRAC(5,1) coarse roots
+0.99     FCFRAC(6,1) C allocation Fruit Juv (EM)    0.00
+0.20      FCFRAC(1,2) leaves    0.28
+0.001      FCFRAC(2,2) fine roots     0.12
+0.32      FCFRAC(3,2) fine branches   0.35
+0.32      FCFRAC(4,2) large wood     0.15
+0.155      FCFRAC(5,2) coarse roots    0.10
+0.99      FCFRAC(6,2)  C allocation Fruit Mat (EM)0.50 45-48 of totbiomass 
+0.30      TFRTCN(1) #nutrient stress
+0.04      TFRTCN(2)
+0.45      TFRTCW(1) #water stress
+0.06      TFRTCW(2)
+1         FNFTIM'     Fruit fall time in months (EM)
+2916.     FNGDDL(1) length fruit growing in DD 1700(EM) Nappa GDD 2916
+7.       FNGDDL(2) Base temp for growing DD (EM)
+35.      FNGDDL(3) Max temp for growing DD
+0.00     LEAFDR(1)
+0.00     LEAFDR(2)
+0.00     LEAFDR(3)
+0.000    LEAFDR(4) budbreak 4/1
+0.000     LEAFDR(5)
+0.000    LEAFDR(6)
+0.000     LEAFDR(7)
+0.000  LEAFDR(8) harvest
+0.000     LEAFDR(9)
+1.0     LEAFDR(10)
+0.0     LEAFDR(11)
+0.0     LEAFDR(12)
+0.4    BTOLAI    0.01  .8661 .012632 .042969 limits leaves
+100.0     KLAI   200 268.0   EM 06/16/07
+-0.47     LAITOP -0.30 -0.47
+17.0      MAXLAI  2.0   3.0  7.5         EM 06/16/07   3.0
+0.0       MAXLDR
+0.0       FORRTF(1)
+0.0       FORRTF(2)
+0.0       FORRTF(3)
+1500.0    SAPK   EM 07/21/07  from Tea
+0      SWOLD  these are mature grapes
+0.036     WDLIG(1) EM 06/14/07
+0.2       WDLIG(2)
+0.18      WDLIG(3) EM 06/14/07
+0.18      WDLIG(4) EM 06/14/07
+0.27      WDLIG(5) EM 06/15/07
+0.47      WDLIG(6) ligin fruit EM 07/09/07
+0.001      WOODDR(1)  leaves 1.00  .8291
+0.12     WOODDR(2) fine roots juv 0.4,
+0.001     WOODDR(3) fine branches .004, EM
+0.05     WOODDR(4) large wood, .004 EM
+0.05    WOODDR(5) coarse roots .008,
+0.001   WOODDR(6) monthly death rate fruit growth GRAPE
+0.495	WOODDR(7) monthly death rate fine roots mature
+0.20	WRDSRFC #fine roots transferred to surface litter
+0.90	WMRTFRAC #mature root fraction 79
+0.0       SNFXMX(2)
+0.0       DEL13C
+0.0       CO2IPR(2)
+0.0       CO2ITR(2)
+0.0       CO2ICE(2,1,1)
+0.0       CO2ICE(2,1,2)
+0.0       CO2ICE(2,1,3)
+0.0       CO2ICE(2,2,1)
+0.0       CO2ICE(2,2,2)
+0.0       CO2ICE(2,2,3)
+0.0       CO2IRS(2)
+1.00      BASFC2
+1.00      BASFCT
+1000    SITPOT '1000 higher value gives pref to grass not tree 2400
+13.0      MAXNP
+0.20000  	'FKMRSPMX(1)'
+0.15000  	'FKMRSPMX(2)'
+0.00160  	'FKMRSPMX(3)'
+0.00030  	'FKMRSPMX(4)'
+0.00400  	'FKMRSPMX(5)'
+0.05000  	'FKMRSPMX(6)'
+0.05000  	'FKMRSPMX(7)'
+0.00000  	'FMRSPLAI(1)'
+0.00000  	'FMRSPLAI(2)'
+0.75000  	'FMRSPLAI(3)'
+1.00000  	'FMRSPLAI(4)'
+2.00000  	'FMRSPLAI(5)'
+2.00000  	'FMRSPLAI(6)'
+2.00000  	'FMRSPLAI(7)'
+0.23300  	'FGRESP(1)'
+0.23300  	'FGRESP(2)'
+0.23300  	'FGRESP(3)'
+0.23300  	'FGRESP(4)'
+0.23300  	'FGRESP(5)'
+0.23300  	'FGRESP(6)'
+0.23300  	'FGRESP(7)'
+0.50000  	'NO3PREF(2)'
+8.00000  	'TLAYPG'
+0.08000  	'TMIX'
+7.00000  	'TMPLFF'
+10.00000  	'TMPLFS'
+120.0  	'FURGDYS'
+1.0  	'FLSGRES'
+0.12  	  'TMXTURN'
+1.0  	'NPP2CS'
+0.1  	  'FAVAIL(1)'
+0.3  	  'FAVAIL(3)'
+0.4  	  'FAVAIL(4)'
+0.5  	  'FAVAIL(5)'
+0.6  	  'FAVAIL(6)'
+ALMOND    #Copied over from the GRAPE crop as a baseline, MJE 1/8/2016
+1         DECID
+2.5       PRDX(2)  0.4   0.5 EM
+25.       PPDF(1) widespread use of this value as base 10 JRS
+36.       PPDF(2) 6/21/05 mark 
+0.5       PPDF(3)
+2.5       PPDF(4)
+11        CERFOR(1,1,1) EM leaves
+300       CERFOR(1,1,2)
+300       CERFOR(1,1,3)
+21        CERFOR(1,2,1) EM fine root
+250       CERFOR(1,2,2)
+250       CERFOR(1,2,3)
+70        CERFOR(1,3,1) EM fine branch
+1100      CERFOR(1,3,2)
+1100      CERFOR(1,3,3)
+68        CERFOR(1,4,1) EM large wood
+4000      CERFOR(1,4,2)
+4000      CERFOR(1,4,3)
+60        CERFOR(1,5,1) EM coarse roots
+4000      CERFOR(1,5,2)
+4000      CERFOR(1,5,3)
+24.0      CERFOR(1,6,1) min C/N Fruit (from leaf EM)
+0.0       CERFOR(1,6,2) min C/P Fruit
+0.0       CERFOR(1,6,3) min C/S Fruit
+17        CERFOR(2,1,1) EM leaves max
+300       CERFOR(2,1,2)
+300       CERFOR(2,1,3)
+40        CERFOR(2,2,1) EM fine root max
+250       CERFOR(2,2,2)
+250       CERFOR(2,2,3)
+136       CERFOR(2,3,1) EM fine branch max
+1100      CERFOR(2,3,2)
+1100      CERFOR(2,3,3)
+280       CERFOR(2,4,1) EM large wood
+4000      CERFOR(2,4,2)
+4000      CERFOR(2,4,3)
+88        CERFOR(2,5,1) EM coarse roots
+4000      CERFOR(2,5,2)
+4000      CERFOR(2,5,3)
+62        CERFOR(2,6,1) max C/N Fruit (from leaf EM)
+0.0       CERFOR(2,6,2) max C/P Fruit
+0.0       CERFOR(2,6,3) max C/S Fruit
+12        CERFOR(3,1,1) EM leaves
+300       CERFOR(3,1,2)
+300       CERFOR(3,1,3)
+30        CERFOR(3,2,1) EM fine root
+250       CERFOR(3,2,2)
+250       CERFOR(3,2,3)
+71        CERFOR(3,3,1) EM fine branch
+1100      CERFOR(3,3,2)
+1100      CERFOR(3,3,3)
+84        CERFOR(3,4,1) EM large wood
+4000      CERFOR(3,4,2)
+4000      CERFOR(3,4,3)
+66        CERFOR(3,5,1) EM coarse roots
+4000      CERFOR(3,5,2)
+4000      CERFOR(3,5,3)
+25        CERFOR(3,6,1) initial C/N Fruit (from leaf EM)
+0.0       CERFOR(3,6,2) initial C/P Fruit
+0.0       CERFOR(3,6,3) initial C/S Fruit
+1.5       DECW1         EM from TMMX 06/18/07
+0.5       DECW2         EM from TMMX 06/18/07
+0.6       DECW3         EM from TMMX 06/18/07
+0.27      FCFRAC(1,1)   leaves
+0.12      FCFRAC(2,1)   fine roots
+0.07      FCFRAC(3,1)   fine branch
+0.32      FCFRAC(4,1)   large wood
+0.22      FCFRAC(5,1)   coarse roots
+0.00      FCFRAC(6,1)   C allocation Fruit Juv (EM)
+0.21      FCFRAC(1,2)   leaves
+0.12      FCFRAC(2,2)   fine roots
+0.25      FCFRAC(3,2)   0.25  fine branches
+0.28      FCFRAC(4,2)   large wood
+0.14      FCFRAC(5,2)   0.14  coarse roots
+0.20      FCFRAC(6,2)   C allocation Fruit Mat (EM)
+0.20      TFRTCN(1) #nutrient stress
+0.04      TFRTCN(2)
+0.25      TFRTCW(1) #water stress
+0.06      TFRTCW(2)
+1         FNFTIM'     Fruit fall time in months (EM)
+2400.     FNGDDL(1) length fruit growing in DD 1700(EM) Nappa GDD 2916
+7.        FNGDDL(2) Base temp for growing DD (EM)
+35.       FNGDDL(3) Max temp for growing DD
+0.00      LEAFDR(1)  #Jorge used 0.025 here for CENTURY
+0.00      LEAFDR(2)  #Jorge used 0.025 here for CENTURY
+0.00      LEAFDR(3)  #Jorge used 0.025 here for CENTURY
+0.000     LEAFDR(4) budbreak 4/1   #Jorge used 0.025 here for CENTURY
+0.000     LEAFDR(5)  #Jorge used 0.025 here for CENTURY
+0.000     LEAFDR(6)  #Jorge used 0.025 here for CENTURY
+0.000     LEAFDR(7)  #Jorge used 0.025 here for CENTURY
+0.000     LEAFDR(8) harvest  #Jorge used 0.025 here for CENTURY
+0.000     LEAFDR(9)  #Jorge used 0.025 here for CENTURY
+1.0       LEAFDR(10)  #Jorge used 0.025 here for CENTURY
+0.0       LEAFDR(11)  #Jorge used 0.025 here for CENTURY
+0.0       LEAFDR(12)  #Jorge used 0.025 here for CENTURY
+0.01      BTOLAI    0.01  .8661 .012632 .042969
+500.0     KLAI   268.0   EM 06/16/07
+-0.47     LAITOP -0.30 -0.47
+3.5       MAXLAI  2.0   3.0  7.5         EM 06/16/07   3.0
+0.0       MAXLDR
+0.5       FORRTF(1)
+0.0       FORRTF(2)
+0.0       FORRTF(3)
+1500.0    SAPK   EM 07/21/07  from Tea
+4      SWOLD  
+0.036     WDLIG(1) EM 06/14/07
+0.2       WDLIG(2)
+0.18      WDLIG(3) EM 06/14/07
+0.18      WDLIG(4) EM 06/14/07
+0.27      WDLIG(5) EM 06/15/07
+0.13      WDLIG(6) ligin fruit EM 07/09/07
+1.00      WOODDR(1)  leaves 1.00  .8291
+0.04      WOODDR(2) fine roots juv 0.4,
+0.004     WOODDR(3) fine branches .004, EM
+0.005     WOODDR(4) large wood, .004 EM
+0.008     WOODDR(5) coarse roots .008,
+0.0       WOODDR(6) monthly death rate fruit growth GRAPE
+0.395     WOODDR(7) monthly death rate fine roots mature
+0.20      WRDSRFC #fine roots transferred to surface litter
+0.79      WMRTFRAC #mature root fraction
+0.0       SNFXMX(2)
+0.0       DEL13C
+0.0       CO2IPR(2)
+0.0       CO2ITR(2)
+0.0       CO2ICE(2,1,1)
+0.0       CO2ICE(2,1,2)
+0.0       CO2ICE(2,1,3)
+0.0       CO2ICE(2,2,1)
+0.0       CO2ICE(2,2,2)
+0.0       CO2ICE(2,2,3)
+0.0       CO2IRS(2)
+1.00      BASFC2
+400.00      BASFCT
+2400    SITPOT #1000 higher value gives pref to grass not tree #changed from 2400, MJE 1/8/2016'
+13.0      MAXNP
+0.20000  	'FKMRSPMX(1)'
+0.15000  	'FKMRSPMX(2)'
+0.00160  	'FKMRSPMX(3)'
+0.00030  	'FKMRSPMX(4)'
+0.00400  	'FKMRSPMX(5)'
+0.05000  	'FKMRSPMX(6)'
+0.05000  	'FKMRSPMX(7)'
+0.00000  	'FMRSPLAI(1)'
+0.00000  	'FMRSPLAI(2)'
+0.75000  	'FMRSPLAI(3)'
+1.00000  	'FMRSPLAI(4)'
+2.00000  	'FMRSPLAI(5)'
+2.00000  	'FMRSPLAI(6)'
+2.00000  	'FMRSPLAI(7)'
+0.23300  	'FGRESP(1)'
+0.23300  	'FGRESP(2)'
+0.23300  	'FGRESP(3)'
+0.23300  	'FGRESP(4)'
+0.23300  	'FGRESP(5)'
+0.23300  	'FGRESP(6)'
+0.23300  	'FGRESP(7)'
+0.50000  	'NO3PREF(2)'
+8.00000  	'TLAYPG'
+0.08000  	'TMIX'
+7.00000  	'TMPLFF'
+10.00000  	'TMPLFS'
+120.0  	'FURGDYS'
+1.0  	'FLSGRES'
+0.12  	  'TMXTURN'
+1.0  	'NPP2CS'
+0.1  	  'FAVAIL(1)'
+0.3  	  'FAVAIL(3)'
+0.4  	  'FAVAIL(4)'
+0.5  	  'FAVAIL(5)'
+0.6  	  'FAVAIL(6)'
